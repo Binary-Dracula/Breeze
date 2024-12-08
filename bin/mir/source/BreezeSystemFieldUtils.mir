@@ -1,0 +1,240 @@
+[ @file = "/Users/summer/work/garmin/Breeze/source/BreezeSystemFieldUtils.mc"; @line = 1; ]
+import Toybox.Time;
+[ @file = "/Users/summer/work/garmin/Breeze/source/BreezeSystemFieldUtils.mc"; @line = 2; ]
+import Toybox.Time.Gregorian;
+[ @file = "/Users/summer/work/garmin/Breeze/source/BreezeSystemFieldUtils.mc"; @line = 3; ]
+import Toybox.Lang;
+[ @file = "/Users/summer/work/garmin/Breeze/source/BreezeSystemFieldUtils.mc"; @line = 4; ]
+import Toybox.Activity;
+[ @file = "/Users/summer/work/garmin/Breeze/source/BreezeSystemFieldUtils.mc"; @line = 5; ]
+import Toybox.ActivityMonitor;
+[ @file = "/Users/summer/work/garmin/Breeze/source/BreezeSystemFieldUtils.mc"; @line = 7; ]
+class BreezeSystemFieldUtils{
+    [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeSystemFieldUtils.mc"; @line = 7; ]
+    <init> {
+    }
+    [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeSystemFieldUtils.mc"; @line = 7; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeSystemFieldUtils.mc"; @line = 10; ]
+    function getSystemTime() {
+_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_10_29_31_4_start:
+[ "/Users/summer/work/garmin/Breeze/source/BreezeSystemFieldUtils.mc" 11 8 ]
+        [ "_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_10_29_31_4_start" "_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_10_29_31_4_stop" ]
+        %timeFormat.1 = local;
+        %tmp.1 = "$1$:$2$:$3$";
+        lputv %timeFormat.1 %tmp.1;
+[ "/Users/summer/work/garmin/Breeze/source/BreezeSystemFieldUtils.mc" 12 8 ]
+        [ "_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_10_29_31_4_start" "_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_10_29_31_4_stop" ]
+        %clockTime.2 = local;
+        %tmp.3 = getv ? :System;
+        %tmp.4 = getv function %tmp.3 :getClockTime;
+        %tmp.5 = invoke %tmp.3 %tmp.4();
+        lputv %clockTime.2 %tmp.5;
+[ "/Users/summer/work/garmin/Breeze/source/BreezeSystemFieldUtils.mc" 13 8 ]
+        [ "_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_10_29_31_4_start" "_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_10_29_31_4_stop" ]
+        %hours.3 = local;
+        %tmp.6 = lgetv %clockTime.2;
+        %tmp.7 = getv %tmp.6 :hour;
+        lputv %hours.3 %tmp.7;
+[ "/Users/summer/work/garmin/Breeze/source/BreezeSystemFieldUtils.mc" 16 8 ]
+_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_16_8_24_8_if_stmt:
+        %tmp.9 = getv ? :System;
+        %tmp.10 = getv function %tmp.9 :getDeviceSettings;
+        %tmp.11 = invoke %tmp.9 %tmp.10();
+        %tmp.12 = getv %tmp.11 :is24Hour;
+        %tmp.13 = not %tmp.12;
+        bf %tmp.13 @_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_16_8_24_8_if_else_false;
+_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_16_8_24_8_if_true:
+_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_16_50_21_8_start:
+[ "/Users/summer/work/garmin/Breeze/source/BreezeSystemFieldUtils.mc" 18 12 ]
+_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_18_12_20_12_if_stmt:
+        %tmp.15 = lgetv %hours.3;
+        %tmp.16 = 12;
+        %tmp.17 = gt %tmp.15 %tmp.16;
+        bf %tmp.17 @_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_18_12_20_12_if_end;
+_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_18_12_20_12_if_true:
+_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_18_28_20_12_start:
+[ "/Users/summer/work/garmin/Breeze/source/BreezeSystemFieldUtils.mc" 19 16 ]
+        %tmp.19 = lgetv %hours.3;
+        %tmp.20 = 12;
+        %tmp.21 = sub %tmp.19 %tmp.20;
+        lputv %hours.3 %tmp.21;
+_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_18_28_20_12_stop:
+        goto @_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_18_12_20_12_if_end;
+_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_18_12_20_12_if_end:
+_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_16_50_21_8_stop:
+        goto @_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_16_8_24_8_if_end;
+_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_16_8_24_8_if_else_false:
+_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_21_15_24_8_start:
+[ "/Users/summer/work/garmin/Breeze/source/BreezeSystemFieldUtils.mc" 23 12 ]
+        %tmp.22 = lgetv %hours.3;
+        %tmp.23 = getv function %tmp.22 :format;
+        %tmp.24 = "%02d";
+        %tmp.25 = invoke %tmp.22 %tmp.23(%tmp.24);
+        lputv %hours.3 %tmp.25;
+_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_21_15_24_8_stop:
+_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_16_8_24_8_if_end:
+[ "/Users/summer/work/garmin/Breeze/source/BreezeSystemFieldUtils.mc" 26 8 ]
+        %tmp.26 = getm $.Toybox.Lang;
+        %tmp.27 = getv function %tmp.26 :format;
+        %tmp.29 = lgetv %timeFormat.1;
+        %tmp.30 = newa 3;
+        %tmp.32 = lgetv %hours.3;
+        %tmp.33 = dup %tmp.30;
+        %tmp.34 = aputv %tmp.33 0 %tmp.32;
+        %tmp.35 = lgetv %clockTime.2;
+        %tmp.36 = getv %tmp.35 :min;
+        %tmp.37 = getv function %tmp.36 :format;
+        %tmp.38 = "%02d";
+        %tmp.39 = invoke %tmp.36 %tmp.37(%tmp.38);
+        %tmp.40 = dup %tmp.34;
+        %tmp.41 = aputv %tmp.40 1 %tmp.39;
+        %tmp.42 = lgetv %clockTime.2;
+        %tmp.43 = getv %tmp.42 :sec;
+        %tmp.44 = getv function %tmp.43 :format;
+        %tmp.45 = "%02d";
+        %tmp.46 = invoke %tmp.43 %tmp.44(%tmp.45);
+        %tmp.47 = dup %tmp.41;
+        %tmp.48 = aputv %tmp.47 2 %tmp.46;
+        %tmp.49 = invoke %tmp.26 %tmp.27(%tmp.29, %tmp.48);
+        ret %tmp.49;
+_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_10_29_31_4_stop:
+    }
+    [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeSystemFieldUtils.mc"; @line = 34; ]
+    function getSystemWeek() {
+_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_34_29_37_4_start:
+[ "/Users/summer/work/garmin/Breeze/source/BreezeSystemFieldUtils.mc" 35 8 ]
+        [ "_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_34_29_37_4_start" "_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_34_29_37_4_stop" ]
+        %today.1 = local;
+        %tmp.1 = getm $.Toybox.Time.Gregorian;
+        %tmp.2 = getv function %tmp.1 :info;
+        %tmp.3 = getm $.Toybox.Time;
+        %tmp.4 = getv function %tmp.3 :now;
+        %tmp.5 = invoke %tmp.3 %tmp.4();
+        %tmp.6 = getm $.Toybox.Time;
+        %tmp.7 = getv %tmp.6 :FORMAT_SHORT;
+        %tmp.8 = invoke %tmp.1 %tmp.2(%tmp.5, %tmp.7);
+        lputv %today.1 %tmp.8;
+[ "/Users/summer/work/garmin/Breeze/source/BreezeSystemFieldUtils.mc" 36 8 ]
+        %tmp.9 = lgetv %today.1;
+        %tmp.10 = getv %tmp.9 :day_of_week;
+        %tmp.11 = getv function %tmp.10 :toString;
+        %tmp.12 = invoke %tmp.10 %tmp.11();
+        ret %tmp.12;
+_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_34_29_37_4_stop:
+    }
+    [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeSystemFieldUtils.mc"; @line = 40; ]
+    function getSystemYearMonthDay() {
+_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_40_37_43_4_start:
+[ "/Users/summer/work/garmin/Breeze/source/BreezeSystemFieldUtils.mc" 41 8 ]
+        [ "_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_40_37_43_4_start" "_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_40_37_43_4_stop" ]
+        %today.1 = local;
+        %tmp.1 = getm $.Toybox.Time.Gregorian;
+        %tmp.2 = getv function %tmp.1 :info;
+        %tmp.3 = getm $.Toybox.Time;
+        %tmp.4 = getv function %tmp.3 :now;
+        %tmp.5 = invoke %tmp.3 %tmp.4();
+        %tmp.6 = getm $.Toybox.Time;
+        %tmp.7 = getv %tmp.6 :FORMAT_SHORT;
+        %tmp.8 = invoke %tmp.1 %tmp.2(%tmp.5, %tmp.7);
+        lputv %today.1 %tmp.8;
+[ "/Users/summer/work/garmin/Breeze/source/BreezeSystemFieldUtils.mc" 42 8 ]
+        %tmp.9 = lgetv %today.1;
+        %tmp.10 = getv %tmp.9 :year;
+        %tmp.11 = "-";
+        %tmp.12 = add %tmp.10 %tmp.11;
+        %tmp.13 = lgetv %today.1;
+        %tmp.14 = getv %tmp.13 :month;
+        %tmp.15 = add %tmp.12 %tmp.14;
+        %tmp.16 = "-";
+        %tmp.17 = add %tmp.15 %tmp.16;
+        %tmp.18 = lgetv %today.1;
+        %tmp.19 = getv %tmp.18 :day;
+        %tmp.20 = add %tmp.17 %tmp.19;
+        ret %tmp.20;
+_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_40_37_43_4_stop:
+    }
+    [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeSystemFieldUtils.mc"; @line = 46; ]
+    function getSystemHeartRate() {
+_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_46_34_49_4_start:
+[ "/Users/summer/work/garmin/Breeze/source/BreezeSystemFieldUtils.mc" 47 8 ]
+        [ "_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_46_34_49_4_start" "_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_46_34_49_4_stop" ]
+        %heartRate.1 = local;
+        %tmp.1 = getm $.Toybox.Activity;
+        %tmp.2 = getv function %tmp.1 :getActivityInfo;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        %tmp.4 = getv %tmp.3 :currentHeartRate;
+        lputv %heartRate.1 %tmp.4;
+[ "/Users/summer/work/garmin/Breeze/source/BreezeSystemFieldUtils.mc" 48 8 ]
+_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_48_15_48_50_begin:
+        %tmp.6 = lgetv %heartRate.1;
+        bf %tmp.6 @_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_48_15_48_50_false;
+_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_48_15_48_50_true:
+        %tmp.7 = lgetv %heartRate.1;
+        %tmp.8 = getv function %tmp.7 :toString;
+        %tmp.9 = invoke %tmp.7 %tmp.8();
+        push %tmp.9;
+        goto @_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_48_15_48_50_end;
+_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_48_15_48_50_false:
+        %tmp.10 = "0";
+        push %tmp.10;
+_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_48_15_48_50_end:
+        %tmp.11 = phi [%tmp.6 @_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_48_15_48_50_begin] [%tmp.9 @_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_48_15_48_50_true] [%tmp.10 @_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_48_15_48_50_false] [%tmp.11 @_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_48_15_48_50_end];
+        ret %tmp.11;
+_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_46_34_49_4_stop:
+    }
+    [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeSystemFieldUtils.mc"; @line = 52; ]
+    function getSystemStepCount() {
+_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_52_34_55_4_start:
+[ "/Users/summer/work/garmin/Breeze/source/BreezeSystemFieldUtils.mc" 53 8 ]
+        [ "_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_52_34_55_4_start" "_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_52_34_55_4_stop" ]
+        %info.1 = local;
+        %tmp.1 = getm $.Toybox.ActivityMonitor;
+        %tmp.2 = getv function %tmp.1 :getInfo;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %info.1 %tmp.3;
+[ "/Users/summer/work/garmin/Breeze/source/BreezeSystemFieldUtils.mc" 54 8 ]
+_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_54_15_54_52_begin:
+        %tmp.4 = lgetv %info.1;
+        %tmp.5 = getv %tmp.4 :steps;
+        bf %tmp.5 @_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_54_15_54_52_false;
+_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_54_15_54_52_true:
+        %tmp.6 = lgetv %info.1;
+        %tmp.7 = getv %tmp.6 :steps;
+        %tmp.8 = getv function %tmp.7 :toString;
+        %tmp.9 = invoke %tmp.7 %tmp.8();
+        push %tmp.9;
+        goto @_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_54_15_54_52_end;
+_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_54_15_54_52_false:
+        %tmp.10 = "0";
+        push %tmp.10;
+_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_54_15_54_52_end:
+        %tmp.11 = phi [%tmp.5 @_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_54_15_54_52_begin] [%tmp.9 @_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_54_15_54_52_true] [%tmp.10 @_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_54_15_54_52_false] [%tmp.11 @_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_54_15_54_52_end];
+        ret %tmp.11;
+_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_52_34_55_4_stop:
+    }
+    [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeSystemFieldUtils.mc"; @line = 58; ]
+    function getSystemBattery() as Lang.String {
+_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_58_47_61_4_start:
+[ "/Users/summer/work/garmin/Breeze/source/BreezeSystemFieldUtils.mc" 59 8 ]
+        [ "_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_58_47_61_4_start" "_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_58_47_61_4_stop" ]
+        %battery.1 = local;
+        %tmp.2 = getv ? :System;
+        %tmp.3 = getv function %tmp.2 :getSystemStats;
+        %tmp.4 = invoke %tmp.2 %tmp.3();
+        %tmp.5 = getv %tmp.4 :battery;
+        lputv %battery.1 %tmp.5;
+[ "/Users/summer/work/garmin/Breeze/source/BreezeSystemFieldUtils.mc" 60 8 ]
+        %tmp.6 = lgetv %battery.1;
+        %tmp.7 = getv function %tmp.6 :format;
+        %tmp.8 = "%d";
+        %tmp.9 = invoke %tmp.6 %tmp.7(%tmp.8);
+        ret %tmp.9;
+_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_58_47_61_4_stop:
+    }
+}
+[ @file = "/Users/summer/work/garmin/Breeze/source/BreezeSystemFieldUtils.mc"; @line = 1; ]
+<init> {
+}
