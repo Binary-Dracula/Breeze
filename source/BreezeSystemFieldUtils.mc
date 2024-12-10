@@ -57,8 +57,14 @@ class BreezeSystemFieldUtils {
     }
 
     // 获取当前星期
-    function getSystemWeek() as Lang.String {
+    function getSystemDayOfWeek() as Lang.String {
         var today = Gregorian.info(Time.now(), Time.FORMAT_SHORT);
+        return today.day_of_week.toString();
+    }
+
+    // 星期英文缩写
+    function getSystemDayOfWeekEn() as Lang.String {
+        var today = Gregorian.info(Time.now(), Time.FORMAT_MEDIUM);
         return today.day_of_week.toString();
     }
 

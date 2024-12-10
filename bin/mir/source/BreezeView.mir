@@ -52,35 +52,31 @@ _Users_summer_work_garmin_Breeze_source_BreezeView_mc_16_40_18_4_stop:
     [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeView.mc"; @line = 27; ]
     function onUpdate(dc as Dc) as Void {
 _Users_summer_work_garmin_Breeze_source_BreezeView_mc_27_40_39_4_start:
-[ "/Users/summer/work/garmin/Breeze/source/BreezeView.mc" 28 7 ]
+[ "/Users/summer/work/garmin/Breeze/source/BreezeView.mc" 29 8 ]
         %tmp.1 = self;
         %tmp.2 = getv function %tmp.1 :updateTimeDisplay;
         invoke %tmp.1 %tmp.2();
-[ "/Users/summer/work/garmin/Breeze/source/BreezeView.mc" 29 7 ]
+[ "/Users/summer/work/garmin/Breeze/source/BreezeView.mc" 30 8 ]
         %tmp.3 = self;
-        %tmp.4 = getv function %tmp.3 :updateWeekDisplay;
+        %tmp.4 = getv function %tmp.3 :updateBatteryDisplay;
         invoke %tmp.3 %tmp.4();
-[ "/Users/summer/work/garmin/Breeze/source/BreezeView.mc" 30 7 ]
+[ "/Users/summer/work/garmin/Breeze/source/BreezeView.mc" 31 8 ]
         %tmp.5 = self;
-        %tmp.6 = getv function %tmp.5 :updateDateDisplay;
+        %tmp.6 = getv function %tmp.5 :updateDayOfWeekDisplay;
         invoke %tmp.5 %tmp.6();
-[ "/Users/summer/work/garmin/Breeze/source/BreezeView.mc" 31 7 ]
+[ "/Users/summer/work/garmin/Breeze/source/BreezeView.mc" 32 8 ]
         %tmp.7 = self;
         %tmp.8 = getv function %tmp.7 :updateHeartRateDisplay;
         invoke %tmp.7 %tmp.8();
-[ "/Users/summer/work/garmin/Breeze/source/BreezeView.mc" 32 7 ]
+[ "/Users/summer/work/garmin/Breeze/source/BreezeView.mc" 33 8 ]
         %tmp.9 = self;
-        %tmp.10 = getv function %tmp.9 :getSystemStepCount;
+        %tmp.10 = getv function %tmp.9 :updateDateDisplay;
         invoke %tmp.9 %tmp.10();
-[ "/Users/summer/work/garmin/Breeze/source/BreezeView.mc" 33 7 ]
-        %tmp.11 = self;
-        %tmp.12 = getv function %tmp.11 :updateBatteryDisplay;
-        invoke %tmp.11 %tmp.12();
 [ "/Users/summer/work/garmin/Breeze/source/BreezeView.mc" 38 8 ]
-        %tmp.14 = getv ? :View;
-        %tmp.15 = getv function %tmp.14 :onUpdate;
-        %tmp.17 = lgetv %dc;
-        invoke %tmp.14 %tmp.15(%tmp.17);
+        %tmp.12 = getv ? :View;
+        %tmp.13 = getv function %tmp.12 :onUpdate;
+        %tmp.15 = lgetv %dc;
+        invoke %tmp.12 %tmp.13(%tmp.15);
 _Users_summer_work_garmin_Breeze_source_BreezeView_mc_27_40_39_4_stop:
     }
     [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeView.mc"; @line = 44; ]
@@ -94,16 +90,16 @@ _Users_summer_work_garmin_Breeze_source_BreezeView_mc_27_40_39_4_stop:
     }
     [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeView.mc"; @line = 55; ]
     function updateTimeDisplay() as Void {
-_Users_summer_work_garmin_Breeze_source_BreezeView_mc_55_41_60_4_start:
-[ "/Users/summer/work/garmin/Breeze/source/BreezeView.mc" 57 8 ]
-        [ "_Users_summer_work_garmin_Breeze_source_BreezeView_mc_55_41_60_4_start" "_Users_summer_work_garmin_Breeze_source_BreezeView_mc_55_41_60_4_stop" ]
+_Users_summer_work_garmin_Breeze_source_BreezeView_mc_55_41_59_4_start:
+[ "/Users/summer/work/garmin/Breeze/source/BreezeView.mc" 56 8 ]
+        [ "_Users_summer_work_garmin_Breeze_source_BreezeView_mc_55_41_59_4_start" "_Users_summer_work_garmin_Breeze_source_BreezeView_mc_55_41_59_4_stop" ]
         %timeString.1 = local;
         %tmp.2 = getv ? :utils;
         %tmp.3 = getv function %tmp.2 :getSystemTime;
         %tmp.4 = invoke %tmp.2 %tmp.3();
         lputv %timeString.1 %tmp.4;
-[ "/Users/summer/work/garmin/Breeze/source/BreezeView.mc" 58 8 ]
-        [ "_Users_summer_work_garmin_Breeze_source_BreezeView_mc_55_41_60_4_start" "_Users_summer_work_garmin_Breeze_source_BreezeView_mc_55_41_60_4_stop" ]
+[ "/Users/summer/work/garmin/Breeze/source/BreezeView.mc" 57 8 ]
+        [ "_Users_summer_work_garmin_Breeze_source_BreezeView_mc_55_41_59_4_start" "_Users_summer_work_garmin_Breeze_source_BreezeView_mc_55_41_59_4_stop" ]
         %timeLabel.2 = local;
         %tmp.6 = getv ? :View;
         %tmp.7 = getv function %tmp.6 :findDrawableById;
@@ -111,129 +107,25 @@ _Users_summer_work_garmin_Breeze_source_BreezeView_mc_55_41_60_4_start:
         %tmp.9 = invoke %tmp.6 %tmp.7(%tmp.8);
         %tmp.10 = as %tmp.9 Text;
         lputv %timeLabel.2 %tmp.10;
-[ "/Users/summer/work/garmin/Breeze/source/BreezeView.mc" 59 8 ]
+[ "/Users/summer/work/garmin/Breeze/source/BreezeView.mc" 58 8 ]
         %tmp.11 = lgetv %timeLabel.2;
         %tmp.12 = getv function %tmp.11 :setText;
         %tmp.14 = lgetv %timeString.1;
         invoke %tmp.11 %tmp.12(%tmp.14);
-_Users_summer_work_garmin_Breeze_source_BreezeView_mc_55_41_60_4_stop:
+_Users_summer_work_garmin_Breeze_source_BreezeView_mc_55_41_59_4_stop:
     }
-    [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeView.mc"; @line = 62; ]
-    function updateWeekDisplay() as Void {
-_Users_summer_work_garmin_Breeze_source_BreezeView_mc_62_41_66_4_start:
-[ "/Users/summer/work/garmin/Breeze/source/BreezeView.mc" 63 8 ]
-        [ "_Users_summer_work_garmin_Breeze_source_BreezeView_mc_62_41_66_4_start" "_Users_summer_work_garmin_Breeze_source_BreezeView_mc_62_41_66_4_stop" ]
-        %weekString.1 = local;
-        %tmp.2 = getv ? :utils;
-        %tmp.3 = getv function %tmp.2 :getSystemWeek;
-        %tmp.4 = invoke %tmp.2 %tmp.3();
-        lputv %weekString.1 %tmp.4;
-[ "/Users/summer/work/garmin/Breeze/source/BreezeView.mc" 64 8 ]
-        [ "_Users_summer_work_garmin_Breeze_source_BreezeView_mc_62_41_66_4_start" "_Users_summer_work_garmin_Breeze_source_BreezeView_mc_62_41_66_4_stop" ]
-        %weekLabel.2 = local;
-        %tmp.6 = getv ? :View;
-        %tmp.7 = getv function %tmp.6 :findDrawableById;
-        %tmp.8 = "WeekLabel";
-        %tmp.9 = invoke %tmp.6 %tmp.7(%tmp.8);
-        %tmp.10 = as %tmp.9 Text;
-        lputv %weekLabel.2 %tmp.10;
-[ "/Users/summer/work/garmin/Breeze/source/BreezeView.mc" 65 8 ]
-        %tmp.11 = lgetv %weekLabel.2;
-        %tmp.12 = getv function %tmp.11 :setText;
-        %tmp.14 = lgetv %weekString.1;
-        invoke %tmp.11 %tmp.12(%tmp.14);
-_Users_summer_work_garmin_Breeze_source_BreezeView_mc_62_41_66_4_stop:
-    }
-    [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeView.mc"; @line = 68; ]
-    function updateDateDisplay() as Void {
-_Users_summer_work_garmin_Breeze_source_BreezeView_mc_68_41_72_4_start:
-[ "/Users/summer/work/garmin/Breeze/source/BreezeView.mc" 69 8 ]
-        [ "_Users_summer_work_garmin_Breeze_source_BreezeView_mc_68_41_72_4_start" "_Users_summer_work_garmin_Breeze_source_BreezeView_mc_68_41_72_4_stop" ]
-        %dateString.1 = local;
-        %tmp.2 = getv ? :utils;
-        %tmp.3 = getv function %tmp.2 :getSystemYearMonthDay;
-        %tmp.4 = invoke %tmp.2 %tmp.3();
-        lputv %dateString.1 %tmp.4;
-[ "/Users/summer/work/garmin/Breeze/source/BreezeView.mc" 70 8 ]
-        [ "_Users_summer_work_garmin_Breeze_source_BreezeView_mc_68_41_72_4_start" "_Users_summer_work_garmin_Breeze_source_BreezeView_mc_68_41_72_4_stop" ]
-        %dateLabel.2 = local;
-        %tmp.6 = getv ? :View;
-        %tmp.7 = getv function %tmp.6 :findDrawableById;
-        %tmp.8 = "DateLabel";
-        %tmp.9 = invoke %tmp.6 %tmp.7(%tmp.8);
-        %tmp.10 = as %tmp.9 Text;
-        lputv %dateLabel.2 %tmp.10;
-[ "/Users/summer/work/garmin/Breeze/source/BreezeView.mc" 71 8 ]
-        %tmp.11 = lgetv %dateLabel.2;
-        %tmp.12 = getv function %tmp.11 :setText;
-        %tmp.14 = lgetv %dateString.1;
-        invoke %tmp.11 %tmp.12(%tmp.14);
-_Users_summer_work_garmin_Breeze_source_BreezeView_mc_68_41_72_4_stop:
-    }
-    [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeView.mc"; @line = 74; ]
-    function updateHeartRateDisplay() as Void {
-_Users_summer_work_garmin_Breeze_source_BreezeView_mc_74_46_78_4_start:
-[ "/Users/summer/work/garmin/Breeze/source/BreezeView.mc" 75 8 ]
-        [ "_Users_summer_work_garmin_Breeze_source_BreezeView_mc_74_46_78_4_start" "_Users_summer_work_garmin_Breeze_source_BreezeView_mc_74_46_78_4_stop" ]
-        %heartRateString.1 = local;
-        %tmp.2 = getv ? :utils;
-        %tmp.3 = getv function %tmp.2 :getSystemHeartRate;
-        %tmp.4 = invoke %tmp.2 %tmp.3();
-        lputv %heartRateString.1 %tmp.4;
-[ "/Users/summer/work/garmin/Breeze/source/BreezeView.mc" 76 8 ]
-        [ "_Users_summer_work_garmin_Breeze_source_BreezeView_mc_74_46_78_4_start" "_Users_summer_work_garmin_Breeze_source_BreezeView_mc_74_46_78_4_stop" ]
-        %heartRateLabel.2 = local;
-        %tmp.6 = getv ? :View;
-        %tmp.7 = getv function %tmp.6 :findDrawableById;
-        %tmp.8 = "HeartRateLabel";
-        %tmp.9 = invoke %tmp.6 %tmp.7(%tmp.8);
-        %tmp.10 = as %tmp.9 Text;
-        lputv %heartRateLabel.2 %tmp.10;
-[ "/Users/summer/work/garmin/Breeze/source/BreezeView.mc" 77 8 ]
-        %tmp.11 = lgetv %heartRateLabel.2;
-        %tmp.12 = getv function %tmp.11 :setText;
-        %tmp.14 = lgetv %heartRateString.1;
-        invoke %tmp.11 %tmp.12(%tmp.14);
-_Users_summer_work_garmin_Breeze_source_BreezeView_mc_74_46_78_4_stop:
-    }
-    [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeView.mc"; @line = 80; ]
-    function getSystemStepCount() as Void {
-_Users_summer_work_garmin_Breeze_source_BreezeView_mc_80_42_84_4_start:
-[ "/Users/summer/work/garmin/Breeze/source/BreezeView.mc" 81 8 ]
-        [ "_Users_summer_work_garmin_Breeze_source_BreezeView_mc_80_42_84_4_start" "_Users_summer_work_garmin_Breeze_source_BreezeView_mc_80_42_84_4_stop" ]
-        %stepCountString.1 = local;
-        %tmp.2 = getv ? :utils;
-        %tmp.3 = getv function %tmp.2 :getSystemStepCount;
-        %tmp.4 = invoke %tmp.2 %tmp.3();
-        lputv %stepCountString.1 %tmp.4;
-[ "/Users/summer/work/garmin/Breeze/source/BreezeView.mc" 82 8 ]
-        [ "_Users_summer_work_garmin_Breeze_source_BreezeView_mc_80_42_84_4_start" "_Users_summer_work_garmin_Breeze_source_BreezeView_mc_80_42_84_4_stop" ]
-        %stepCountLabel.2 = local;
-        %tmp.6 = getv ? :View;
-        %tmp.7 = getv function %tmp.6 :findDrawableById;
-        %tmp.8 = "StepCountLabel";
-        %tmp.9 = invoke %tmp.6 %tmp.7(%tmp.8);
-        %tmp.10 = as %tmp.9 Text;
-        lputv %stepCountLabel.2 %tmp.10;
-[ "/Users/summer/work/garmin/Breeze/source/BreezeView.mc" 83 8 ]
-        %tmp.11 = lgetv %stepCountLabel.2;
-        %tmp.12 = getv function %tmp.11 :setText;
-        %tmp.14 = lgetv %stepCountString.1;
-        invoke %tmp.11 %tmp.12(%tmp.14);
-_Users_summer_work_garmin_Breeze_source_BreezeView_mc_80_42_84_4_stop:
-    }
-    [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeView.mc"; @line = 86; ]
+    [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeView.mc"; @line = 61; ]
     function updateBatteryDisplay() as Void {
-_Users_summer_work_garmin_Breeze_source_BreezeView_mc_86_44_90_4_start:
-[ "/Users/summer/work/garmin/Breeze/source/BreezeView.mc" 87 8 ]
-        [ "_Users_summer_work_garmin_Breeze_source_BreezeView_mc_86_44_90_4_start" "_Users_summer_work_garmin_Breeze_source_BreezeView_mc_86_44_90_4_stop" ]
+_Users_summer_work_garmin_Breeze_source_BreezeView_mc_61_44_65_4_start:
+[ "/Users/summer/work/garmin/Breeze/source/BreezeView.mc" 62 8 ]
+        [ "_Users_summer_work_garmin_Breeze_source_BreezeView_mc_61_44_65_4_start" "_Users_summer_work_garmin_Breeze_source_BreezeView_mc_61_44_65_4_stop" ]
         %batteryString.1 = local;
         %tmp.2 = getv ? :utils;
         %tmp.3 = getv function %tmp.2 :getSystemBattery;
         %tmp.4 = invoke %tmp.2 %tmp.3();
         lputv %batteryString.1 %tmp.4;
-[ "/Users/summer/work/garmin/Breeze/source/BreezeView.mc" 88 8 ]
-        [ "_Users_summer_work_garmin_Breeze_source_BreezeView_mc_86_44_90_4_start" "_Users_summer_work_garmin_Breeze_source_BreezeView_mc_86_44_90_4_stop" ]
+[ "/Users/summer/work/garmin/Breeze/source/BreezeView.mc" 63 8 ]
+        [ "_Users_summer_work_garmin_Breeze_source_BreezeView_mc_61_44_65_4_start" "_Users_summer_work_garmin_Breeze_source_BreezeView_mc_61_44_65_4_stop" ]
         %batteryLabel.2 = local;
         %tmp.6 = getv ? :View;
         %tmp.7 = getv function %tmp.6 :findDrawableById;
@@ -241,12 +133,90 @@ _Users_summer_work_garmin_Breeze_source_BreezeView_mc_86_44_90_4_start:
         %tmp.9 = invoke %tmp.6 %tmp.7(%tmp.8);
         %tmp.10 = as %tmp.9 Text;
         lputv %batteryLabel.2 %tmp.10;
-[ "/Users/summer/work/garmin/Breeze/source/BreezeView.mc" 89 8 ]
+[ "/Users/summer/work/garmin/Breeze/source/BreezeView.mc" 64 8 ]
         %tmp.11 = lgetv %batteryLabel.2;
         %tmp.12 = getv function %tmp.11 :setText;
         %tmp.14 = lgetv %batteryString.1;
         invoke %tmp.11 %tmp.12(%tmp.14);
-_Users_summer_work_garmin_Breeze_source_BreezeView_mc_86_44_90_4_stop:
+_Users_summer_work_garmin_Breeze_source_BreezeView_mc_61_44_65_4_stop:
+    }
+    [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeView.mc"; @line = 67; ]
+    function updateDayOfWeekDisplay() as Void {
+_Users_summer_work_garmin_Breeze_source_BreezeView_mc_67_46_71_4_start:
+[ "/Users/summer/work/garmin/Breeze/source/BreezeView.mc" 68 8 ]
+        [ "_Users_summer_work_garmin_Breeze_source_BreezeView_mc_67_46_71_4_start" "_Users_summer_work_garmin_Breeze_source_BreezeView_mc_67_46_71_4_stop" ]
+        %dayOfWeekString.1 = local;
+        %tmp.2 = getv ? :utils;
+        %tmp.3 = getv function %tmp.2 :getSystemDayOfWeekEn;
+        %tmp.4 = invoke %tmp.2 %tmp.3();
+        lputv %dayOfWeekString.1 %tmp.4;
+[ "/Users/summer/work/garmin/Breeze/source/BreezeView.mc" 69 8 ]
+        [ "_Users_summer_work_garmin_Breeze_source_BreezeView_mc_67_46_71_4_start" "_Users_summer_work_garmin_Breeze_source_BreezeView_mc_67_46_71_4_stop" ]
+        %dayOfWeekLabel.2 = local;
+        %tmp.6 = getv ? :View;
+        %tmp.7 = getv function %tmp.6 :findDrawableById;
+        %tmp.8 = "DayOfWeekLabel";
+        %tmp.9 = invoke %tmp.6 %tmp.7(%tmp.8);
+        %tmp.10 = as %tmp.9 Text;
+        lputv %dayOfWeekLabel.2 %tmp.10;
+[ "/Users/summer/work/garmin/Breeze/source/BreezeView.mc" 70 8 ]
+        %tmp.11 = lgetv %dayOfWeekLabel.2;
+        %tmp.12 = getv function %tmp.11 :setText;
+        %tmp.14 = lgetv %dayOfWeekString.1;
+        invoke %tmp.11 %tmp.12(%tmp.14);
+_Users_summer_work_garmin_Breeze_source_BreezeView_mc_67_46_71_4_stop:
+    }
+    [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeView.mc"; @line = 73; ]
+    function updateHeartRateDisplay() as Void {
+_Users_summer_work_garmin_Breeze_source_BreezeView_mc_73_46_77_4_start:
+[ "/Users/summer/work/garmin/Breeze/source/BreezeView.mc" 74 8 ]
+        [ "_Users_summer_work_garmin_Breeze_source_BreezeView_mc_73_46_77_4_start" "_Users_summer_work_garmin_Breeze_source_BreezeView_mc_73_46_77_4_stop" ]
+        %heartRateString.1 = local;
+        %tmp.2 = getv ? :utils;
+        %tmp.3 = getv function %tmp.2 :getSystemHeartRate;
+        %tmp.4 = invoke %tmp.2 %tmp.3();
+        lputv %heartRateString.1 %tmp.4;
+[ "/Users/summer/work/garmin/Breeze/source/BreezeView.mc" 75 8 ]
+        [ "_Users_summer_work_garmin_Breeze_source_BreezeView_mc_73_46_77_4_start" "_Users_summer_work_garmin_Breeze_source_BreezeView_mc_73_46_77_4_stop" ]
+        %heartRateLabel.2 = local;
+        %tmp.6 = getv ? :View;
+        %tmp.7 = getv function %tmp.6 :findDrawableById;
+        %tmp.8 = "HeartRateLabel";
+        %tmp.9 = invoke %tmp.6 %tmp.7(%tmp.8);
+        %tmp.10 = as %tmp.9 Text;
+        lputv %heartRateLabel.2 %tmp.10;
+[ "/Users/summer/work/garmin/Breeze/source/BreezeView.mc" 76 8 ]
+        %tmp.11 = lgetv %heartRateLabel.2;
+        %tmp.12 = getv function %tmp.11 :setText;
+        %tmp.14 = lgetv %heartRateString.1;
+        invoke %tmp.11 %tmp.12(%tmp.14);
+_Users_summer_work_garmin_Breeze_source_BreezeView_mc_73_46_77_4_stop:
+    }
+    [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeView.mc"; @line = 79; ]
+    function updateDateDisplay() as Void {
+_Users_summer_work_garmin_Breeze_source_BreezeView_mc_79_41_83_4_start:
+[ "/Users/summer/work/garmin/Breeze/source/BreezeView.mc" 80 8 ]
+        [ "_Users_summer_work_garmin_Breeze_source_BreezeView_mc_79_41_83_4_start" "_Users_summer_work_garmin_Breeze_source_BreezeView_mc_79_41_83_4_stop" ]
+        %dateString.1 = local;
+        %tmp.2 = getv ? :utils;
+        %tmp.3 = getv function %tmp.2 :getSystemYearMonthDay;
+        %tmp.4 = invoke %tmp.2 %tmp.3();
+        lputv %dateString.1 %tmp.4;
+[ "/Users/summer/work/garmin/Breeze/source/BreezeView.mc" 81 8 ]
+        [ "_Users_summer_work_garmin_Breeze_source_BreezeView_mc_79_41_83_4_start" "_Users_summer_work_garmin_Breeze_source_BreezeView_mc_79_41_83_4_stop" ]
+        %dateLabel.2 = local;
+        %tmp.6 = getv ? :View;
+        %tmp.7 = getv function %tmp.6 :findDrawableById;
+        %tmp.8 = "DateLabel";
+        %tmp.9 = invoke %tmp.6 %tmp.7(%tmp.8);
+        %tmp.10 = as %tmp.9 Text;
+        lputv %dateLabel.2 %tmp.10;
+[ "/Users/summer/work/garmin/Breeze/source/BreezeView.mc" 82 8 ]
+        %tmp.11 = lgetv %dateLabel.2;
+        %tmp.12 = getv function %tmp.11 :setText;
+        %tmp.14 = lgetv %dateString.1;
+        invoke %tmp.11 %tmp.12(%tmp.14);
+_Users_summer_work_garmin_Breeze_source_BreezeView_mc_79_41_83_4_stop:
     }
 }
 [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeView.mc"; @line = 1; ]

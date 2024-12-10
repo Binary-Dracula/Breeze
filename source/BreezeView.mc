@@ -25,12 +25,12 @@ class BreezeView extends WatchUi.WatchFace {
 
     // Update the view
     function onUpdate(dc as Dc) as Void {
-       updateTimeDisplay();
-       updateWeekDisplay();
-       updateDateDisplay();
-       updateHeartRateDisplay();
-       getSystemStepCount();
-       updateBatteryDisplay();
+
+        updateTimeDisplay();
+        updateBatteryDisplay();
+        updateDayOfWeekDisplay();
+        updateHeartRateDisplay();
+        updateDateDisplay();
         // Call the parent onUpdate function to redraw the layout
         // 调用父类的onUpdate方法来重新绘制布局
         // 这是必需的步骤,因为我们使用了setLayout()来设置视图布局
@@ -53,34 +53,9 @@ class BreezeView extends WatchUi.WatchFace {
     }
 
     function updateTimeDisplay() as Void {
-       
         var timeString = utils.getSystemTime();
         var timeLabel = View.findDrawableById("TimeLabel") as Text;
         timeLabel.setText(timeString);
-    }
-
-    function updateWeekDisplay() as Void {
-        var weekString = utils.getSystemWeek();
-        var weekLabel = View.findDrawableById("WeekLabel") as Text;
-        weekLabel.setText(weekString);
-    }
-
-    function updateDateDisplay() as Void {
-        var dateString = utils.getSystemYearMonthDay();
-        var dateLabel = View.findDrawableById("DateLabel") as Text;
-        dateLabel.setText(dateString);
-    }
-
-    function updateHeartRateDisplay() as Void {
-        var heartRateString = utils.getSystemHeartRate();
-        var heartRateLabel = View.findDrawableById("HeartRateLabel") as Text;
-        heartRateLabel.setText(heartRateString);
-    }
-
-    function getSystemStepCount() as Void {
-        var stepCountString = utils.getSystemStepCount();
-        var stepCountLabel = View.findDrawableById("StepCountLabel") as Text;
-        stepCountLabel.setText(stepCountString);
     }
 
     function updateBatteryDisplay() as Void {
@@ -89,4 +64,21 @@ class BreezeView extends WatchUi.WatchFace {
         batteryLabel.setText(batteryString);
     }
 
+    function updateDayOfWeekDisplay() as Void {
+        var dayOfWeekString = utils.getSystemDayOfWeekEn();
+        var dayOfWeekLabel = View.findDrawableById("DayOfWeekLabel") as Text;
+        dayOfWeekLabel.setText(dayOfWeekString);
+    }
+
+    function updateHeartRateDisplay() as Void {
+        var heartRateString = utils.getSystemHeartRate();
+        var heartRateLabel = View.findDrawableById("HeartRateLabel") as Text;
+        heartRateLabel.setText(heartRateString);
+    }
+
+    function updateDateDisplay() as Void {
+        var dateString = utils.getSystemYearMonthDay();
+        var dateLabel = View.findDrawableById("DateLabel") as Text;
+        dateLabel.setText(dateString);
+    }
 }
