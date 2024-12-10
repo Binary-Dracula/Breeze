@@ -11,7 +11,7 @@ module Rez {
 
     module Layouts {
         function WatchFace(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
-            var rez_cmp_local_custom_drawable_84728156113847731119 = new Background();
+            var rez_cmp_local_custom_drawable_16195096931574173033 = new Background();
 
             var rez_cmp_local_text_TimeLabel = new WatchUi.Text({:identifier=>"TimeLabel", :color=>Graphics.COLOR_BLUE, :locX=>(260 * 0.5), :locY=>(260 * (5 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_LARGE});
 
@@ -25,7 +25,7 @@ module Rez {
 
             var rez_cmp_local_text_BatteryLabel = new WatchUi.Text({:identifier=>"BatteryLabel", :color=>Graphics.COLOR_BLUE, :locX=>(260 * 0.5), :locY=>(260 * (80 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_SMALL});
 
-            return [rez_cmp_local_custom_drawable_84728156113847731119, rez_cmp_local_text_TimeLabel, rez_cmp_local_text_WeekLabel, rez_cmp_local_text_DateLabel, rez_cmp_local_text_HeartRateLabel, rez_cmp_local_text_StepCountLabel, rez_cmp_local_text_BatteryLabel] as Array<WatchUi.Drawable>;
+            return [rez_cmp_local_custom_drawable_16195096931574173033, rez_cmp_local_text_TimeLabel, rez_cmp_local_text_WeekLabel, rez_cmp_local_text_DateLabel, rez_cmp_local_text_HeartRateLabel, rez_cmp_local_text_StepCountLabel, rez_cmp_local_text_BatteryLabel] as Array<WatchUi.Drawable>;
         }
     } // Layouts
 

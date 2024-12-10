@@ -31,10 +31,10 @@ module Rez {
 _Users_summer_work_garmin_Breeze_bin_gen_006_B3992_00_source_Rez_mcgen_13_73_29_8_start:
 [ "/Users/summer/work/garmin/Breeze/bin/gen/006-B3992-00/source/Rez.mcgen" 14 12 ]
             [ "_Users_summer_work_garmin_Breeze_bin_gen_006_B3992_00_source_Rez_mcgen_13_73_29_8_start" "_Users_summer_work_garmin_Breeze_bin_gen_006_B3992_00_source_Rez_mcgen_13_73_29_8_stop" ]
-            %rez_cmp_local_custom_drawable_84728156113847731119.1 = local;
+            %rez_cmp_local_custom_drawable_16195096931574173033.1 = local;
             %tmp.4 = getv ? :Background;
             %tmp.1 = newc %tmp.4 ();
-            lputv %rez_cmp_local_custom_drawable_84728156113847731119.1 %tmp.1;
+            lputv %rez_cmp_local_custom_drawable_16195096931574173033.1 %tmp.1;
 [ "/Users/summer/work/garmin/Breeze/bin/gen/006-B3992-00/source/Rez.mcgen" 16 12 ]
             [ "_Users_summer_work_garmin_Breeze_bin_gen_006_B3992_00_source_Rez_mcgen_13_73_29_8_start" "_Users_summer_work_garmin_Breeze_bin_gen_006_B3992_00_source_Rez_mcgen_13_73_29_8_stop" ]
             %rez_cmp_local_text_TimeLabel.2 = local;
@@ -283,7 +283,7 @@ _Users_summer_work_garmin_Breeze_bin_gen_006_B3992_00_source_Rez_mcgen_13_73_29_
             lputv %rez_cmp_local_text_BatteryLabel.7 %tmp.225;
 [ "/Users/summer/work/garmin/Breeze/bin/gen/006-B3992-00/source/Rez.mcgen" 28 12 ]
             %tmp.269 = newa 7 Array<WatchUi.Drawable>;
-            %tmp.271 = lgetv %rez_cmp_local_custom_drawable_84728156113847731119.1;
+            %tmp.271 = lgetv %rez_cmp_local_custom_drawable_16195096931574173033.1;
             %tmp.272 = dup %tmp.269;
             %tmp.273 = aputv %tmp.272 0 %tmp.271;
             %tmp.275 = lgetv %rez_cmp_local_text_TimeLabel.2;
