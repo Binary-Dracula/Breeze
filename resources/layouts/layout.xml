@@ -1,26 +1,5 @@
 <layout id="WatchFace">
     <drawable class="Background" />
-    <label id="TimeLabel" x="center" y="15%" font="Graphics.FONT_LARGE" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
-
-    <bitmap id="BatteryIcon" x="15%" y="35%" filename = "../images/battery_icon.png"/>
-    <drawable class="DashedLine" >
-        <param name="index">0</param>
-    </drawable>
-    <label id="BatteryLabel" x="80%" y="34%" font="Graphics.FONT_SMALL" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
-
-    <bitmap id="CalendarIcon" x="16%" y="50%" filename = "../images/calendar_icon.png"/>
-    <drawable class="DashedLine" >
-        <param name="index">1</param>
-    </drawable>
-    <label id="DayOfWeekLabel" x="83%" y="49%" font="Graphics.FONT_SMALL" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
-
-    <bitmap id="HeartRateIcon" x="16%" y="64%" filename = "../images/heartrate_icon.png"/>
-    <drawable class="DashedLine" >
-        <param name="index">2</param>
-    </drawable>
-    <label id="HeartRateLabel" x="78%" y="63%" font="Graphics.FONT_SMALL" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
-
-    <label id="DateLabel" x="center" y="76%" font="Graphics.FONT_SMALL" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
-
+    <drawable class="BreezeLine"  />
 </layout>
 
