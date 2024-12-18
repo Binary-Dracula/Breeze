@@ -5,6 +5,7 @@ import Toybox.Activity;
 import Toybox.ActivityMonitor;
 import Toybox.Graphics;
 import Toybox.Math;
+import Toybox.Application;
 
 class BreezeSystemFieldUtils {
   // 获取当前小时12小时制
@@ -121,17 +122,17 @@ class BreezeSystemFieldUtils {
   // 用小球画时分秒
   function drawTimeBalls(dc) {
     // 小时颜色
-    var hourColor = Graphics.COLOR_RED;
+    var hourColor = Application.Properties.getValue("HourColor") as Number;
     // 小时半径
-    var hourRadius = 6;
+    var hourRadius = 4;
     // 分钟颜色
-    var minuteColor = Graphics.COLOR_YELLOW;
+    var minuteColor = Application.Properties.getValue("MinuteColor") as Number;
     // 分钟半径
-    var minuteRadius = 6;
+    var minuteRadius = 4;
     // 秒颜色
-    var secondColor = Graphics.COLOR_BLUE;
+    var secondColor = Application.Properties.getValue("SecondColor") as Number;
     // 秒半径
-    var secondRadius = 6;
+    var secondRadius = 4;
 
     var centerX = dc.getWidth() / 2;
     var centerY = dc.getHeight() / 2;
@@ -147,7 +148,12 @@ class BreezeSystemFieldUtils {
     var seconds = clockTime.sec;
 
     // 计算时针角度
-    var hourAngle = (((hours % 12) + minutes / 60) * Math.PI) / 6; // 每小时 30 度，加上分钟带来的偏移
+    // 计算分钟数占 12 的比例，向下取整
+    var minuteRatio = Math.floor(minutes / 12);
+    // 计算小时数，加上分钟的偏移量
+    var hour = (hours % 12) + minuteRatio / 5.0; // 每个小刻度代表 1/5 小时
+    // 计算小时角度
+    var hourAngle = (hour * Math.PI) / 6; // 每小时 30 度
 
     // 计算分针角度
     var minuteAngle = (minutes * Math.PI) / 30; // 每分钟 6 度

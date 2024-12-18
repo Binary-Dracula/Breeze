@@ -11,24 +11,26 @@ module Rez {
 
     module Layouts {
         function WatchFace(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
-            var rez_cmp_local_custom_drawable_82691879173177582097 = new Background();
+            var rez_cmp_local_custom_drawable_18266493641118460158 = new Background();
 
-            var rez_cmp_local_custom_drawable_14770723541473548146 = new BreezeLine();
+            var rez_cmp_local_custom_drawable_19414774602101648611 = new BreezeLine();
 
-            return [rez_cmp_local_custom_drawable_82691879173177582097, rez_cmp_local_custom_drawable_14770723541473548146] as Array<WatchUi.Drawable>;
+            return [rez_cmp_local_custom_drawable_18266493641118460158, rez_cmp_local_custom_drawable_19414774602101648611] as Array<WatchUi.Drawable>;
         }
     } // Layouts
 
     module Strings {
+        (:initialized) var HourColorTitle as ResourceId;
         (:initialized) var ColorLightGray as ResourceId;
         (:initialized) var ColorBlue as ResourceId;
         (:initialized) var ColorRed as ResourceId;
-        (:initialized) var ForegroundColorTitle as ResourceId;
         (:initialized) var BackgroundColorTitle as ResourceId;
         (:initialized) var ColorDarkGray as ResourceId;
-        (:initialized) var MilitaryFormatTitle as ResourceId;
+        (:initialized) var SecondColorTitle as ResourceId;
         (:initialized) var ColorBlack as ResourceId;
         (:initialized) var ColorWhite as ResourceId;
+        (:initialized) var ColorYellow as ResourceId;
+        (:initialized) var MinuteColorTitle as ResourceId;
         (:initialized) var AppName as ResourceId;
     } // Strings
 

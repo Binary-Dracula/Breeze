@@ -27,10 +27,10 @@
     "configMax" : null,
     "configMaxLength" : null
   }, {
-    "key" : "ForegroundColor",
+    "key" : "HourColor",
     "valueType" : "number",
     "defaultValue" : 16711680,
-    "configTitle" : "ForegroundColorTitle",
+    "configTitle" : "HourColorTitle",
     "configPrompt" : null,
     "configType" : "list",
     "configError" : null,
@@ -38,33 +38,63 @@
     "configReadonly" : false,
     "configRequired" : false,
     "configOptions" : [ {
-      "display" : "ColorBlack",
-      "value" : 0
-    }, {
       "display" : "ColorBlue",
-      "value" : 255
+      "value" : 11393254
     }, {
       "display" : "ColorRed",
       "value" : 16711680
     }, {
-      "display" : "ColorWhite",
-      "value" : 16777215
+      "display" : "ColorYellow",
+      "value" : 16776960
     } ],
     "configMin" : null,
     "configMax" : null,
     "configMaxLength" : null
   }, {
-    "key" : "UseMilitaryFormat",
-    "valueType" : "boolean",
-    "defaultValue" : false,
-    "configTitle" : "MilitaryFormatTitle",
+    "key" : "MinuteColor",
+    "valueType" : "number",
+    "defaultValue" : 16776960,
+    "configTitle" : "MinuteColorTitle",
     "configPrompt" : null,
-    "configType" : "boolean",
+    "configType" : "list",
     "configError" : null,
     "configHelpUrl" : null,
     "configReadonly" : false,
     "configRequired" : false,
-    "configOptions" : null,
+    "configOptions" : [ {
+      "display" : "ColorBlue",
+      "value" : 11393254
+    }, {
+      "display" : "ColorRed",
+      "value" : 16711680
+    }, {
+      "display" : "ColorYellow",
+      "value" : 16776960
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "SecondColor",
+    "valueType" : "number",
+    "defaultValue" : 11393254,
+    "configTitle" : "SecondColorTitle",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "ColorBlue",
+      "value" : 11393254
+    }, {
+      "display" : "ColorRed",
+      "value" : 16711680
+    }, {
+      "display" : "ColorYellow",
+      "value" : 16776960
+    } ],
     "configMin" : null,
     "configMax" : null,
     "configMaxLength" : null
@@ -74,14 +104,16 @@
     "valyrian" : {
       "ColorLightGray" : "Light Gray",
       "ColorBlue" : "Blue",
-      "ColorRed" : "Red",
-      "ForegroundColorTitle" : "Foreground Color",
       "BackgroundColorTitle" : "Background Color",
       "ColorDarkGray" : "Dark Gray",
-      "MilitaryFormatTitle" : "Military Format for 24 Hour Time",
+      "SecondColorTitle" : "Second Color",
       "ColorBlack" : "Black",
+      "ColorYellow" : "Yellow",
+      "AppName" : "Breeze",
+      "HourColorTitle" : "Hour Color",
+      "ColorRed" : "Red",
       "ColorWhite" : "White",
-      "AppName" : "Breeze"
+      "MinuteColorTitle" : "Minute Color"
     }
   }
 }

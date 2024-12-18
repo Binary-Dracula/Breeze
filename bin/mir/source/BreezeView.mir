@@ -12,7 +12,7 @@ import Toybox.WatchUi;
 class BreezeView extends WatchUi.WatchFace{
     [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeView.mc"; @line = 7; ]
     <init> {
-[ "/Users/summer/work/garmin/Breeze/source/BreezeView.mc" 9 8 ]
+[ "/Users/summer/work/garmin/Breeze/source/BreezeView.mc" 8 6 ]
         %tmp.4 = getv ? :BreezeSystemFieldUtils;
         %tmp.1 = newc %tmp.4 ();
         putv self :utils %tmp.1;
@@ -21,21 +21,21 @@ class BreezeView extends WatchUi.WatchFace{
     static
     <init> {
     }
-    [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeView.mc"; @line = 9; @position = 8; ]
+    [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeView.mc"; @line = 8; @position = 6; ]
     var utils;
-    [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeView.mc"; @line = 11; ]
+    [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeView.mc"; @line = 10; ]
     function initialize() as Void {
-_Users_summer_work_garmin_Breeze_source_BreezeView_mc_11_26_13_4_start:
-[ "/Users/summer/work/garmin/Breeze/source/BreezeView.mc" 12 8 ]
+_Users_summer_work_garmin_Breeze_source_BreezeView_mc_10_24_12_2_start:
+[ "/Users/summer/work/garmin/Breeze/source/BreezeView.mc" 11 4 ]
         %tmp.2 = getv ? :WatchFace;
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-_Users_summer_work_garmin_Breeze_source_BreezeView_mc_11_26_13_4_stop:
+_Users_summer_work_garmin_Breeze_source_BreezeView_mc_10_24_12_2_stop:
     }
-    [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeView.mc"; @line = 16; ]
+    [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeView.mc"; @line = 15; ]
     function onLayout(dc as Dc) as Void {
-_Users_summer_work_garmin_Breeze_source_BreezeView_mc_16_40_18_4_start:
-[ "/Users/summer/work/garmin/Breeze/source/BreezeView.mc" 17 8 ]
+_Users_summer_work_garmin_Breeze_source_BreezeView_mc_15_38_17_2_start:
+[ "/Users/summer/work/garmin/Breeze/source/BreezeView.mc" 16 4 ]
         %tmp.1 = self;
         %tmp.2 = getv function %tmp.1 :setLayout;
         %tmp.4 = getv ? :Rez;
@@ -44,33 +44,28 @@ _Users_summer_work_garmin_Breeze_source_BreezeView_mc_16_40_18_4_start:
         %tmp.8 = lgetv %dc;
         %tmp.9 = invoke %tmp.5 %tmp.6(%tmp.8);
         invoke %tmp.1 %tmp.2(%tmp.9);
-_Users_summer_work_garmin_Breeze_source_BreezeView_mc_16_40_18_4_stop:
+_Users_summer_work_garmin_Breeze_source_BreezeView_mc_15_38_17_2_stop:
     }
-    [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeView.mc"; @line = 23; ]
+    [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeView.mc"; @line = 22; ]
     function onShow() as Void {
     }
-    [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeView.mc"; @line = 27; ]
+    [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeView.mc"; @line = 25; ]
     function onUpdate(dc as Dc) as Void {
-_Users_summer_work_garmin_Breeze_source_BreezeView_mc_27_40_37_4_start:
-[ "/Users/summer/work/garmin/Breeze/source/BreezeView.mc" 34 8 ]
+_Users_summer_work_garmin_Breeze_source_BreezeView_mc_25_38_31_2_start:
+[ "/Users/summer/work/garmin/Breeze/source/BreezeView.mc" 30 4 ]
         %tmp.2 = getv ? :View;
         %tmp.3 = getv function %tmp.2 :onUpdate;
         %tmp.5 = lgetv %dc;
         invoke %tmp.2 %tmp.3(%tmp.5);
-[ "/Users/summer/work/garmin/Breeze/source/BreezeView.mc" 36 8 ]
-        %tmp.7 = getv ? :utils;
-        %tmp.8 = getv function %tmp.7 :drawTimeBalls;
-        %tmp.10 = lgetv %dc;
-        invoke %tmp.7 %tmp.8(%tmp.10);
-_Users_summer_work_garmin_Breeze_source_BreezeView_mc_27_40_37_4_stop:
+_Users_summer_work_garmin_Breeze_source_BreezeView_mc_25_38_31_2_stop:
     }
-    [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeView.mc"; @line = 42; ]
+    [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeView.mc"; @line = 36; ]
     function onHide() as Void {
     }
-    [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeView.mc"; @line = 46; ]
+    [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeView.mc"; @line = 39; ]
     function onExitSleep() as Void {
     }
-    [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeView.mc"; @line = 50; ]
+    [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeView.mc"; @line = 42; ]
     function onEnterSleep() as Void {
     }
 }

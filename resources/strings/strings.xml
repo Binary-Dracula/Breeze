@@ -2,15 +2,26 @@
 
     <string id="AppName">Breeze</string>
 
+    <!-- 表盘背景色 -->
     <string id="BackgroundColorTitle">Background Color</string>
-    <string id="ForegroundColorTitle">Foreground Color</string>
-    <string id="MilitaryFormatTitle">Military Format for 24 Hour Time</string>
 
+    <!-- 小时圆球颜色 -->
+    <string id="HourColorTitle">Hour Color</string>
+    <!-- 分钟圆球颜色 -->
+    <string id="MinuteColorTitle">Minute Color</string>
+    <!-- 秒圆球颜色 -->
+    <string id="SecondColorTitle">Second Color</string>
+    <!-- 小时刻度颜色 -->
+    <!-- 分钟刻度颜色 -->
+
+
+    <!-- 各种颜色 -->
     <string id="ColorBlack">Black</string>
     <string id="ColorDarkGray">Dark Gray</string>
     <string id="ColorLightGray">Light Gray</string>
     <string id="ColorWhite">White</string>
     <string id="ColorBlue">Blue</string>
     <string id="ColorRed">Red</string>
+    <string id="ColorYellow">Yellow</string>
 
 </strings>
