@@ -31,22 +31,22 @@ module Rez {
 _Users_summer_work_garmin_Breeze_bin_gen_006_B3992_00_source_Rez_mcgen_13_73_19_8_start:
 [ "/Users/summer/work/garmin/Breeze/bin/gen/006-B3992-00/source/Rez.mcgen" 14 12 ]
             [ "_Users_summer_work_garmin_Breeze_bin_gen_006_B3992_00_source_Rez_mcgen_13_73_19_8_start" "_Users_summer_work_garmin_Breeze_bin_gen_006_B3992_00_source_Rez_mcgen_13_73_19_8_stop" ]
-            %rez_cmp_local_custom_drawable_18266493641118460158.1 = local;
+            %rez_cmp_local_custom_drawable_11722428389471359691.1 = local;
             %tmp.4 = getv ? :Background;
             %tmp.1 = newc %tmp.4 ();
-            lputv %rez_cmp_local_custom_drawable_18266493641118460158.1 %tmp.1;
+            lputv %rez_cmp_local_custom_drawable_11722428389471359691.1 %tmp.1;
 [ "/Users/summer/work/garmin/Breeze/bin/gen/006-B3992-00/source/Rez.mcgen" 16 12 ]
             [ "_Users_summer_work_garmin_Breeze_bin_gen_006_B3992_00_source_Rez_mcgen_13_73_19_8_start" "_Users_summer_work_garmin_Breeze_bin_gen_006_B3992_00_source_Rez_mcgen_13_73_19_8_stop" ]
-            %rez_cmp_local_custom_drawable_19414774602101648611.2 = local;
-            %tmp.8 = getv ? :BreezeLine;
+            %rez_cmp_local_custom_drawable_80435124619589063521.2 = local;
+            %tmp.8 = getv ? :BreezeTickDrawer;
             %tmp.5 = newc %tmp.8 ();
-            lputv %rez_cmp_local_custom_drawable_19414774602101648611.2 %tmp.5;
+            lputv %rez_cmp_local_custom_drawable_80435124619589063521.2 %tmp.5;
 [ "/Users/summer/work/garmin/Breeze/bin/gen/006-B3992-00/source/Rez.mcgen" 18 12 ]
             %tmp.9 = newa 2 Array<WatchUi.Drawable>;
-            %tmp.11 = lgetv %rez_cmp_local_custom_drawable_18266493641118460158.1;
+            %tmp.11 = lgetv %rez_cmp_local_custom_drawable_11722428389471359691.1;
             %tmp.12 = dup %tmp.9;
             %tmp.13 = aputv %tmp.12 0 %tmp.11;
-            %tmp.15 = lgetv %rez_cmp_local_custom_drawable_19414774602101648611.2;
+            %tmp.15 = lgetv %rez_cmp_local_custom_drawable_80435124619589063521.2;
             %tmp.16 = dup %tmp.13;
             %tmp.17 = aputv %tmp.16 1 %tmp.15;
             ret %tmp.17;

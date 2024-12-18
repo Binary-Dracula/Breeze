@@ -11,11 +11,11 @@ module Rez {
 
     module Layouts {
         function WatchFace(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
-            var rez_cmp_local_custom_drawable_18266493641118460158 = new Background();
+            var rez_cmp_local_custom_drawable_11722428389471359691 = new Background();
 
-            var rez_cmp_local_custom_drawable_19414774602101648611 = new BreezeLine();
+            var rez_cmp_local_custom_drawable_80435124619589063521 = new BreezeTickDrawer();
 
-            return [rez_cmp_local_custom_drawable_18266493641118460158, rez_cmp_local_custom_drawable_19414774602101648611] as Array<WatchUi.Drawable>;
+            return [rez_cmp_local_custom_drawable_11722428389471359691, rez_cmp_local_custom_drawable_80435124619589063521] as Array<WatchUi.Drawable>;
         }
     } // Layouts
 

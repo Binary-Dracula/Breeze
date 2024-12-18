@@ -1,5 +1,5 @@
 <layout id="WatchFace">
     <drawable class="Background" />
-    <drawable class="BreezeLine"  />
+    <drawable class="BreezeTickDrawer"  />
 </layout>
 

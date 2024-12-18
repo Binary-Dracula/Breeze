@@ -78,104 +78,120 @@ class BreezeLine extends WatchUi.Drawable{
     var utils;
     [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc"; @line = 38; ]
     function initialize() as Void {
+_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_38_24_44_2_start:
+[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 39 4 ]
+        [ "_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_38_24_44_2_start" "_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_38_24_44_2_stop" ]
+        %dictionary.1 = local;
+        %tmp.1 = newd 1;
+        %tmp.3 = const :identifier;
+        %tmp.4 = "BreezeLine";
+        %tmp.5 = dup %tmp.1;
+        %tmp.6 = aputv %tmp.5 %tmp.3 %tmp.4;
+        lputv %dictionary.1 %tmp.6;
+[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 43 4 ]
+        %tmp.8 = getv ? :Drawable;
+        %tmp.9 = getv function %tmp.8 :initialize;
+        %tmp.11 = lgetv %dictionary.1;
+        invoke %tmp.8 %tmp.9(%tmp.11);
+_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_38_24_44_2_stop:
     }
-    [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc"; @line = 40; ]
+    [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc"; @line = 46; ]
     function draw(dc as Dc) as Void {
-_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_40_34_46_2_start:
-[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 41 4 ]
+_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_46_34_52_2_start:
+[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 47 4 ]
         %tmp.1 = self;
         %tmp.2 = getv function %tmp.1 :calculatedBase;
         %tmp.4 = lgetv %dc;
         invoke %tmp.1 %tmp.2(%tmp.4);
-[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 42 4 ]
+[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 48 4 ]
         %tmp.5 = self;
         %tmp.6 = getv function %tmp.5 :drawMinuteTicks;
         %tmp.8 = lgetv %dc;
         invoke %tmp.5 %tmp.6(%tmp.8);
-[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 43 4 ]
+[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 49 4 ]
         %tmp.9 = self;
         %tmp.10 = getv function %tmp.9 :drawCircle;
         %tmp.12 = lgetv %dc;
         invoke %tmp.9 %tmp.10(%tmp.12);
-[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 45 4 ]
+[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 51 4 ]
         %tmp.14 = getv ? :utils;
         %tmp.15 = getv function %tmp.14 :drawTimeBalls;
         %tmp.17 = lgetv %dc;
         invoke %tmp.14 %tmp.15(%tmp.17);
-_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_40_34_46_2_stop:
+_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_46_34_52_2_stop:
     }
-    [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc"; @line = 49; ]
+    [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc"; @line = 55; ]
     function calculatedBase(dc as Graphics.Dc) {
-_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_49_45_53_2_start:
-[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 50 4 ]
+_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_55_45_59_2_start:
+[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 56 4 ]
         %tmp.1 = lgetv %dc;
         %tmp.2 = getv function %tmp.1 :getWidth;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         %tmp.4 = 2;
         %tmp.5 = div %tmp.3 %tmp.4;
         putv self :_centerX %tmp.5;
-[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 51 4 ]
+[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 57 4 ]
         %tmp.6 = lgetv %dc;
         %tmp.7 = getv function %tmp.6 :getHeight;
         %tmp.8 = invoke %tmp.6 %tmp.7();
         %tmp.9 = 2;
         %tmp.10 = div %tmp.8 %tmp.9;
         putv self :_centerY %tmp.10;
-[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 52 4 ]
+[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 58 4 ]
         %tmp.11 = lgetv %dc;
         %tmp.12 = getv function %tmp.11 :getWidth;
         %tmp.13 = invoke %tmp.11 %tmp.12();
         %tmp.14 = 2;
         %tmp.15 = div %tmp.13 %tmp.14;
         putv self :_radius %tmp.15;
-_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_49_45_53_2_stop:
+_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_55_45_59_2_stop:
     }
-    [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc"; @line = 55; ]
+    [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc"; @line = 61; ]
     function drawMinuteTicks(dc) {
-_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_55_31_87_2_start:
-[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 57 4 ]
-        [ "_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_55_31_87_2_start" "_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_55_31_87_2_stop" ]
+_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_61_31_93_2_start:
+[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 63 4 ]
+        [ "_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_61_31_93_2_start" "_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_61_31_93_2_stop" ]
         %clockTime.1 = local;
         %tmp.2 = getv ? :System;
         %tmp.3 = getv function %tmp.2 :getClockTime;
         %tmp.4 = invoke %tmp.2 %tmp.3();
         lputv %clockTime.1 %tmp.4;
-[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 58 4 ]
-        [ "_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_55_31_87_2_start" "_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_55_31_87_2_stop" ]
+[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 64 4 ]
+        [ "_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_61_31_93_2_start" "_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_61_31_93_2_stop" ]
         %hours.2 = local;
         %tmp.5 = lgetv %clockTime.1;
         %tmp.6 = getv %tmp.5 :hour;
         lputv %hours.2 %tmp.6;
-[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 59 4 ]
-        [ "_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_55_31_87_2_start" "_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_55_31_87_2_stop" ]
+[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 65 4 ]
+        [ "_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_61_31_93_2_start" "_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_61_31_93_2_stop" ]
         %minutes.3 = local;
         %tmp.7 = lgetv %clockTime.1;
         %tmp.8 = getv %tmp.7 :min;
         lputv %minutes.3 %tmp.8;
-[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 60 4 ]
-        [ "_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_55_31_87_2_start" "_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_55_31_87_2_stop" ]
+[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 66 4 ]
+        [ "_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_61_31_93_2_start" "_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_61_31_93_2_stop" ]
         %seconds.4 = local;
         %tmp.9 = lgetv %clockTime.1;
         %tmp.10 = getv %tmp.9 :sec;
         lputv %seconds.4 %tmp.10;
-[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 63 4 ]
-        for @_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_63_4_86_4_for_test @_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_63_4_86_4_for_incr @_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_63_4_86_4_for_end;
-_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_63_4_86_4_for_init:
-        [ "_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_63_4_86_4_for_begin" "_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_63_4_86_4_for_end" ]
+[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 69 4 ]
+        for @_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_69_4_92_4_for_test @_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_69_4_92_4_for_incr @_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_69_4_92_4_for_end;
+_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_69_4_92_4_for_init:
+        [ "_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_69_4_92_4_for_begin" "_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_69_4_92_4_for_end" ]
         %tick.5 = local;
         %tmp.11 = 0;
         lputv %tick.5 %tmp.11;
-_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_63_4_86_4_for_test:
+_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_69_4_92_4_for_test:
         %tmp.13 = lgetv %tick.5;
         %tmp.14 = 60;
         %tmp.15 = lt %tmp.13 %tmp.14;
-        bf %tmp.15 @_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_63_4_86_4_for_end;
-_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_63_4_86_4_for_begin:
-_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_63_42_86_4_start:
-[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 64 6 ]
-_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_64_6_85_6_if_stmt:
-_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_64_10_64_91_begin:
-_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_64_10_64_72_begin:
+        bf %tmp.15 @_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_69_4_92_4_for_end;
+_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_69_4_92_4_for_begin:
+_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_69_42_92_4_start:
+[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 70 6 ]
+_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_70_6_91_6_if_stmt:
+_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_70_10_70_91_begin:
+_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_70_10_70_72_begin:
         %tmp.17 = lgetv %tick.5;
         %tmp.19 = lgetv %hours.2;
         %tmp.20 = 12;
@@ -190,47 +206,47 @@ _Users_summer_work_garmin_Breeze_source_BreezeLine_mc_64_10_64_72_begin:
         %tmp.30 = invoke %tmp.24 %tmp.25(%tmp.29);
         %tmp.31 = add %tmp.23 %tmp.30;
         %tmp.32 = eq %tmp.17 %tmp.31;
-        bt %tmp.32 @_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_64_6_85_6_if_true;
-_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_64_64_64_72_false:
+        bt %tmp.32 @_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_70_6_91_6_if_true;
+_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_70_64_70_72_false:
         %tmp.34 = lgetv %tick.5;
         %tmp.36 = lgetv %minutes.3;
         %tmp.37 = eq %tmp.34 %tmp.36;
         push %tmp.37;
-_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_64_64_64_72_end:
-        %tmp.38 = phi [%tmp.32 @_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_64_10_64_72_begin] [%tmp.37 @_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_64_64_64_72_false] [%tmp.38 @_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_64_64_64_72_end];
-        bt %tmp.38 @_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_64_6_85_6_if_true;
-_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_64_83_64_91_false:
+_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_70_64_70_72_end:
+        %tmp.38 = phi [%tmp.32 @_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_70_10_70_72_begin] [%tmp.37 @_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_70_64_70_72_false] [%tmp.38 @_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_70_64_70_72_end];
+        bt %tmp.38 @_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_70_6_91_6_if_true;
+_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_70_83_70_91_false:
         %tmp.40 = lgetv %tick.5;
         %tmp.42 = lgetv %seconds.4;
         %tmp.43 = eq %tmp.40 %tmp.42;
         push %tmp.43;
-_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_64_83_64_91_end:
-        %tmp.44 = phi [%tmp.38 @_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_64_10_64_91_begin] [%tmp.43 @_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_64_83_64_91_false] [%tmp.44 @_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_64_83_64_91_end];
-        bf %tmp.44 @_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_64_6_85_6_if_else_false;
-_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_64_6_85_6_if_true:
-        goto @_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_64_6_85_6_if_end;
-_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_64_6_85_6_if_else_false:
-_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_65_13_85_6_start:
-[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 67 8 ]
-        [ "_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_65_13_85_6_start" "_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_65_13_85_6_stop" ]
+_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_70_83_70_91_end:
+        %tmp.44 = phi [%tmp.38 @_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_70_10_70_91_begin] [%tmp.43 @_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_70_83_70_91_false] [%tmp.44 @_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_70_83_70_91_end];
+        bf %tmp.44 @_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_70_6_91_6_if_else_false;
+_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_70_6_91_6_if_true:
+        goto @_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_70_6_91_6_if_end;
+_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_70_6_91_6_if_else_false:
+_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_71_13_91_6_start:
+[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 73 8 ]
+        [ "_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_71_13_91_6_start" "_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_71_13_91_6_stop" ]
         %startPoint.6 = local;
         %tmp.45 = self;
         %tmp.46 = getv function %tmp.45 :computeTickStartPoint;
         %tmp.48 = lgetv %tick.5;
         %tmp.49 = invoke %tmp.45 %tmp.46(%tmp.48);
         lputv %startPoint.6 %tmp.49;
-[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 70 8 ]
-_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_70_8_84_8_if_stmt:
+[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 76 8 ]
+_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_76_8_90_8_if_stmt:
         %tmp.51 = lgetv %tick.5;
         %tmp.52 = 5;
         %tmp.53 = mod %tmp.51 %tmp.52;
         %tmp.54 = 0;
         %tmp.55 = eq %tmp.53 %tmp.54;
-        bf %tmp.55 @_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_70_8_84_8_if_else_false;
-_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_70_8_84_8_if_true:
-_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_70_27_77_8_start:
-[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 72 10 ]
-        [ "_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_70_27_77_8_start" "_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_70_27_77_8_stop" ]
+        bf %tmp.55 @_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_76_8_90_8_if_else_false;
+_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_76_8_90_8_if_true:
+_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_76_27_83_8_start:
+[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 78 10 ]
+        [ "_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_76_27_83_8_start" "_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_76_27_83_8_stop" ]
         %endPoint.7 = local;
         %tmp.56 = self;
         %tmp.57 = getv function %tmp.56 :computeTickEndPoint;
@@ -238,18 +254,18 @@ _Users_summer_work_garmin_Breeze_source_BreezeLine_mc_70_27_77_8_start:
         %tmp.61 = getv ? :_hourTickLength;
         %tmp.62 = invoke %tmp.56 %tmp.57(%tmp.59, %tmp.61);
         lputv %endPoint.7 %tmp.62;
-[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 74 10 ]
+[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 80 10 ]
         %tmp.63 = lgetv %dc;
         %tmp.64 = getv function %tmp.63 :setColor;
         %tmp.66 = getv ? :_hourStrokeColor;
         %tmp.68 = getv ? :_colorTransparent;
         invoke %tmp.63 %tmp.64(%tmp.66, %tmp.68);
-[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 75 10 ]
+[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 81 10 ]
         %tmp.69 = lgetv %dc;
         %tmp.70 = getv function %tmp.69 :setPenWidth;
         %tmp.72 = getv ? :_hourStrokeWidth;
         invoke %tmp.69 %tmp.70(%tmp.72);
-[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 76 10 ]
+[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 82 10 ]
         %tmp.73 = lgetv %dc;
         %tmp.74 = getv function %tmp.73 :drawLine;
         %tmp.76 = lgetv %startPoint.6;
@@ -265,12 +281,12 @@ _Users_summer_work_garmin_Breeze_source_BreezeLine_mc_70_27_77_8_start:
         %tmp.89 = 1;
         %tmp.90 = agetv %tmp.88 %tmp.89;
         invoke %tmp.73 %tmp.74(%tmp.78, %tmp.82, %tmp.86, %tmp.90);
-_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_70_27_77_8_stop:
-        goto @_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_70_8_84_8_if_end;
-_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_70_8_84_8_if_else_false:
-_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_77_15_84_8_start:
-[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 79 10 ]
-        [ "_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_77_15_84_8_start" "_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_77_15_84_8_stop" ]
+_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_76_27_83_8_stop:
+        goto @_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_76_8_90_8_if_end;
+_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_76_8_90_8_if_else_false:
+_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_83_15_90_8_start:
+[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 85 10 ]
+        [ "_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_83_15_90_8_start" "_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_83_15_90_8_stop" ]
         %endPoint.8 = local;
         %tmp.91 = self;
         %tmp.92 = getv function %tmp.91 :computeTickEndPoint;
@@ -278,18 +294,18 @@ _Users_summer_work_garmin_Breeze_source_BreezeLine_mc_77_15_84_8_start:
         %tmp.96 = getv ? :_minuteTickLength;
         %tmp.97 = invoke %tmp.91 %tmp.92(%tmp.94, %tmp.96);
         lputv %endPoint.8 %tmp.97;
-[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 81 10 ]
+[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 87 10 ]
         %tmp.98 = lgetv %dc;
         %tmp.99 = getv function %tmp.98 :setColor;
         %tmp.101 = getv ? :_minuteStrokeColor;
         %tmp.103 = getv ? :_colorTransparent;
         invoke %tmp.98 %tmp.99(%tmp.101, %tmp.103);
-[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 82 10 ]
+[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 88 10 ]
         %tmp.104 = lgetv %dc;
         %tmp.105 = getv function %tmp.104 :setPenWidth;
         %tmp.107 = getv ? :_minuteStrokeWidth;
         invoke %tmp.104 %tmp.105(%tmp.107);
-[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 83 10 ]
+[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 89 10 ]
         %tmp.108 = lgetv %dc;
         %tmp.109 = getv function %tmp.108 :drawLine;
         %tmp.111 = lgetv %startPoint.6;
@@ -305,25 +321,25 @@ _Users_summer_work_garmin_Breeze_source_BreezeLine_mc_77_15_84_8_start:
         %tmp.124 = 1;
         %tmp.125 = agetv %tmp.123 %tmp.124;
         invoke %tmp.108 %tmp.109(%tmp.113, %tmp.117, %tmp.121, %tmp.125);
-_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_77_15_84_8_stop:
-_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_70_8_84_8_if_end:
-_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_65_13_85_6_stop:
-_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_64_6_85_6_if_end:
-_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_63_42_86_4_stop:
-_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_63_4_86_4_for_incr:
-[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 63 ]
+_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_83_15_90_8_stop:
+_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_76_8_90_8_if_end:
+_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_71_13_91_6_stop:
+_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_70_6_91_6_if_end:
+_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_69_42_92_4_stop:
+_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_69_4_92_4_for_incr:
+[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 69 ]
         %tmp.128 = lgetv %tick.5;
         %tmp.129 = add %tmp.128 1;
         lputv %tick.5 %tmp.129;
-        goto @_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_63_4_86_4_for_test;
-_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_63_4_86_4_for_end:
-_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_55_31_87_2_stop:
+        goto @_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_69_4_92_4_for_test;
+_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_69_4_92_4_for_end:
+_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_61_31_93_2_stop:
     }
-    [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc"; @line = 90; ]
+    [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc"; @line = 96; ]
     function computeTickStartPoint(tick) {
-_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_90_39_101_2_start:
-[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 92 4 ]
-        [ "_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_90_39_101_2_start" "_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_90_39_101_2_stop" ]
+_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_96_39_107_2_start:
+[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 98 4 ]
+        [ "_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_96_39_107_2_start" "_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_96_39_107_2_stop" ]
         %angle.1 = local;
         %tmp.2 = lgetv %tick;
         %tmp.3 = getm $.Toybox.Math;
@@ -332,8 +348,8 @@ _Users_summer_work_garmin_Breeze_source_BreezeLine_mc_90_39_101_2_start:
         %tmp.6 = 30;
         %tmp.7 = div %tmp.5 %tmp.6;
         lputv %angle.1 %tmp.7;
-[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 95 4 ]
-        [ "_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_90_39_101_2_start" "_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_90_39_101_2_stop" ]
+[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 101 4 ]
+        [ "_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_96_39_107_2_start" "_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_96_39_107_2_stop" ]
         %x.2 = local;
         %tmp.9 = getv ? :_centerX;
         %tmp.11 = getv ? :_radius;
@@ -344,8 +360,8 @@ _Users_summer_work_garmin_Breeze_source_BreezeLine_mc_90_39_101_2_start:
         %tmp.17 = mul %tmp.11 %tmp.16;
         %tmp.18 = add %tmp.9 %tmp.17;
         lputv %x.2 %tmp.18;
-[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 98 4 ]
-        [ "_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_90_39_101_2_start" "_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_90_39_101_2_stop" ]
+[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 104 4 ]
+        [ "_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_96_39_107_2_start" "_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_96_39_107_2_stop" ]
         %y.3 = local;
         %tmp.20 = getv ? :_centerY;
         %tmp.22 = getv ? :_radius;
@@ -356,7 +372,7 @@ _Users_summer_work_garmin_Breeze_source_BreezeLine_mc_90_39_101_2_start:
         %tmp.28 = mul %tmp.22 %tmp.27;
         %tmp.29 = sub %tmp.20 %tmp.28;
         lputv %y.3 %tmp.29;
-[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 100 4 ]
+[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 106 4 ]
         %tmp.30 = newa 2;
         %tmp.32 = lgetv %x.2;
         %tmp.33 = dup %tmp.30;
@@ -365,13 +381,13 @@ _Users_summer_work_garmin_Breeze_source_BreezeLine_mc_90_39_101_2_start:
         %tmp.37 = dup %tmp.34;
         %tmp.38 = aputv %tmp.37 1 %tmp.36;
         ret %tmp.38;
-_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_90_39_101_2_stop:
+_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_96_39_107_2_stop:
     }
-    [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc"; @line = 107; ]
+    [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc"; @line = 113; ]
     function computeTickEndPoint(tick, offset) {
-_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_107_45_118_2_start:
-[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 109 4 ]
-        [ "_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_107_45_118_2_start" "_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_107_45_118_2_stop" ]
+_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_113_45_124_2_start:
+[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 115 4 ]
+        [ "_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_113_45_124_2_start" "_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_113_45_124_2_stop" ]
         %angle.1 = local;
         %tmp.1 = 6;
         %tmp.3 = lgetv %tick;
@@ -382,8 +398,8 @@ _Users_summer_work_garmin_Breeze_source_BreezeLine_mc_107_45_118_2_start:
         %tmp.8 = 180;
         %tmp.9 = div %tmp.7 %tmp.8;
         lputv %angle.1 %tmp.9;
-[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 112 4 ]
-        [ "_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_107_45_118_2_start" "_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_107_45_118_2_stop" ]
+[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 118 4 ]
+        [ "_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_113_45_124_2_start" "_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_113_45_124_2_stop" ]
         %x.2 = local;
         %tmp.11 = getv ? :_centerX;
         %tmp.13 = getv ? :_radius;
@@ -396,8 +412,8 @@ _Users_summer_work_garmin_Breeze_source_BreezeLine_mc_107_45_118_2_start:
         %tmp.22 = mul %tmp.16 %tmp.21;
         %tmp.23 = add %tmp.11 %tmp.22;
         lputv %x.2 %tmp.23;
-[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 115 4 ]
-        [ "_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_107_45_118_2_start" "_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_107_45_118_2_stop" ]
+[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 121 4 ]
+        [ "_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_113_45_124_2_start" "_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_113_45_124_2_stop" ]
         %y.3 = local;
         %tmp.25 = getv ? :_centerY;
         %tmp.27 = getv ? :_radius;
@@ -410,7 +426,7 @@ _Users_summer_work_garmin_Breeze_source_BreezeLine_mc_107_45_118_2_start:
         %tmp.36 = mul %tmp.30 %tmp.35;
         %tmp.37 = sub %tmp.25 %tmp.36;
         lputv %y.3 %tmp.37;
-[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 117 4 ]
+[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 123 4 ]
         %tmp.38 = newa 2;
         %tmp.40 = lgetv %x.2;
         %tmp.41 = dup %tmp.38;
@@ -419,23 +435,23 @@ _Users_summer_work_garmin_Breeze_source_BreezeLine_mc_107_45_118_2_start:
         %tmp.45 = dup %tmp.42;
         %tmp.46 = aputv %tmp.45 1 %tmp.44;
         ret %tmp.46;
-_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_107_45_118_2_stop:
+_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_113_45_124_2_stop:
     }
-    [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc"; @line = 121; ]
+    [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc"; @line = 127; ]
     function drawCircle(dc) {
-_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_121_26_129_2_start:
-[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 122 4 ]
+_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_127_26_135_2_start:
+[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 128 4 ]
         %tmp.1 = lgetv %dc;
         %tmp.2 = getv function %tmp.1 :setPenWidth;
         %tmp.4 = getv ? :_circleWidth;
         invoke %tmp.1 %tmp.2(%tmp.4);
-[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 123 4 ]
+[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 129 4 ]
         %tmp.5 = lgetv %dc;
         %tmp.6 = getv function %tmp.5 :setColor;
         %tmp.8 = getv ? :_circleColor;
         %tmp.10 = getv ? :_colorTransparent;
         invoke %tmp.5 %tmp.6(%tmp.8, %tmp.10);
-[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 124 4 ]
+[ "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc" 130 4 ]
         %tmp.11 = lgetv %dc;
         %tmp.12 = getv function %tmp.11 :drawCircle;
         %tmp.14 = getv ? :_centerX;
@@ -446,7 +462,7 @@ _Users_summer_work_garmin_Breeze_source_BreezeLine_mc_121_26_129_2_start:
         %tmp.23 = getv ? :_circleOffset;
         %tmp.24 = sub %tmp.21 %tmp.23;
         invoke %tmp.11 %tmp.12(%tmp.14, %tmp.16, %tmp.24);
-_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_121_26_129_2_stop:
+_Users_summer_work_garmin_Breeze_source_BreezeLine_mc_127_26_135_2_stop:
     }
 }
 [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeLine.mc"; @line = 1; ]

@@ -3,7 +3,7 @@ import Toybox.Graphics;
 import Toybox.Lang;
 using Toybox.Math;
 
-class BreezeLine extends WatchUi.Drawable {
+class BreezeTickDrawer extends WatchUi.Drawable {
   // 小时刻度长
   private var _hourTickLength = 10;
   // 小时刻度宽
@@ -35,7 +35,13 @@ class BreezeLine extends WatchUi.Drawable {
 
   var utils = new BreezeSystemFieldUtils();
 
-  function initialize() {}
+  function initialize() {
+    var dictionary = {
+      :identifier => "BreezeLine",
+    };
+
+    Drawable.initialize(dictionary);
+  }
 
   function draw(dc as Dc) as Void {
     calculatedBase(dc);
@@ -61,7 +67,11 @@ class BreezeLine extends WatchUi.Drawable {
 
     // 循环遍历 0 到 59 分钟
     for (var tick = 0; tick < 60; tick++) {
-      if (tick == hours % 12 * 5  + Math.floor(minutes / 12) || tick == minutes || tick == seconds) {
+      if (
+        tick == (hours % 12) * 5 + Math.floor(minutes / 12) ||
+        tick == minutes ||
+        tick == seconds
+      ) {
       } else {
         // 计算起始点坐标
         var startPoint = computeTickStartPoint(tick);
@@ -73,21 +83,31 @@ class BreezeLine extends WatchUi.Drawable {
           // 设置小时刻度样式
           dc.setColor(_hourStrokeColor, _colorTransparent);
           dc.setPenWidth(_hourStrokeWidth);
-          dc.drawLine(startPoint[0], startPoint[1], endPoint[0], endPoint[1]);
+          dc.drawLine(
+            startPoint[0] as Float,
+            startPoint[1] as Float,
+            endPoint[0] as Float,
+            endPoint[1] as Float
+          );
         } else {
           // 计算结束点坐标，使用缩短的半径
           var endPoint = computeTickEndPoint(tick, _minuteTickLength);
           // 设置分钟刻度样式
           dc.setColor(_minuteStrokeColor, _colorTransparent);
           dc.setPenWidth(_minuteStrokeWidth);
-          dc.drawLine(startPoint[0], startPoint[1], endPoint[0], endPoint[1]);
+          dc.drawLine(
+            startPoint[0] as Float,
+            startPoint[1] as Float,
+            endPoint[0] as Float,
+            endPoint[1] as Float
+          );
         }
       }
     }
   }
 
   // 根据分钟获取刻度起始坐标
-  function computeTickStartPoint(tick) {
+  function computeTickStartPoint(tick) as Array<Float> {
     // 将分钟转换为角度（每分钟 6 度）
     var angle = (tick * Math.PI) / 30;
 
@@ -104,7 +124,7 @@ class BreezeLine extends WatchUi.Drawable {
    * 根据分钟获取刻度终点坐标
    * offset指刻度长度
    */
-  function computeTickEndPoint(tick, offset) {
+  function computeTickEndPoint(tick, offset) as Array<Float> {
     // 将分钟转换为角度（每分钟 6 度）
     var angle = (6 * tick * Math.PI) / 180;
 
