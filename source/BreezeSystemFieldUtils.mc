@@ -77,15 +77,15 @@ class BreezeSystemFieldUtils {
   }
 
   // 获取当前心率
-  function getSystemHeartRate() as Lang.String {
+  function getSystemHeartRate() as Lang.Number {
     var heartRate = Activity.getActivityInfo().currentHeartRate;
-    return heartRate ? heartRate.toString() : "0";
+    return heartRate ? heartRate.toString() : 170;
   }
 
   // 获取当前步数
-  function getSystemStepCount() as Lang.String {
+  function getSystemStepCount() as Lang.Number {
     var info = ActivityMonitor.getInfo();
-    return info.steps ? info.steps.toString() : "0";
+    return info.steps ? info.steps.toString() : 6000;
   }
 
   // 获取当前电量百分比
@@ -184,5 +184,41 @@ class BreezeSystemFieldUtils {
     // 绘制秒针小球
     dc.setColor(secondColor, Graphics.COLOR_TRANSPARENT);
     dc.fillCircle(secondX, secondY, secondRadius);
+  }
+
+  // 用小球画时钟
+  function drawMinuteBalls(dc) {
+    // 小时颜色
+    var hourColor = Application.Properties.getValue("StaticHourColor") as Number;
+    // 分钟颜色
+    // var minuteColor = Application.Properties.getValue("StaticMinuteColor") as Number;
+    var minuteColor = Graphics.COLOR_TRANSPARENT;
+    // 分钟半径
+    var minuteRadius = 4;
+
+    var centerX = dc.getWidth() / 2;
+    var centerY = dc.getHeight() / 2;
+    var radius = dc.getWidth() / 2;
+    var minuteHandLength = radius - minuteRadius;
+
+    // 获取所有分钟的坐标
+    var minuteBalls = [];
+    for (var i = 0; i < 60; i++) {
+      var minuteAngle = (i * Math.PI) / 30; // 每分钟 6 度
+      var minuteX = centerX + minuteHandLength * Math.sin(minuteAngle);
+      var minuteY = centerY - minuteHandLength * Math.cos(minuteAngle);
+      minuteBalls.add([minuteX, minuteY]);
+    }
+    // 遍历绘制分钟小球，如果是整点，则用小时颜色
+    for (var i = 0; i < minuteBalls.size(); i++) {
+      var minuteX = minuteBalls[i][0];
+      var minuteY = minuteBalls[i][1];
+      if (i % 5 == 0) {
+        dc.setColor(hourColor, Graphics.COLOR_TRANSPARENT);
+      } else {
+        dc.setColor(minuteColor, Graphics.COLOR_TRANSPARENT);
+      }
+      dc.fillCircle(minuteX, minuteY, minuteRadius);
+    }
   }
 }

@@ -1,6 +1,10 @@
 <properties>
 
     <property id="BackgroundColor" type="number">0x000000</property>
+    <!-- 静态小时颜色 -->
+    <property id="StaticHourColor" type="number">0x00FF00</property>
+    <!-- 静态分钟颜色 -->
+    <property id="StaticMinuteColor" type="number">0x808080</property>
     <!-- 小时圆球颜色 -->
     <property id="HourColor" type="number">0xFF0000</property>
     <!-- 分钟圆球颜色 -->

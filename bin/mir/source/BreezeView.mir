@@ -51,21 +51,31 @@ _Users_summer_work_garmin_Breeze_source_BreezeView_mc_15_38_17_2_stop:
     }
     [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeView.mc"; @line = 25; ]
     function onUpdate(dc as Dc) as Void {
-_Users_summer_work_garmin_Breeze_source_BreezeView_mc_25_38_31_2_start:
+_Users_summer_work_garmin_Breeze_source_BreezeView_mc_25_38_34_2_start:
 [ "/Users/summer/work/garmin/Breeze/source/BreezeView.mc" 30 4 ]
         %tmp.2 = getv ? :View;
         %tmp.3 = getv function %tmp.2 :onUpdate;
         %tmp.5 = lgetv %dc;
         invoke %tmp.2 %tmp.3(%tmp.5);
-_Users_summer_work_garmin_Breeze_source_BreezeView_mc_25_38_31_2_stop:
-    }
-    [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeView.mc"; @line = 36; ]
-    function onHide() as Void {
+[ "/Users/summer/work/garmin/Breeze/source/BreezeView.mc" 32 4 ]
+        %tmp.7 = getv ? :utils;
+        %tmp.8 = getv function %tmp.7 :drawMinuteBalls;
+        %tmp.10 = lgetv %dc;
+        invoke %tmp.7 %tmp.8(%tmp.10);
+[ "/Users/summer/work/garmin/Breeze/source/BreezeView.mc" 33 4 ]
+        %tmp.12 = getv ? :utils;
+        %tmp.13 = getv function %tmp.12 :drawTimeBalls;
+        %tmp.15 = lgetv %dc;
+        invoke %tmp.12 %tmp.13(%tmp.15);
+_Users_summer_work_garmin_Breeze_source_BreezeView_mc_25_38_34_2_stop:
     }
     [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeView.mc"; @line = 39; ]
-    function onExitSleep() as Void {
+    function onHide() as Void {
     }
     [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeView.mc"; @line = 42; ]
+    function onExitSleep() as Void {
+    }
+    [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeView.mc"; @line = 45; ]
     function onEnterSleep() as Void {
     }
 }

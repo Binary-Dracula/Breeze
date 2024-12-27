@@ -27,6 +27,54 @@
     "configMax" : null,
     "configMaxLength" : null
   }, {
+    "key" : "StaticHourColor",
+    "valueType" : "number",
+    "defaultValue" : 65280,
+    "configTitle" : "StaticHourColorTitle",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "ColorBlue",
+      "value" : 255
+    }, {
+      "display" : "ColorRed",
+      "value" : 16711680
+    }, {
+      "display" : "ColorYellow",
+      "value" : 16776960
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "StaticMinuteColor",
+    "valueType" : "number",
+    "defaultValue" : 8421504,
+    "configTitle" : "StaticMinuteColorTitle",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "ColorGreen",
+      "value" : 65280
+    }, {
+      "display" : "ColorRed",
+      "value" : 16711680
+    }, {
+      "display" : "ColorYellow",
+      "value" : 16776960
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
     "key" : "HourColor",
     "valueType" : "number",
     "defaultValue" : 16711680,
@@ -105,6 +153,7 @@
       "ColorLightGray" : "Light Gray",
       "ColorBlue" : "Blue",
       "BackgroundColorTitle" : "Background Color",
+      "StaticHourColorTitle" : "Static Hour Color",
       "ColorDarkGray" : "Dark Gray",
       "SecondColorTitle" : "Second Color",
       "ColorBlack" : "Black",
@@ -112,7 +161,9 @@
       "AppName" : "Breeze",
       "HourColorTitle" : "Hour Color",
       "ColorRed" : "Red",
+      "StaticMinuteColorTitle" : "Static Minute Color",
       "ColorWhite" : "White",
+      "ColorGreen" : "Green",
       "MinuteColorTitle" : "Minute Color"
     }
   }

@@ -11,27 +11,30 @@ module Rez {
 
     module Layouts {
         function WatchFace(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
-            var rez_cmp_local_custom_drawable_11722428389471359691 = new Background();
+            var rez_cmp_local_custom_drawable_15452552501317075647 = new Background();
 
-            var rez_cmp_local_custom_drawable_80435124619589063521 = new BreezeTickDrawer();
+            var rez_cmp_local_custom_drawable_14815707271123789942 = new BreezeHeartRate();
 
-            return [rez_cmp_local_custom_drawable_11722428389471359691, rez_cmp_local_custom_drawable_80435124619589063521] as Array<WatchUi.Drawable>;
+            return [rez_cmp_local_custom_drawable_15452552501317075647, rez_cmp_local_custom_drawable_14815707271123789942] as Array<WatchUi.Drawable>;
         }
     } // Layouts
 
     module Strings {
-        (:initialized) var HourColorTitle as ResourceId;
         (:initialized) var ColorLightGray as ResourceId;
         (:initialized) var ColorBlue as ResourceId;
-        (:initialized) var ColorRed as ResourceId;
         (:initialized) var BackgroundColorTitle as ResourceId;
+        (:initialized) var StaticHourColorTitle as ResourceId;
         (:initialized) var ColorDarkGray as ResourceId;
         (:initialized) var SecondColorTitle as ResourceId;
         (:initialized) var ColorBlack as ResourceId;
-        (:initialized) var ColorWhite as ResourceId;
         (:initialized) var ColorYellow as ResourceId;
-        (:initialized) var MinuteColorTitle as ResourceId;
         (:initialized) var AppName as ResourceId;
+        (:initialized) var HourColorTitle as ResourceId;
+        (:initialized) var ColorRed as ResourceId;
+        (:initialized) var StaticMinuteColorTitle as ResourceId;
+        (:initialized) var ColorWhite as ResourceId;
+        (:initialized) var ColorGreen as ResourceId;
+        (:initialized) var MinuteColorTitle as ResourceId;
     } // Strings
 
     module Styles {

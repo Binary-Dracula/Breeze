@@ -282,7 +282,7 @@ _Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_74_50_77_2_sta
 _Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_74_50_77_2_stop:
     }
     [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeSystemFieldUtils.mc"; @line = 80; ]
-    function getSystemHeartRate() as Lang.String {
+    function getSystemHeartRate() as Lang.Number {
 _Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_80_47_83_2_start:
 [ "/Users/summer/work/garmin/Breeze/source/BreezeSystemFieldUtils.mc" 81 4 ]
         [ "_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_80_47_83_2_start" "_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_80_47_83_2_stop" ]
@@ -303,7 +303,7 @@ _Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_82_11_82_46_tr
         push %tmp.9;
         goto @_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_82_11_82_46_end;
 _Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_82_11_82_46_false:
-        %tmp.10 = "0";
+        %tmp.10 = 170;
         push %tmp.10;
 _Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_82_11_82_46_end:
         %tmp.11 = phi [%tmp.6 @_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_82_11_82_46_begin] [%tmp.9 @_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_82_11_82_46_true] [%tmp.10 @_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_82_11_82_46_false] [%tmp.11 @_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_82_11_82_46_end];
@@ -311,7 +311,7 @@ _Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_82_11_82_46_en
 _Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_80_47_83_2_stop:
     }
     [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeSystemFieldUtils.mc"; @line = 86; ]
-    function getSystemStepCount() as Lang.String {
+    function getSystemStepCount() as Lang.Number {
 _Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_86_47_89_2_start:
 [ "/Users/summer/work/garmin/Breeze/source/BreezeSystemFieldUtils.mc" 87 4 ]
         [ "_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_86_47_89_2_start" "_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_86_47_89_2_stop" ]
@@ -333,7 +333,7 @@ _Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_88_11_88_48_tr
         push %tmp.9;
         goto @_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_88_11_88_48_end;
 _Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_88_11_88_48_false:
-        %tmp.10 = "0";
+        %tmp.10 = 6000;
         push %tmp.10;
 _Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_88_11_88_48_end:
         %tmp.11 = phi [%tmp.5 @_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_88_11_88_48_begin] [%tmp.9 @_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_88_11_88_48_true] [%tmp.10 @_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_88_11_88_48_false] [%tmp.11 @_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_88_11_88_48_end];
@@ -708,6 +708,217 @@ _Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_123_29_187_2_s
         %tmp.206 = lgetv %secondRadius.6;
         invoke %tmp.199 %tmp.200(%tmp.202, %tmp.204, %tmp.206);
 _Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_123_29_187_2_stop:
+    }
+    [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeSystemFieldUtils.mc"; @line = 190; ]
+    function drawMinuteBalls(dc) {
+_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_190_31_223_2_start:
+[ "/Users/summer/work/garmin/Breeze/source/BreezeSystemFieldUtils.mc" 192 4 ]
+        [ "_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_190_31_223_2_start" "_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_190_31_223_2_stop" ]
+        %hourColor.1 = local;
+        %tmp.1 = getm $.Toybox.Application;
+        %tmp.2 = getv %tmp.1 :Properties;
+        %tmp.3 = getv function %tmp.2 :getValue;
+        %tmp.4 = "StaticHourColor";
+        %tmp.5 = invoke %tmp.2 %tmp.3(%tmp.4);
+        %tmp.6 = as %tmp.5 Number;
+        lputv %hourColor.1 %tmp.6;
+[ "/Users/summer/work/garmin/Breeze/source/BreezeSystemFieldUtils.mc" 195 4 ]
+        [ "_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_190_31_223_2_start" "_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_190_31_223_2_stop" ]
+        %minuteColor.2 = local;
+        %tmp.7 = getm $.Toybox.Graphics;
+        %tmp.8 = getv %tmp.7 :COLOR_TRANSPARENT;
+        lputv %minuteColor.2 %tmp.8;
+[ "/Users/summer/work/garmin/Breeze/source/BreezeSystemFieldUtils.mc" 197 4 ]
+        [ "_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_190_31_223_2_start" "_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_190_31_223_2_stop" ]
+        %minuteRadius.3 = local;
+        %tmp.9 = 4;
+        lputv %minuteRadius.3 %tmp.9;
+[ "/Users/summer/work/garmin/Breeze/source/BreezeSystemFieldUtils.mc" 199 4 ]
+        [ "_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_190_31_223_2_start" "_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_190_31_223_2_stop" ]
+        %centerX.4 = local;
+        %tmp.10 = lgetv %dc;
+        %tmp.11 = getv function %tmp.10 :getWidth;
+        %tmp.12 = invoke %tmp.10 %tmp.11();
+        %tmp.13 = 2;
+        %tmp.14 = div %tmp.12 %tmp.13;
+        lputv %centerX.4 %tmp.14;
+[ "/Users/summer/work/garmin/Breeze/source/BreezeSystemFieldUtils.mc" 200 4 ]
+        [ "_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_190_31_223_2_start" "_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_190_31_223_2_stop" ]
+        %centerY.5 = local;
+        %tmp.15 = lgetv %dc;
+        %tmp.16 = getv function %tmp.15 :getHeight;
+        %tmp.17 = invoke %tmp.15 %tmp.16();
+        %tmp.18 = 2;
+        %tmp.19 = div %tmp.17 %tmp.18;
+        lputv %centerY.5 %tmp.19;
+[ "/Users/summer/work/garmin/Breeze/source/BreezeSystemFieldUtils.mc" 201 4 ]
+        [ "_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_190_31_223_2_start" "_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_190_31_223_2_stop" ]
+        %radius.6 = local;
+        %tmp.20 = lgetv %dc;
+        %tmp.21 = getv function %tmp.20 :getWidth;
+        %tmp.22 = invoke %tmp.20 %tmp.21();
+        %tmp.23 = 2;
+        %tmp.24 = div %tmp.22 %tmp.23;
+        lputv %radius.6 %tmp.24;
+[ "/Users/summer/work/garmin/Breeze/source/BreezeSystemFieldUtils.mc" 202 4 ]
+        [ "_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_190_31_223_2_start" "_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_190_31_223_2_stop" ]
+        %minuteHandLength.7 = local;
+        %tmp.26 = lgetv %radius.6;
+        %tmp.28 = lgetv %minuteRadius.3;
+        %tmp.29 = sub %tmp.26 %tmp.28;
+        lputv %minuteHandLength.7 %tmp.29;
+[ "/Users/summer/work/garmin/Breeze/source/BreezeSystemFieldUtils.mc" 205 4 ]
+        [ "_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_190_31_223_2_start" "_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_190_31_223_2_stop" ]
+        %minuteBalls.8 = local;
+        %tmp.30 = newa 0;
+        lputv %minuteBalls.8 %tmp.30;
+[ "/Users/summer/work/garmin/Breeze/source/BreezeSystemFieldUtils.mc" 206 4 ]
+        for @_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_206_4_211_4_for_test @_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_206_4_211_4_for_incr @_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_206_4_211_4_for_end;
+_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_206_4_211_4_for_init:
+        [ "_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_206_4_211_4_for_begin" "_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_206_4_211_4_for_end" ]
+        %i.9 = local;
+        %tmp.31 = 0;
+        lputv %i.9 %tmp.31;
+_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_206_4_211_4_for_test:
+        %tmp.33 = lgetv %i.9;
+        %tmp.34 = 60;
+        %tmp.35 = lt %tmp.33 %tmp.34;
+        bf %tmp.35 @_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_206_4_211_4_for_end;
+_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_206_4_211_4_for_begin:
+_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_206_33_211_4_start:
+[ "/Users/summer/work/garmin/Breeze/source/BreezeSystemFieldUtils.mc" 207 6 ]
+        [ "_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_206_33_211_4_start" "_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_206_33_211_4_stop" ]
+        %minuteAngle.10 = local;
+        %tmp.37 = lgetv %i.9;
+        %tmp.38 = getm $.Toybox.Math;
+        %tmp.39 = getv %tmp.38 :PI;
+        %tmp.40 = mul %tmp.37 %tmp.39;
+        %tmp.41 = 30;
+        %tmp.42 = div %tmp.40 %tmp.41;
+        lputv %minuteAngle.10 %tmp.42;
+[ "/Users/summer/work/garmin/Breeze/source/BreezeSystemFieldUtils.mc" 208 6 ]
+        [ "_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_206_33_211_4_start" "_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_206_33_211_4_stop" ]
+        %minuteX.11 = local;
+        %tmp.44 = lgetv %centerX.4;
+        %tmp.46 = lgetv %minuteHandLength.7;
+        %tmp.47 = getm $.Toybox.Math;
+        %tmp.48 = getv function %tmp.47 :sin;
+        %tmp.50 = lgetv %minuteAngle.10;
+        %tmp.51 = invoke %tmp.47 %tmp.48(%tmp.50);
+        %tmp.52 = mul %tmp.46 %tmp.51;
+        %tmp.53 = add %tmp.44 %tmp.52;
+        lputv %minuteX.11 %tmp.53;
+[ "/Users/summer/work/garmin/Breeze/source/BreezeSystemFieldUtils.mc" 209 6 ]
+        [ "_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_206_33_211_4_start" "_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_206_33_211_4_stop" ]
+        %minuteY.12 = local;
+        %tmp.55 = lgetv %centerY.5;
+        %tmp.57 = lgetv %minuteHandLength.7;
+        %tmp.58 = getm $.Toybox.Math;
+        %tmp.59 = getv function %tmp.58 :cos;
+        %tmp.61 = lgetv %minuteAngle.10;
+        %tmp.62 = invoke %tmp.58 %tmp.59(%tmp.61);
+        %tmp.63 = mul %tmp.57 %tmp.62;
+        %tmp.64 = sub %tmp.55 %tmp.63;
+        lputv %minuteY.12 %tmp.64;
+[ "/Users/summer/work/garmin/Breeze/source/BreezeSystemFieldUtils.mc" 210 6 ]
+        %tmp.65 = lgetv %minuteBalls.8;
+        %tmp.66 = getv function %tmp.65 :add;
+        %tmp.67 = newa 2;
+        %tmp.69 = lgetv %minuteX.11;
+        %tmp.70 = dup %tmp.67;
+        %tmp.71 = aputv %tmp.70 0 %tmp.69;
+        %tmp.73 = lgetv %minuteY.12;
+        %tmp.74 = dup %tmp.71;
+        %tmp.75 = aputv %tmp.74 1 %tmp.73;
+        invoke %tmp.65 %tmp.66(%tmp.75);
+_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_206_33_211_4_stop:
+_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_206_4_211_4_for_incr:
+[ "/Users/summer/work/garmin/Breeze/source/BreezeSystemFieldUtils.mc" 206 ]
+        %tmp.78 = lgetv %i.9;
+        %tmp.79 = add %tmp.78 1;
+        lputv %i.9 %tmp.79;
+        goto @_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_206_4_211_4_for_test;
+_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_206_4_211_4_for_end:
+[ "/Users/summer/work/garmin/Breeze/source/BreezeSystemFieldUtils.mc" 213 4 ]
+        for @_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_213_4_222_4_for_test @_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_213_4_222_4_for_incr @_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_213_4_222_4_for_end;
+_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_213_4_222_4_for_init:
+        [ "_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_213_4_222_4_for_begin" "_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_213_4_222_4_for_end" ]
+        %i.13 = local;
+        %tmp.80 = 0;
+        lputv %i.13 %tmp.80;
+_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_213_4_222_4_for_test:
+        %tmp.82 = lgetv %i.13;
+        %tmp.83 = lgetv %minuteBalls.8;
+        %tmp.84 = getv function %tmp.83 :size;
+        %tmp.85 = invoke %tmp.83 %tmp.84();
+        %tmp.86 = lt %tmp.82 %tmp.85;
+        bf %tmp.86 @_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_213_4_222_4_for_end;
+_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_213_4_222_4_for_begin:
+_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_213_49_222_4_start:
+[ "/Users/summer/work/garmin/Breeze/source/BreezeSystemFieldUtils.mc" 214 6 ]
+        [ "_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_213_49_222_4_start" "_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_213_49_222_4_stop" ]
+        %minuteX.14 = local;
+        %tmp.88 = lgetv %minuteBalls.8;
+        %tmp.90 = lgetv %i.13;
+        %tmp.91 = agetv %tmp.88 %tmp.90;
+        %tmp.92 = 0;
+        %tmp.93 = agetv %tmp.91 %tmp.92;
+        lputv %minuteX.14 %tmp.93;
+[ "/Users/summer/work/garmin/Breeze/source/BreezeSystemFieldUtils.mc" 215 6 ]
+        [ "_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_213_49_222_4_start" "_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_213_49_222_4_stop" ]
+        %minuteY.15 = local;
+        %tmp.95 = lgetv %minuteBalls.8;
+        %tmp.97 = lgetv %i.13;
+        %tmp.98 = agetv %tmp.95 %tmp.97;
+        %tmp.99 = 1;
+        %tmp.100 = agetv %tmp.98 %tmp.99;
+        lputv %minuteY.15 %tmp.100;
+[ "/Users/summer/work/garmin/Breeze/source/BreezeSystemFieldUtils.mc" 216 6 ]
+_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_216_6_220_6_if_stmt:
+        %tmp.102 = lgetv %i.13;
+        %tmp.103 = 5;
+        %tmp.104 = mod %tmp.102 %tmp.103;
+        %tmp.105 = 0;
+        %tmp.106 = eq %tmp.104 %tmp.105;
+        bf %tmp.106 @_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_216_6_220_6_if_else_false;
+_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_216_6_220_6_if_true:
+_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_216_22_218_6_start:
+[ "/Users/summer/work/garmin/Breeze/source/BreezeSystemFieldUtils.mc" 217 8 ]
+        %tmp.107 = lgetv %dc;
+        %tmp.108 = getv function %tmp.107 :setColor;
+        %tmp.110 = lgetv %hourColor.1;
+        %tmp.111 = getm $.Toybox.Graphics;
+        %tmp.112 = getv %tmp.111 :COLOR_TRANSPARENT;
+        invoke %tmp.107 %tmp.108(%tmp.110, %tmp.112);
+_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_216_22_218_6_stop:
+        goto @_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_216_6_220_6_if_end;
+_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_216_6_220_6_if_else_false:
+_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_218_13_220_6_start:
+[ "/Users/summer/work/garmin/Breeze/source/BreezeSystemFieldUtils.mc" 219 8 ]
+        %tmp.113 = lgetv %dc;
+        %tmp.114 = getv function %tmp.113 :setColor;
+        %tmp.116 = lgetv %minuteColor.2;
+        %tmp.117 = getm $.Toybox.Graphics;
+        %tmp.118 = getv %tmp.117 :COLOR_TRANSPARENT;
+        invoke %tmp.113 %tmp.114(%tmp.116, %tmp.118);
+_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_218_13_220_6_stop:
+_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_216_6_220_6_if_end:
+[ "/Users/summer/work/garmin/Breeze/source/BreezeSystemFieldUtils.mc" 221 6 ]
+        %tmp.119 = lgetv %dc;
+        %tmp.120 = getv function %tmp.119 :fillCircle;
+        %tmp.122 = lgetv %minuteX.14;
+        %tmp.124 = lgetv %minuteY.15;
+        %tmp.126 = lgetv %minuteRadius.3;
+        invoke %tmp.119 %tmp.120(%tmp.122, %tmp.124, %tmp.126);
+_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_213_49_222_4_stop:
+_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_213_4_222_4_for_incr:
+[ "/Users/summer/work/garmin/Breeze/source/BreezeSystemFieldUtils.mc" 213 ]
+        %tmp.129 = lgetv %i.13;
+        %tmp.130 = add %tmp.129 1;
+        lputv %i.13 %tmp.130;
+        goto @_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_213_4_222_4_for_test;
+_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_213_4_222_4_for_end:
+_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_190_31_223_2_stop:
     }
 }
 [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeSystemFieldUtils.mc"; @line = 1; ]

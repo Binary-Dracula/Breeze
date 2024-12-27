@@ -3,6 +3,7 @@ import Toybox.Graphics;
 import Toybox.Lang;
 using Toybox.Math;
 
+// 画时间刻度
 class BreezeTickDrawer extends WatchUi.Drawable {
   // 小时刻度长
   private var _hourTickLength = 10;
@@ -33,8 +34,6 @@ class BreezeTickDrawer extends WatchUi.Drawable {
   // 颜色
   private var _colorTransparent = Graphics.COLOR_TRANSPARENT;
 
-  var utils = new BreezeSystemFieldUtils();
-
   function initialize() {
     var dictionary = {
       :identifier => "BreezeLine",
@@ -47,8 +46,6 @@ class BreezeTickDrawer extends WatchUi.Drawable {
     calculatedBase(dc);
     drawMinuteTicks(dc);
     drawCircle(dc);
-
-    utils.drawTimeBalls(dc);
   }
 
   // 计算基础值

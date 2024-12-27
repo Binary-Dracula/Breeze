@@ -5,6 +5,10 @@
     <!-- 表盘背景色 -->
     <string id="BackgroundColorTitle">Background Color</string>
 
+    <!-- 静态小时颜色 -->
+    <string id="StaticHourColorTitle">Static Hour Color</string>
+    <!-- 静态分钟颜色 -->
+    <string id="StaticMinuteColorTitle">Static Minute Color</string>
     <!-- 小时圆球颜色 -->
     <string id="HourColorTitle">Hour Color</string>
     <!-- 分钟圆球颜色 -->
@@ -23,5 +27,6 @@
     <string id="ColorBlue">Blue</string>
     <string id="ColorRed">Red</string>
     <string id="ColorYellow">Yellow</string>
+    <string id="ColorGreen">Green</string>
 
 </strings>

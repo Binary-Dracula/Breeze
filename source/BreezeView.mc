@@ -28,6 +28,9 @@ class BreezeView extends WatchUi.WatchFace {
     // 这是必需的步骤,因为我们使用了setLayout()来设置视图布局
     // 父类的onUpdate会确保所有drawable组件都被正确渲染
     View.onUpdate(dc);
+
+    utils.drawMinuteBalls(dc);
+    utils.drawTimeBalls(dc);
   }
 
   // Called when this View is removed from the screen. Save the
