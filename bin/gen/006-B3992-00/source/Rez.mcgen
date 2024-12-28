@@ -13,23 +13,23 @@ module Rez {
 
     module Layouts {
         function WatchFace(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
-            var rez_cmp_local_custom_drawable_19259595971168160156 = new Background();
+            var rez_cmp_local_custom_drawable_19235525741590462926 = new Background();
 
-            var rez_cmp_local_custom_drawable_79456065319682957778 = new BreezeHeartRate();
+            var rez_cmp_local_custom_drawable_10188211311878091959 = new BreezeHeartRate();
 
             var rez_cmp_local_bitmap_HeartRateIcon = new WatchUi.Bitmap({:identifier=>"HeartRateIcon", :rezId=>$.Rez.Drawables.HeartRateIcon, :locX=>(260 * (40 / 100.0)), :locY=>(260 * (12 / 100.0))});
             rez_cmp_local_bitmap_HeartRateIcon.setLocation((260 * (40 / 100.0)), (260 * (12 / 100.0)));
 
             var rez_cmp_local_text_HeartRate = new WatchUi.Text({:identifier=>"HeartRate", :locX=>(260 * (50 / 100.0)), :locY=>(260 * (13 / 100.0)), :text=>"100", :font=>Graphics.FONT_XTINY});
 
-            var rez_cmp_local_custom_drawable_83728112315648554926 = new BreezeStress();
+            var rez_cmp_local_custom_drawable_14273700932668625931 = new BreezeStress();
 
             var rez_cmp_local_bitmap_StressIcon = new WatchUi.Bitmap({:identifier=>"StressIcon", :rezId=>$.Rez.Drawables.StressIcon, :locX=>(260 * (40 / 100.0)), :locY=>(260 * (80 / 100.0))});
             rez_cmp_local_bitmap_StressIcon.setLocation((260 * (40 / 100.0)), (260 * (80 / 100.0)));
 
             var rez_cmp_local_text_Stress = new WatchUi.Text({:identifier=>"Stress", :locX=>(260 * (50 / 100.0)), :locY=>(260 * (80 / 100.0)), :text=>"100", :font=>Graphics.FONT_XTINY});
 
-            return [rez_cmp_local_custom_drawable_19259595971168160156, rez_cmp_local_custom_drawable_79456065319682957778, rez_cmp_local_bitmap_HeartRateIcon, rez_cmp_local_text_HeartRate, rez_cmp_local_custom_drawable_83728112315648554926, rez_cmp_local_bitmap_StressIcon, rez_cmp_local_text_Stress] as Array<WatchUi.Drawable>;
+            return [rez_cmp_local_custom_drawable_19235525741590462926, rez_cmp_local_custom_drawable_10188211311878091959, rez_cmp_local_bitmap_HeartRateIcon, rez_cmp_local_text_HeartRate, rez_cmp_local_custom_drawable_14273700932668625931, rez_cmp_local_bitmap_StressIcon, rez_cmp_local_text_Stress] as Array<WatchUi.Drawable>;
         }
     } // Layouts
 

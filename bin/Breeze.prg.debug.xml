@@ -604,11 +604,11 @@
         <entry endPc="268439645" name="stress" stackId="4" startPc="268439490"/>
         <entry endPc="268439645" name="stressLabel" stackId="5" startPc="268439490"/>
         <entry arg="true" endPc="268440143" name="dc" stackId="1" startPc="268439647"/>
-        <entry endPc="268440143" name="rez_cmp_local_custom_drawable_19259595971168160156" stackId="2" startPc="268439658"/>
-        <entry endPc="268440143" name="rez_cmp_local_custom_drawable_79456065319682957778" stackId="3" startPc="268439658"/>
+        <entry endPc="268440143" name="rez_cmp_local_custom_drawable_19235525741590462926" stackId="2" startPc="268439658"/>
+        <entry endPc="268440143" name="rez_cmp_local_custom_drawable_10188211311878091959" stackId="3" startPc="268439658"/>
         <entry endPc="268440143" name="rez_cmp_local_bitmap_HeartRateIcon" stackId="4" startPc="268439658"/>
         <entry endPc="268440143" name="rez_cmp_local_text_HeartRate" stackId="5" startPc="268439658"/>
-        <entry endPc="268440143" name="rez_cmp_local_custom_drawable_83728112315648554926" stackId="6" startPc="268439658"/>
+        <entry endPc="268440143" name="rez_cmp_local_custom_drawable_14273700932668625931" stackId="6" startPc="268439658"/>
         <entry endPc="268440143" name="rez_cmp_local_bitmap_StressIcon" stackId="7" startPc="268439658"/>
         <entry endPc="268440143" name="rez_cmp_local_text_Stress" stackId="8" startPc="268439658"/>
     </localVars>

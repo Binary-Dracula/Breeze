@@ -218,7 +218,7 @@ class BreezeSystemFieldUtils {
     var minuteHandLength = radius - minuteRadius;
 
     // 获取所有分钟的坐标
-    var minuteBalls = [];
+    var minuteBalls = [] as Array<Array<Float>>;
     for (var i = 0; i < 60; i++) {
       var minuteAngle = (i * Math.PI) / 30; // 每分钟 6 度
       var minuteX = centerX + minuteHandLength * Math.sin(minuteAngle);

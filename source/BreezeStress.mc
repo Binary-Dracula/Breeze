@@ -59,7 +59,7 @@ class BreezeStress extends WatchUi.Drawable {
         var startAngle = 150;
         var angle = startAngle - stress * 120 / 100;
         
-        var position  = breezeSystemFieldUtils.getPosition(centerX, centerY, radius, angle, offset);
+        var position  = breezeSystemFieldUtils.getPosition(centerX, centerY, radius, angle, offset) as Array<Array<Float>>;
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
         dc.setPenWidth(4);
         dc.drawLine(position[0][0], position[0][1], position[1][0], position[1][1]);

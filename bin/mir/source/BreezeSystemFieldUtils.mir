@@ -850,7 +850,7 @@ _Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_206_31_239_2_s
 [ "/Users/summer/work/garmin/Breeze/source/BreezeSystemFieldUtils.mc" 221 4 ]
         [ "_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_206_31_239_2_start" "_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_206_31_239_2_stop" ]
         %minuteBalls.8 = local;
-        %tmp.30 = newa 0;
+        %tmp.30 = newa 0 Array<Array<Float>>;
         lputv %minuteBalls.8 %tmp.30;
 [ "/Users/summer/work/garmin/Breeze/source/BreezeSystemFieldUtils.mc" 222 4 ]
         for @_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_222_4_227_4_for_test @_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_222_4_227_4_for_incr @_Users_summer_work_garmin_Breeze_source_BreezeSystemFieldUtils_mc_222_4_227_4_for_end;

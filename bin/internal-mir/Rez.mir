@@ -35,16 +35,16 @@ module Rez {
 _Users_summer_work_garmin_Breeze_bin_gen_006_B3992_00_source_Rez_mcgen_15_73_33_8_start:
 [ "/Users/summer/work/garmin/Breeze/bin/gen/006-B3992-00/source/Rez.mcgen" 16 12 ]
             [ "_Users_summer_work_garmin_Breeze_bin_gen_006_B3992_00_source_Rez_mcgen_15_73_33_8_start" "_Users_summer_work_garmin_Breeze_bin_gen_006_B3992_00_source_Rez_mcgen_15_73_33_8_stop" ]
-            %rez_cmp_local_custom_drawable_19259595971168160156.1 = local;
+            %rez_cmp_local_custom_drawable_19235525741590462926.1 = local;
             %tmp.4 = getv ? :Background;
             %tmp.1 = newc %tmp.4 ();
-            lputv %rez_cmp_local_custom_drawable_19259595971168160156.1 %tmp.1;
+            lputv %rez_cmp_local_custom_drawable_19235525741590462926.1 %tmp.1;
 [ "/Users/summer/work/garmin/Breeze/bin/gen/006-B3992-00/source/Rez.mcgen" 18 12 ]
             [ "_Users_summer_work_garmin_Breeze_bin_gen_006_B3992_00_source_Rez_mcgen_15_73_33_8_start" "_Users_summer_work_garmin_Breeze_bin_gen_006_B3992_00_source_Rez_mcgen_15_73_33_8_stop" ]
-            %rez_cmp_local_custom_drawable_79456065319682957778.2 = local;
+            %rez_cmp_local_custom_drawable_10188211311878091959.2 = local;
             %tmp.8 = getv ? :BreezeHeartRate;
             %tmp.5 = newc %tmp.8 ();
-            lputv %rez_cmp_local_custom_drawable_79456065319682957778.2 %tmp.5;
+            lputv %rez_cmp_local_custom_drawable_10188211311878091959.2 %tmp.5;
 [ "/Users/summer/work/garmin/Breeze/bin/gen/006-B3992-00/source/Rez.mcgen" 20 12 ]
             [ "_Users_summer_work_garmin_Breeze_bin_gen_006_B3992_00_source_Rez_mcgen_15_73_33_8_start" "_Users_summer_work_garmin_Breeze_bin_gen_006_B3992_00_source_Rez_mcgen_15_73_33_8_stop" ]
             %rez_cmp_local_bitmap_HeartRateIcon.3 = local;
@@ -133,10 +133,10 @@ _Users_summer_work_garmin_Breeze_bin_gen_006_B3992_00_source_Rez_mcgen_15_73_33_
             lputv %rez_cmp_local_text_HeartRate.4 %tmp.57;
 [ "/Users/summer/work/garmin/Breeze/bin/gen/006-B3992-00/source/Rez.mcgen" 25 12 ]
             [ "_Users_summer_work_garmin_Breeze_bin_gen_006_B3992_00_source_Rez_mcgen_15_73_33_8_start" "_Users_summer_work_garmin_Breeze_bin_gen_006_B3992_00_source_Rez_mcgen_15_73_33_8_stop" ]
-            %rez_cmp_local_custom_drawable_83728112315648554926.5 = local;
+            %rez_cmp_local_custom_drawable_14273700932668625931.5 = local;
             %tmp.99 = getv ? :BreezeStress;
             %tmp.96 = newc %tmp.99 ();
-            lputv %rez_cmp_local_custom_drawable_83728112315648554926.5 %tmp.96;
+            lputv %rez_cmp_local_custom_drawable_14273700932668625931.5 %tmp.96;
 [ "/Users/summer/work/garmin/Breeze/bin/gen/006-B3992-00/source/Rez.mcgen" 27 12 ]
             [ "_Users_summer_work_garmin_Breeze_bin_gen_006_B3992_00_source_Rez_mcgen_15_73_33_8_start" "_Users_summer_work_garmin_Breeze_bin_gen_006_B3992_00_source_Rez_mcgen_15_73_33_8_stop" ]
             %rez_cmp_local_bitmap_StressIcon.6 = local;
@@ -225,10 +225,10 @@ _Users_summer_work_garmin_Breeze_bin_gen_006_B3992_00_source_Rez_mcgen_15_73_33_
             lputv %rez_cmp_local_text_Stress.7 %tmp.148;
 [ "/Users/summer/work/garmin/Breeze/bin/gen/006-B3992-00/source/Rez.mcgen" 32 12 ]
             %tmp.187 = newa 7 Array<WatchUi.Drawable>;
-            %tmp.189 = lgetv %rez_cmp_local_custom_drawable_19259595971168160156.1;
+            %tmp.189 = lgetv %rez_cmp_local_custom_drawable_19235525741590462926.1;
             %tmp.190 = dup %tmp.187;
             %tmp.191 = aputv %tmp.190 0 %tmp.189;
-            %tmp.193 = lgetv %rez_cmp_local_custom_drawable_79456065319682957778.2;
+            %tmp.193 = lgetv %rez_cmp_local_custom_drawable_10188211311878091959.2;
             %tmp.194 = dup %tmp.191;
             %tmp.195 = aputv %tmp.194 1 %tmp.193;
             %tmp.197 = lgetv %rez_cmp_local_bitmap_HeartRateIcon.3;
@@ -237,7 +237,7 @@ _Users_summer_work_garmin_Breeze_bin_gen_006_B3992_00_source_Rez_mcgen_15_73_33_
             %tmp.201 = lgetv %rez_cmp_local_text_HeartRate.4;
             %tmp.202 = dup %tmp.199;
             %tmp.203 = aputv %tmp.202 3 %tmp.201;
-            %tmp.205 = lgetv %rez_cmp_local_custom_drawable_83728112315648554926.5;
+            %tmp.205 = lgetv %rez_cmp_local_custom_drawable_14273700932668625931.5;
             %tmp.206 = dup %tmp.203;
             %tmp.207 = aputv %tmp.206 4 %tmp.205;
             %tmp.209 = lgetv %rez_cmp_local_bitmap_StressIcon.6;

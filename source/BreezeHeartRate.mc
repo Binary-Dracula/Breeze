@@ -66,7 +66,7 @@ class BreezeHeartRate extends WatchUi.Drawable {
         // 70-140 10点到2点是120度
         var angle = startAngle + (heartRateForCaculate - 70) * 120 / (140 - 70);
 
-        var position  = breezeSystemFieldUtils.getPosition(centerX, centerY, radius, angle, offset);
+        var position  = breezeSystemFieldUtils.getPosition(centerX, centerY, radius, angle, offset) as Array<Array<Float>>;
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
         dc.setPenWidth(4);
         dc.drawLine(position[0][0], position[0][1], position[1][0], position[1][1]);
