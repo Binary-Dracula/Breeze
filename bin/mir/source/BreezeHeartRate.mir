@@ -23,191 +23,340 @@ class BreezeHeartRate extends WatchUi.Drawable{
     var breezeSystemFieldUtils;
     [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeHeartRate.mc"; @line = 11; ]
     function initialize() as Void {
+_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_11_26_14_4_start:
+[ "/Users/summer/work/garmin/Breeze/source/BreezeHeartRate.mc" 12 8 ]
+        %tmp.2 = getv ? :Drawable;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        %tmp.4 = newd 0;
+        invoke %tmp.2 %tmp.3(%tmp.4);
+_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_11_26_14_4_stop:
     }
-    [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeHeartRate.mc"; @line = 15; ]
+    [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeHeartRate.mc"; @line = 16; ]
     function draw(dc as Dc) as Void {
-_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_15_36_18_4_start:
-[ "/Users/summer/work/garmin/Breeze/source/BreezeHeartRate.mc" 17 8 ]
+_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_16_36_20_4_start:
+[ "/Users/summer/work/garmin/Breeze/source/BreezeHeartRate.mc" 18 8 ]
         %tmp.1 = self;
         %tmp.2 = getv function %tmp.1 :drawHeartRateArc;
         %tmp.4 = lgetv %dc;
         invoke %tmp.1 %tmp.2(%tmp.4);
-_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_15_36_18_4_stop:
+[ "/Users/summer/work/garmin/Breeze/source/BreezeHeartRate.mc" 19 8 ]
+        %tmp.5 = self;
+        %tmp.6 = getv function %tmp.5 :onHeartRateChanged;
+        %tmp.8 = lgetv %dc;
+        invoke %tmp.5 %tmp.6(%tmp.8);
+_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_16_36_20_4_stop:
     }
-    [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeHeartRate.mc"; @line = 20; ]
+    [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeHeartRate.mc"; @line = 22; ]
     function drawHeartRateArc(dc as Dc) {
-_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_20_40_49_4_start:
-[ "/Users/summer/work/garmin/Breeze/source/BreezeHeartRate.mc" 21 8 ]
-        [ "_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_20_40_49_4_start" "_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_20_40_49_4_stop" ]
-        %heartRate.1 = local;
-        %tmp.2 = getv ? :breezeSystemFieldUtils;
-        %tmp.3 = getv function %tmp.2 :getSystemHeartRate;
-        %tmp.4 = invoke %tmp.2 %tmp.3();
-        lputv %heartRate.1 %tmp.4;
+_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_22_40_49_4_start:
 [ "/Users/summer/work/garmin/Breeze/source/BreezeHeartRate.mc" 23 8 ]
-        [ "_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_20_40_49_4_start" "_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_20_40_49_4_stop" ]
-        %centerX.2 = local;
-        %tmp.5 = lgetv %dc;
-        %tmp.6 = getv function %tmp.5 :getWidth;
-        %tmp.7 = invoke %tmp.5 %tmp.6();
-        %tmp.8 = 2;
-        %tmp.9 = div %tmp.7 %tmp.8;
-        lputv %centerX.2 %tmp.9;
+        [ "_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_22_40_49_4_start" "_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_22_40_49_4_stop" ]
+        %centerX.1 = local;
+        %tmp.1 = lgetv %dc;
+        %tmp.2 = getv function %tmp.1 :getWidth;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        %tmp.4 = 2;
+        %tmp.5 = div %tmp.3 %tmp.4;
+        lputv %centerX.1 %tmp.5;
 [ "/Users/summer/work/garmin/Breeze/source/BreezeHeartRate.mc" 24 8 ]
-        [ "_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_20_40_49_4_start" "_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_20_40_49_4_stop" ]
-        %centerY.3 = local;
-        %tmp.10 = lgetv %dc;
-        %tmp.11 = getv function %tmp.10 :getHeight;
-        %tmp.12 = invoke %tmp.10 %tmp.11();
-        %tmp.13 = 2;
-        %tmp.14 = div %tmp.12 %tmp.13;
-        lputv %centerY.3 %tmp.14;
+        [ "_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_22_40_49_4_start" "_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_22_40_49_4_stop" ]
+        %centerY.2 = local;
+        %tmp.6 = lgetv %dc;
+        %tmp.7 = getv function %tmp.6 :getHeight;
+        %tmp.8 = invoke %tmp.6 %tmp.7();
+        %tmp.9 = 2;
+        %tmp.10 = div %tmp.8 %tmp.9;
+        lputv %centerY.2 %tmp.10;
 [ "/Users/summer/work/garmin/Breeze/source/BreezeHeartRate.mc" 25 8 ]
-        [ "_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_20_40_49_4_start" "_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_20_40_49_4_stop" ]
-        %radius.4 = local;
-        %tmp.16 = lgetv %centerX.2;
-        %tmp.17 = 20;
-        %tmp.18 = sub %tmp.16 %tmp.17;
-        lputv %radius.4 %tmp.18;
+        [ "_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_22_40_49_4_start" "_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_22_40_49_4_stop" ]
+        %radius.3 = local;
+        %tmp.12 = lgetv %centerX.1;
+        %tmp.13 = 20;
+        %tmp.14 = sub %tmp.12 %tmp.13;
+        lputv %radius.3 %tmp.14;
 [ "/Users/summer/work/garmin/Breeze/source/BreezeHeartRate.mc" 26 8 ]
-        [ "_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_20_40_49_4_start" "_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_20_40_49_4_stop" ]
-        %startAngle.5 = local;
-        %tmp.19 = 150;
-        lputv %startAngle.5 %tmp.19;
+        [ "_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_22_40_49_4_start" "_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_22_40_49_4_stop" ]
+        %startAngle.4 = local;
+        %tmp.15 = 150;
+        lputv %startAngle.4 %tmp.15;
 [ "/Users/summer/work/garmin/Breeze/source/BreezeHeartRate.mc" 27 8 ]
-        [ "_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_20_40_49_4_start" "_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_20_40_49_4_stop" ]
-        %sweepAngle.6 = local;
-        %tmp.20 = 30;
-        lputv %sweepAngle.6 %tmp.20;
+        [ "_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_22_40_49_4_start" "_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_22_40_49_4_stop" ]
+        %sweepAngle.5 = local;
+        %tmp.16 = 30;
+        lputv %sweepAngle.5 %tmp.16;
 [ "/Users/summer/work/garmin/Breeze/source/BreezeHeartRate.mc" 28 8 ]
-        [ "_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_20_40_49_4_start" "_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_20_40_49_4_stop" ]
-        %count.7 = local;
-        %tmp.21 = 4;
-        lputv %count.7 %tmp.21;
+        [ "_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_22_40_49_4_start" "_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_22_40_49_4_stop" ]
+        %count.6 = local;
+        %tmp.17 = 4;
+        lputv %count.6 %tmp.17;
 [ "/Users/summer/work/garmin/Breeze/source/BreezeHeartRate.mc" 30 8 ]
-        %tmp.22 = lgetv %dc;
-        %tmp.23 = getv function %tmp.22 :setPenWidth;
-        %tmp.24 = 4;
-        invoke %tmp.22 %tmp.23(%tmp.24);
+        %tmp.18 = lgetv %dc;
+        %tmp.19 = getv function %tmp.18 :setPenWidth;
+        %tmp.20 = 4;
+        invoke %tmp.18 %tmp.19(%tmp.20);
 [ "/Users/summer/work/garmin/Breeze/source/BreezeHeartRate.mc" 31 8 ]
         for @_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_31_8_48_8_for_test @_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_31_8_48_8_for_incr @_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_31_8_48_8_for_end;
 _Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_31_8_48_8_for_init:
         [ "_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_31_8_48_8_for_begin" "_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_31_8_48_8_for_end" ]
-        %i.8 = local;
-        %tmp.25 = 0;
-        lputv %i.8 %tmp.25;
+        %i.7 = local;
+        %tmp.21 = 0;
+        lputv %i.7 %tmp.21;
 _Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_31_8_48_8_for_test:
-        %tmp.27 = lgetv %i.8;
-        %tmp.29 = lgetv %count.7;
-        %tmp.30 = lt %tmp.27 %tmp.29;
-        bf %tmp.30 @_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_31_8_48_8_for_end;
+        %tmp.23 = lgetv %i.7;
+        %tmp.25 = lgetv %count.6;
+        %tmp.26 = lt %tmp.23 %tmp.25;
+        bf %tmp.26 @_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_31_8_48_8_for_end;
 _Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_31_8_48_8_for_begin:
 _Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_31_37_48_8_start:
 [ "/Users/summer/work/garmin/Breeze/source/BreezeHeartRate.mc" 32 12 ]
-        %tmp.32 = lgetv %i.8;
-        push %tmp.32;
-        switch %tmp.32 @_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_32_12_45_12_switchStmtEnd;
+        %tmp.28 = lgetv %i.7;
+        push %tmp.28;
+        switch %tmp.28 @_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_32_12_45_12_switchStmtEnd;
 _Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_32_12_45_12_switchStmtBegin:
 [ "/Users/summer/work/garmin/Breeze/source/BreezeHeartRate.mc" 33 16 ]
-        %tmp.33 = dup %tmp.32;
-        %tmp.34 = 0;
+        %tmp.29 = dup %tmp.28;
+        %tmp.30 = 0;
+        %tmp.31 = getv function %tmp.29 :equals;
+        %tmp.32 = invoke %tmp.29 %tmp.31 (%tmp.30);
+        bt %tmp.32 @_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_33_16_35_25_switchCase;
+[ "/Users/summer/work/garmin/Breeze/source/BreezeHeartRate.mc" 36 16 ]
+        %tmp.33 = dup %tmp.28;
+        %tmp.34 = 1;
         %tmp.35 = getv function %tmp.33 :equals;
         %tmp.36 = invoke %tmp.33 %tmp.35 (%tmp.34);
-        bt %tmp.36 @_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_33_16_35_25_switchCase;
-[ "/Users/summer/work/garmin/Breeze/source/BreezeHeartRate.mc" 36 16 ]
-        %tmp.37 = dup %tmp.32;
-        %tmp.38 = 1;
+        bt %tmp.36 @_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_36_16_38_25_switchCase;
+[ "/Users/summer/work/garmin/Breeze/source/BreezeHeartRate.mc" 39 16 ]
+        %tmp.37 = dup %tmp.28;
+        %tmp.38 = 2;
         %tmp.39 = getv function %tmp.37 :equals;
         %tmp.40 = invoke %tmp.37 %tmp.39 (%tmp.38);
-        bt %tmp.40 @_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_36_16_38_25_switchCase;
-[ "/Users/summer/work/garmin/Breeze/source/BreezeHeartRate.mc" 39 16 ]
-        %tmp.41 = dup %tmp.32;
-        %tmp.42 = 2;
+        bt %tmp.40 @_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_39_16_41_25_switchCase;
+[ "/Users/summer/work/garmin/Breeze/source/BreezeHeartRate.mc" 42 16 ]
+        %tmp.41 = dup %tmp.28;
+        %tmp.42 = 3;
         %tmp.43 = getv function %tmp.41 :equals;
         %tmp.44 = invoke %tmp.41 %tmp.43 (%tmp.42);
-        bt %tmp.44 @_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_39_16_41_25_switchCase;
-[ "/Users/summer/work/garmin/Breeze/source/BreezeHeartRate.mc" 42 16 ]
-        %tmp.45 = dup %tmp.32;
-        %tmp.46 = 3;
-        %tmp.47 = getv function %tmp.45 :equals;
-        %tmp.48 = invoke %tmp.45 %tmp.47 (%tmp.46);
-        bt %tmp.48 @_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_42_16_44_25_switchCase;
+        bt %tmp.44 @_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_42_16_44_25_switchCase;
 _Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_32_12_45_12_switchStmtDefault:
         goto @_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_32_12_45_12_defaultCodeBegin;
 _Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_33_16_35_25_switchCase:
 [ "/Users/summer/work/garmin/Breeze/source/BreezeHeartRate.mc" 34 20 ]
-        %tmp.49 = lgetv %dc;
-        %tmp.50 = getv function %tmp.49 :setColor;
-        %tmp.51 = getm $.Toybox.Graphics;
-        %tmp.52 = getv %tmp.51 :COLOR_LT_GRAY;
-        %tmp.53 = getm $.Toybox.Graphics;
-        %tmp.54 = getv %tmp.53 :COLOR_TRANSPARENT;
-        invoke %tmp.49 %tmp.50(%tmp.52, %tmp.54);
+        %tmp.45 = lgetv %dc;
+        %tmp.46 = getv function %tmp.45 :setColor;
+        %tmp.47 = getm $.Toybox.Graphics;
+        %tmp.48 = getv %tmp.47 :COLOR_LT_GRAY;
+        %tmp.49 = getm $.Toybox.Graphics;
+        %tmp.50 = getv %tmp.49 :COLOR_TRANSPARENT;
+        invoke %tmp.45 %tmp.46(%tmp.48, %tmp.50);
 [ "/Users/summer/work/garmin/Breeze/source/BreezeHeartRate.mc" 35 20 ]
         goto break @_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_32_12_45_12_switchStmtEnd;
 _Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_36_16_38_25_switchCase:
 [ "/Users/summer/work/garmin/Breeze/source/BreezeHeartRate.mc" 37 20 ]
-        %tmp.55 = lgetv %dc;
-        %tmp.56 = getv function %tmp.55 :setColor;
-        %tmp.57 = getm $.Toybox.Graphics;
-        %tmp.58 = getv %tmp.57 :COLOR_GREEN;
-        %tmp.59 = getm $.Toybox.Graphics;
-        %tmp.60 = getv %tmp.59 :COLOR_TRANSPARENT;
-        invoke %tmp.55 %tmp.56(%tmp.58, %tmp.60);
+        %tmp.51 = lgetv %dc;
+        %tmp.52 = getv function %tmp.51 :setColor;
+        %tmp.53 = getm $.Toybox.Graphics;
+        %tmp.54 = getv %tmp.53 :COLOR_GREEN;
+        %tmp.55 = getm $.Toybox.Graphics;
+        %tmp.56 = getv %tmp.55 :COLOR_TRANSPARENT;
+        invoke %tmp.51 %tmp.52(%tmp.54, %tmp.56);
 [ "/Users/summer/work/garmin/Breeze/source/BreezeHeartRate.mc" 38 20 ]
         goto break @_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_32_12_45_12_switchStmtEnd;
 _Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_39_16_41_25_switchCase:
 [ "/Users/summer/work/garmin/Breeze/source/BreezeHeartRate.mc" 40 20 ]
-        %tmp.61 = lgetv %dc;
-        %tmp.62 = getv function %tmp.61 :setColor;
-        %tmp.63 = getm $.Toybox.Graphics;
-        %tmp.64 = getv %tmp.63 :COLOR_ORANGE;
-        %tmp.65 = getm $.Toybox.Graphics;
-        %tmp.66 = getv %tmp.65 :COLOR_TRANSPARENT;
-        invoke %tmp.61 %tmp.62(%tmp.64, %tmp.66);
+        %tmp.57 = lgetv %dc;
+        %tmp.58 = getv function %tmp.57 :setColor;
+        %tmp.59 = getm $.Toybox.Graphics;
+        %tmp.60 = getv %tmp.59 :COLOR_ORANGE;
+        %tmp.61 = getm $.Toybox.Graphics;
+        %tmp.62 = getv %tmp.61 :COLOR_TRANSPARENT;
+        invoke %tmp.57 %tmp.58(%tmp.60, %tmp.62);
 [ "/Users/summer/work/garmin/Breeze/source/BreezeHeartRate.mc" 41 20 ]
         goto break @_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_32_12_45_12_switchStmtEnd;
 _Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_42_16_44_25_switchCase:
 [ "/Users/summer/work/garmin/Breeze/source/BreezeHeartRate.mc" 43 20 ]
-        %tmp.67 = lgetv %dc;
-        %tmp.68 = getv function %tmp.67 :setColor;
-        %tmp.69 = getm $.Toybox.Graphics;
-        %tmp.70 = getv %tmp.69 :COLOR_RED;
-        %tmp.71 = getm $.Toybox.Graphics;
-        %tmp.72 = getv %tmp.71 :COLOR_TRANSPARENT;
-        invoke %tmp.67 %tmp.68(%tmp.70, %tmp.72);
+        %tmp.63 = lgetv %dc;
+        %tmp.64 = getv function %tmp.63 :setColor;
+        %tmp.65 = getm $.Toybox.Graphics;
+        %tmp.66 = getv %tmp.65 :COLOR_RED;
+        %tmp.67 = getm $.Toybox.Graphics;
+        %tmp.68 = getv %tmp.67 :COLOR_TRANSPARENT;
+        invoke %tmp.63 %tmp.64(%tmp.66, %tmp.68);
 [ "/Users/summer/work/garmin/Breeze/source/BreezeHeartRate.mc" 44 20 ]
         goto break @_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_32_12_45_12_switchStmtEnd;
 _Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_32_12_45_12_defaultCodeBegin:
 _Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_32_12_45_12_switchStmtEnd:
         pop;
 [ "/Users/summer/work/garmin/Breeze/source/BreezeHeartRate.mc" 46 12 ]
-        %tmp.73 = lgetv %dc;
-        %tmp.74 = getv function %tmp.73 :drawArc;
-        %tmp.76 = lgetv %centerX.2;
-        %tmp.78 = lgetv %centerY.3;
-        %tmp.80 = lgetv %radius.4;
-        %tmp.81 = getm $.Toybox.Graphics;
-        %tmp.82 = getv %tmp.81 :ARC_CLOCKWISE;
-        %tmp.84 = lgetv %startAngle.5;
-        %tmp.86 = lgetv %startAngle.5;
-        %tmp.88 = lgetv %sweepAngle.6;
-        %tmp.89 = sub %tmp.86 %tmp.88;
-        invoke %tmp.73 %tmp.74(%tmp.76, %tmp.78, %tmp.80, %tmp.82, %tmp.84, %tmp.89);
+        %tmp.69 = lgetv %dc;
+        %tmp.70 = getv function %tmp.69 :drawArc;
+        %tmp.72 = lgetv %centerX.1;
+        %tmp.74 = lgetv %centerY.2;
+        %tmp.76 = lgetv %radius.3;
+        %tmp.77 = getm $.Toybox.Graphics;
+        %tmp.78 = getv %tmp.77 :ARC_CLOCKWISE;
+        %tmp.80 = lgetv %startAngle.4;
+        %tmp.82 = lgetv %startAngle.4;
+        %tmp.84 = lgetv %sweepAngle.5;
+        %tmp.85 = sub %tmp.82 %tmp.84;
+        invoke %tmp.69 %tmp.70(%tmp.72, %tmp.74, %tmp.76, %tmp.78, %tmp.80, %tmp.85);
 [ "/Users/summer/work/garmin/Breeze/source/BreezeHeartRate.mc" 47 12 ]
-        %tmp.90 = lgetv %startAngle.5;
-        %tmp.92 = lgetv %sweepAngle.6;
-        %tmp.93 = sub %tmp.90 %tmp.92;
-        lputv %startAngle.5 %tmp.93;
+        %tmp.86 = lgetv %startAngle.4;
+        %tmp.88 = lgetv %sweepAngle.5;
+        %tmp.89 = sub %tmp.86 %tmp.88;
+        lputv %startAngle.4 %tmp.89;
 _Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_31_37_48_8_stop:
 _Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_31_8_48_8_for_incr:
 [ "/Users/summer/work/garmin/Breeze/source/BreezeHeartRate.mc" 31 ]
-        %tmp.96 = lgetv %i.8;
-        %tmp.97 = add %tmp.96 1;
-        lputv %i.8 %tmp.97;
+        %tmp.92 = lgetv %i.7;
+        %tmp.93 = add %tmp.92 1;
+        lputv %i.7 %tmp.93;
         goto @_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_31_8_48_8_for_test;
 _Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_31_8_48_8_for_end:
-_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_20_40_49_4_stop:
+_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_22_40_49_4_stop:
+    }
+    [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeHeartRate.mc"; @line = 51; ]
+    function onHeartRateChanged(dc as Dc) {
+_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_51_42_73_4_start:
+[ "/Users/summer/work/garmin/Breeze/source/BreezeHeartRate.mc" 52 8 ]
+        [ "_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_51_42_73_4_start" "_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_51_42_73_4_stop" ]
+        %heartRate.1 = local;
+        %tmp.2 = getv ? :breezeSystemFieldUtils;
+        %tmp.3 = getv function %tmp.2 :getSystemHeartRate;
+        %tmp.4 = invoke %tmp.2 %tmp.3();
+        lputv %heartRate.1 %tmp.4;
+[ "/Users/summer/work/garmin/Breeze/source/BreezeHeartRate.mc" 53 8 ]
+        [ "_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_51_42_73_4_start" "_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_51_42_73_4_stop" ]
+        %heartRateForCaculate.2 = local;
+        %tmp.6 = lgetv %heartRate.1;
+        lputv %heartRateForCaculate.2 %tmp.6;
+[ "/Users/summer/work/garmin/Breeze/source/BreezeHeartRate.mc" 54 8 ]
+_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_54_8_56_8_if_stmt:
+        %tmp.8 = lgetv %heartRateForCaculate.2;
+        %tmp.9 = 70;
+        %tmp.10 = lt %tmp.8 %tmp.9;
+        bf %tmp.10 @_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_54_8_56_8_if_end;
+_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_54_8_56_8_if_true:
+_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_54_38_56_8_start:
+[ "/Users/summer/work/garmin/Breeze/source/BreezeHeartRate.mc" 55 12 ]
+        %tmp.11 = 70;
+        lputv %heartRateForCaculate.2 %tmp.11;
+_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_54_38_56_8_stop:
+        goto @_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_54_8_56_8_if_end;
+_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_54_8_56_8_if_end:
+[ "/Users/summer/work/garmin/Breeze/source/BreezeHeartRate.mc" 57 8 ]
+_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_57_8_59_8_if_stmt:
+        %tmp.13 = lgetv %heartRateForCaculate.2;
+        %tmp.14 = 140;
+        %tmp.15 = gt %tmp.13 %tmp.14;
+        bf %tmp.15 @_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_57_8_59_8_if_end;
+_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_57_8_59_8_if_true:
+_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_57_40_59_8_start:
+[ "/Users/summer/work/garmin/Breeze/source/BreezeHeartRate.mc" 58 12 ]
+        %tmp.16 = 140;
+        lputv %heartRateForCaculate.2 %tmp.16;
+_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_57_40_59_8_stop:
+        goto @_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_57_8_59_8_if_end;
+_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_57_8_59_8_if_end:
+[ "/Users/summer/work/garmin/Breeze/source/BreezeHeartRate.mc" 61 8 ]
+        [ "_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_51_42_73_4_start" "_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_51_42_73_4_stop" ]
+        %centerX.3 = local;
+        %tmp.17 = lgetv %dc;
+        %tmp.18 = getv function %tmp.17 :getWidth;
+        %tmp.19 = invoke %tmp.17 %tmp.18();
+        %tmp.20 = 2;
+        %tmp.21 = div %tmp.19 %tmp.20;
+        lputv %centerX.3 %tmp.21;
+[ "/Users/summer/work/garmin/Breeze/source/BreezeHeartRate.mc" 62 8 ]
+        [ "_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_51_42_73_4_start" "_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_51_42_73_4_stop" ]
+        %centerY.4 = local;
+        %tmp.22 = lgetv %dc;
+        %tmp.23 = getv function %tmp.22 :getHeight;
+        %tmp.24 = invoke %tmp.22 %tmp.23();
+        %tmp.25 = 2;
+        %tmp.26 = div %tmp.24 %tmp.25;
+        lputv %centerY.4 %tmp.26;
+[ "/Users/summer/work/garmin/Breeze/source/BreezeHeartRate.mc" 63 8 ]
+        [ "_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_51_42_73_4_start" "_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_51_42_73_4_stop" ]
+        %radius.5 = local;
+        %tmp.28 = lgetv %centerX.3;
+        %tmp.29 = 20;
+        %tmp.30 = sub %tmp.28 %tmp.29;
+        lputv %radius.5 %tmp.30;
+[ "/Users/summer/work/garmin/Breeze/source/BreezeHeartRate.mc" 64 8 ]
+        [ "_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_51_42_73_4_start" "_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_51_42_73_4_stop" ]
+        %offset.6 = local;
+        %tmp.31 = 2;
+        lputv %offset.6 %tmp.31;
+[ "/Users/summer/work/garmin/Breeze/source/BreezeHeartRate.mc" 65 8 ]
+        [ "_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_51_42_73_4_start" "_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_51_42_73_4_stop" ]
+        %startAngle.7 = local;
+        %tmp.32 = 210;
+        lputv %startAngle.7 %tmp.32;
+[ "/Users/summer/work/garmin/Breeze/source/BreezeHeartRate.mc" 67 8 ]
+        [ "_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_51_42_73_4_start" "_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_51_42_73_4_stop" ]
+        %angle.8 = local;
+        %tmp.34 = lgetv %startAngle.7;
+        %tmp.36 = lgetv %heartRateForCaculate.2;
+        %tmp.37 = 70;
+        %tmp.38 = sub %tmp.36 %tmp.37;
+        %tmp.39 = 120;
+        %tmp.40 = mul %tmp.38 %tmp.39;
+        %tmp.41 = 140;
+        %tmp.42 = 70;
+        %tmp.43 = sub %tmp.41 %tmp.42;
+        %tmp.44 = div %tmp.40 %tmp.43;
+        %tmp.45 = add %tmp.34 %tmp.44;
+        lputv %angle.8 %tmp.45;
+[ "/Users/summer/work/garmin/Breeze/source/BreezeHeartRate.mc" 69 8 ]
+        [ "_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_51_42_73_4_start" "_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_51_42_73_4_stop" ]
+        %position.9 = local;
+        %tmp.47 = getv ? :breezeSystemFieldUtils;
+        %tmp.48 = getv function %tmp.47 :getPosition;
+        %tmp.50 = lgetv %centerX.3;
+        %tmp.52 = lgetv %centerY.4;
+        %tmp.54 = lgetv %radius.5;
+        %tmp.56 = lgetv %angle.8;
+        %tmp.58 = lgetv %offset.6;
+        %tmp.59 = invoke %tmp.47 %tmp.48(%tmp.50, %tmp.52, %tmp.54, %tmp.56, %tmp.58);
+        lputv %position.9 %tmp.59;
+[ "/Users/summer/work/garmin/Breeze/source/BreezeHeartRate.mc" 70 8 ]
+        %tmp.60 = lgetv %dc;
+        %tmp.61 = getv function %tmp.60 :setColor;
+        %tmp.62 = getm $.Toybox.Graphics;
+        %tmp.63 = getv %tmp.62 :COLOR_WHITE;
+        %tmp.64 = getm $.Toybox.Graphics;
+        %tmp.65 = getv %tmp.64 :COLOR_TRANSPARENT;
+        invoke %tmp.60 %tmp.61(%tmp.63, %tmp.65);
+[ "/Users/summer/work/garmin/Breeze/source/BreezeHeartRate.mc" 71 8 ]
+        %tmp.66 = lgetv %dc;
+        %tmp.67 = getv function %tmp.66 :setPenWidth;
+        %tmp.68 = 4;
+        invoke %tmp.66 %tmp.67(%tmp.68);
+[ "/Users/summer/work/garmin/Breeze/source/BreezeHeartRate.mc" 72 8 ]
+        %tmp.69 = lgetv %dc;
+        %tmp.70 = getv function %tmp.69 :drawLine;
+        %tmp.72 = lgetv %position.9;
+        %tmp.73 = 0;
+        %tmp.74 = agetv %tmp.72 %tmp.73;
+        %tmp.75 = 0;
+        %tmp.76 = agetv %tmp.74 %tmp.75;
+        %tmp.78 = lgetv %position.9;
+        %tmp.79 = 0;
+        %tmp.80 = agetv %tmp.78 %tmp.79;
+        %tmp.81 = 1;
+        %tmp.82 = agetv %tmp.80 %tmp.81;
+        %tmp.84 = lgetv %position.9;
+        %tmp.85 = 1;
+        %tmp.86 = agetv %tmp.84 %tmp.85;
+        %tmp.87 = 0;
+        %tmp.88 = agetv %tmp.86 %tmp.87;
+        %tmp.90 = lgetv %position.9;
+        %tmp.91 = 1;
+        %tmp.92 = agetv %tmp.90 %tmp.91;
+        %tmp.93 = 1;
+        %tmp.94 = agetv %tmp.92 %tmp.93;
+        invoke %tmp.69 %tmp.70(%tmp.76, %tmp.82, %tmp.88, %tmp.94);
+_Users_summer_work_garmin_Breeze_source_BreezeHeartRate_mc_51_42_73_4_stop:
     }
 }
 [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeHeartRate.mc"; @line = 1; ]

@@ -5,6 +5,7 @@ import Toybox.Activity;
 import Toybox.ActivityMonitor;
 import Toybox.Graphics;
 import Toybox.Math;
+import Toybox.SensorHistory;
 import Toybox.Application;
 
 class BreezeSystemFieldUtils {
@@ -79,7 +80,22 @@ class BreezeSystemFieldUtils {
   // 获取当前心率
   function getSystemHeartRate() as Lang.Number {
     var heartRate = Activity.getActivityInfo().currentHeartRate;
-    return heartRate ? heartRate.toString() : 170;
+    return heartRate ? heartRate.toString() : 100;
+  }
+
+  // 获取当前压力(Pascals (Pa))值，如果支持，应该不是身体压力
+  function getStressData() as Lang.Number {
+    if ((Toybox has :SensorHistory) && (SensorHistory has :getStressHistory)) {
+      var stressHistory = SensorHistory.getStressHistory({});
+      if (stressHistory != null) {
+          var sample = stressHistory.next() as SensorHistory.SensorSample;
+          if (sample != null) {
+              var stress = sample.data as Lang.Number;
+              return stress;
+          }
+      }
+    }
+    return 50;
   }
 
   // 获取当前步数
@@ -221,4 +237,16 @@ class BreezeSystemFieldUtils {
       dc.fillCircle(minuteX, minuteY, minuteRadius);
     }
   }
+
+  // 根据圆心坐标，半径，角度，偏移量获取坐标，如果offset是0则不是计算一条线的起始点和终点坐标
+  function getPosition(x as Float, y as Float, radius as Float, angle as  Float, offset as Float) as Lang.Array<Lang.Array<Float>> {
+    // 角度转弧度
+    var radian = angle * Math.PI / 180;
+    var x1 = x + radius * Math.cos(radian);
+    var y1 = y + radius * Math.sin(radian);
+    var x2 = x + (radius - offset) * Math.cos(radian);
+    var y2 = y + (radius - offset) * Math.sin(radian);
+    return [[x1, y1], [x2, y2]];
+  }
+
 }

@@ -31,6 +31,16 @@ class BreezeView extends WatchUi.WatchFace {
 
     utils.drawMinuteBalls(dc);
     utils.drawTimeBalls(dc);
+
+    // 当前心率
+    var heartRate = utils.getSystemHeartRate();
+    var heartRateLabel = findDrawableById("HeartRate") as Text;
+    heartRateLabel.setText(heartRate.format("%d"));
+
+    // 当前压力值
+    var stress = utils.getStressData();
+    var stressLabel = findDrawableById("Stress") as Text;
+    stressLabel.setText(stress.format("%d"));
   }
 
   // Called when this View is removed from the screen. Save the

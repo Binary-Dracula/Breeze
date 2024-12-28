@@ -29,7 +29,7 @@
   }, {
     "key" : "StaticHourColor",
     "valueType" : "number",
-    "defaultValue" : 65280,
+    "defaultValue" : 16777215,
     "configTitle" : "StaticHourColorTitle",
     "configPrompt" : null,
     "configType" : "list",

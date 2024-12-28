@@ -1,5 +1,14 @@
 <layout id="WatchFace">
     <drawable class="Background" />
+
+    <!-- 心率 -->
     <drawable class="BreezeHeartRate" />
+    <bitmap id="HeartRateIcon" filename = "../images/heartrate_icon.png" x="40%" y="12%" />
+    <label id="HeartRate" x="50%" y="13%"  text="100" font = "Graphics.FONT_XTINY"/>
+
+    <!-- 压力 -->
+    <drawable class="BreezeStress" />
+    <bitmap id="StressIcon" filename = "../images/heartrate_icon.png" x="40%" y="80%" />
+    <label id="Stress" x="50%" y="80%"  text="100" font = "Graphics.FONT_XTINY"/>
 </layout>
 
