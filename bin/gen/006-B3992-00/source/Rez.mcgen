@@ -6,6 +6,8 @@ using Toybox.Graphics as Gfx;
 
 module Rez {
     module Drawables {
+        (:initialized) var Bluetooth as ResourceId;
+        (:initialized) var BluetoothDisabled as ResourceId;
         (:initialized) var HeartRateIcon as ResourceId;
         (:initialized) var StressIcon as ResourceId;
         (:initialized) var LauncherIcon as ResourceId;
@@ -13,23 +15,42 @@ module Rez {
 
     module Layouts {
         function WatchFace(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
-            var rez_cmp_local_custom_drawable_19235525741590462926 = new Background();
+            var rez_cmp_local_custom_drawable_10884784465777752811 = new Background();
 
-            var rez_cmp_local_custom_drawable_10188211311878091959 = new BreezeHeartRate();
+            var rez_cmp_local_text_Time = new WatchUi.Text({:identifier=>"Time", :locX=>(260 * (50 / 100.0)), :locY=>(260 * (40 / 100.0)), :text=>"00:00", :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_NUMBER_MEDIUM});
+
+            var rez_cmp_local_custom_drawable_16925142799190241851 = new BreezeHeartRate();
 
             var rez_cmp_local_bitmap_HeartRateIcon = new WatchUi.Bitmap({:identifier=>"HeartRateIcon", :rezId=>$.Rez.Drawables.HeartRateIcon, :locX=>(260 * (40 / 100.0)), :locY=>(260 * (12 / 100.0))});
             rez_cmp_local_bitmap_HeartRateIcon.setLocation((260 * (40 / 100.0)), (260 * (12 / 100.0)));
 
             var rez_cmp_local_text_HeartRate = new WatchUi.Text({:identifier=>"HeartRate", :locX=>(260 * (50 / 100.0)), :locY=>(260 * (13 / 100.0)), :text=>"100", :font=>Graphics.FONT_XTINY});
 
-            var rez_cmp_local_custom_drawable_14273700932668625931 = new BreezeStress();
+            var rez_cmp_local_custom_drawable_20656131191026769883 = new BreezeStress();
 
             var rez_cmp_local_bitmap_StressIcon = new WatchUi.Bitmap({:identifier=>"StressIcon", :rezId=>$.Rez.Drawables.StressIcon, :locX=>(260 * (40 / 100.0)), :locY=>(260 * (80 / 100.0))});
             rez_cmp_local_bitmap_StressIcon.setLocation((260 * (40 / 100.0)), (260 * (80 / 100.0)));
 
-            var rez_cmp_local_text_Stress = new WatchUi.Text({:identifier=>"Stress", :locX=>(260 * (50 / 100.0)), :locY=>(260 * (80 / 100.0)), :text=>"100", :font=>Graphics.FONT_XTINY});
+            var rez_cmp_local_text_Stress = new WatchUi.Text({:identifier=>"Stress", :locX=>(260 * (50 / 100.0)), :locY=>(260 * (81 / 100.0)), :text=>"100", :font=>Graphics.FONT_XTINY});
 
-            return [rez_cmp_local_custom_drawable_19235525741590462926, rez_cmp_local_custom_drawable_10188211311878091959, rez_cmp_local_bitmap_HeartRateIcon, rez_cmp_local_text_HeartRate, rez_cmp_local_custom_drawable_14273700932668625931, rez_cmp_local_bitmap_StressIcon, rez_cmp_local_text_Stress] as Array<WatchUi.Drawable>;
+            var rez_cmp_local_text_Calories = new WatchUi.Text({:identifier=>"Calories", :locX=>(260 * (16 / 100.0)), :locY=>(260 * (30 / 100.0)), :text=>"1000", :font=>Graphics.FONT_XTINY});
+
+            var rez_cmp_local_text_Steps = new WatchUi.Text({:identifier=>"Steps", :locX=>(260 * (16 / 100.0)), :locY=>(260 * (38 / 100.0)), :text=>"10000", :font=>Graphics.FONT_XTINY});
+
+            var rez_cmp_local_text_MonthAndDay = new WatchUi.Text({:identifier=>"MonthAndDay", :locX=>(260 * (85 / 100.0)), :locY=>(260 * (30 / 100.0)), :text=>"01", :justification=>Graphics.TEXT_JUSTIFY_RIGHT, :font=>Graphics.FONT_XTINY});
+
+            var rez_cmp_local_text_Week = new WatchUi.Text({:identifier=>"Week", :locX=>(260 * (85 / 100.0)), :locY=>(260 * (38 / 100.0)), :text=>"星期一", :justification=>Graphics.TEXT_JUSTIFY_RIGHT, :font=>Graphics.FONT_XTINY});
+
+            var rez_cmp_local_text_BodyBattery = new WatchUi.Text({:identifier=>"BodyBattery", :locX=>(260 * (16 / 100.0)), :locY=>(260 * (54 / 100.0)), :text=>"100%", :font=>Graphics.FONT_XTINY});
+
+            var rez_cmp_local_text_WatchBattery = new WatchUi.Text({:identifier=>"WatchBattery", :locX=>(260 * (16 / 100.0)), :locY=>(260 * (62 / 100.0)), :text=>"100%", :font=>Graphics.FONT_XTINY});
+
+            var rez_cmp_local_text_Temperature = new WatchUi.Text({:identifier=>"Temperature", :locX=>(260 * (85 / 100.0)), :locY=>(260 * (54 / 100.0)), :text=>"100", :justification=>Graphics.TEXT_JUSTIFY_RIGHT, :font=>Graphics.FONT_XTINY});
+
+            var rez_cmp_local_bitmap_Bluetooth = new WatchUi.Bitmap({:identifier=>"Bluetooth", :rezId=>$.Rez.Drawables.Bluetooth, :locX=>(260 * (79 / 100.0)), :locY=>(260 * (62 / 100.0))});
+            rez_cmp_local_bitmap_Bluetooth.setLocation((260 * (79 / 100.0)), (260 * (62 / 100.0)));
+
+            return [rez_cmp_local_custom_drawable_10884784465777752811, rez_cmp_local_text_Time, rez_cmp_local_custom_drawable_16925142799190241851, rez_cmp_local_bitmap_HeartRateIcon, rez_cmp_local_text_HeartRate, rez_cmp_local_custom_drawable_20656131191026769883, rez_cmp_local_bitmap_StressIcon, rez_cmp_local_text_Stress, rez_cmp_local_text_Calories, rez_cmp_local_text_Steps, rez_cmp_local_text_MonthAndDay, rez_cmp_local_text_Week, rez_cmp_local_text_BodyBattery, rez_cmp_local_text_WatchBattery, rez_cmp_local_text_Temperature, rez_cmp_local_bitmap_Bluetooth] as Array<WatchUi.Drawable>;
         }
     } // Layouts
 

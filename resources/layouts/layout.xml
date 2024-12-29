@@ -1,6 +1,9 @@
 <layout id="WatchFace">
     <drawable class="Background" />
 
+    <!-- 当前时间 -->
+    <label id="Time" x="50%" y="40%" text="00:00" font = "Graphics.FONT_NUMBER_MEDIUM" justification = "Graphics.TEXT_JUSTIFY_CENTER"/>
+
     <!-- 心率 -->
     <drawable class="BreezeHeartRate" />
     <bitmap id="HeartRateIcon" filename = "../images/heartrate_icon.png" x="40%" y="12%" />
@@ -8,7 +11,29 @@
 
     <!-- 压力 -->
     <drawable class="BreezeStress" />
-    <bitmap id="StressIcon" filename = "../images/heartrate_icon.png" x="40%" y="80%" />
-    <label id="Stress" x="50%" y="80%"  text="100" font = "Graphics.FONT_XTINY"/>
+    <bitmap id="StressIcon" filename = "../images/ic_stress.png" x="40%" y="80%" />
+    <label id="Stress" x="50%" y="81%"  text="100" font = "Graphics.FONT_XTINY"/>
+
+    <!-- 今日消耗卡路里 -->
+    <label id="Calories" x="16%" y="30%" text="1000" font = "Graphics.FONT_XTINY" />
+    <!-- 今天步数 -->
+    <label id="Steps" x="16%" y="38%" text="10000" font = "Graphics.FONT_XTINY" />
+
+    <!-- 月日 -->
+    <label id="MonthAndDay" x="85%" y="30%" text="01" font = "Graphics.FONT_XTINY" justification = "Graphics.TEXT_JUSTIFY_RIGHT"/>
+    <!-- 星期 -->
+    <label id="Week" x="85%" y="38%" text="星期一" font = "Graphics.FONT_XTINY" justification = "Graphics.TEXT_JUSTIFY_RIGHT"/>
+
+    <!-- 身体剩余电量 -->
+    <label id="BodyBattery" x="16%" y="54%" text="100%" font = "Graphics.FONT_XTINY" />
+
+    <!-- 手表剩余电量和可使用天数 -->
+    <label id="WatchBattery" x="16%" y="62%" text="100%" font = "Graphics.FONT_XTINY" />
+
+    <!-- 当前温度 -->
+    <label id="Temperature" x="85%" y="54%" text="100" font = "Graphics.FONT_XTINY" justification = "Graphics.TEXT_JUSTIFY_RIGHT"/>
+
+    <!-- 蓝牙状态 -->
+    <bitmap id="Bluetooth" filename = "../images/ic_bluetooth.png" x="79%" y="62%" />
 </layout>
 

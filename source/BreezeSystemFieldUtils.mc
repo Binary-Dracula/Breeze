@@ -59,6 +59,29 @@ class BreezeSystemFieldUtils {
     ]);
   }
 
+  // 获取系统时间不带秒
+  function getSystemTimeWithoutSecond() as Lang.String {
+    var timeFormat = "$1$:$2$";
+    var clockTime = System.getClockTime();
+    var hours = clockTime.hour;
+
+    // 根据系统设置判断是12小时制还是24小时制
+    if (!System.getDeviceSettings().is24Hour) {
+      // 12小时制
+      if (hours > 12) {
+        hours = hours - 12;
+      }
+    } else {
+      // 24小时制
+      hours = hours.format("%02d");
+    }
+
+    return Lang.format(timeFormat, [
+      hours,
+      clockTime.min.format("%02d"),
+    ]);
+  }
+
   // 获取当前星期
   function getSystemDayOfWeek() as Lang.String {
     var today = Gregorian.info(Time.now(), Time.FORMAT_SHORT);
@@ -71,6 +94,12 @@ class BreezeSystemFieldUtils {
     return today.day_of_week.toString();
   }
 
+  // 获取当前日期Array<Lang.String>
+  function getSystemDate() as Array<Lang.Number>{
+    var today = Gregorian.info(Time.now(), Time.FORMAT_SHORT);
+    return [today.year, today.month, today.day];
+  }
+
   // 获取当前年月日用-连接
   function getSystemYearMonthDay() as Lang.String {
     var today = Gregorian.info(Time.now(), Time.FORMAT_SHORT);
@@ -81,6 +110,21 @@ class BreezeSystemFieldUtils {
   function getSystemHeartRate() as Lang.Number {
     var heartRate = Activity.getActivityInfo().currentHeartRate;
     return heartRate ? heartRate.toString() : 100;
+  }
+
+  // 剩余身体电量
+  function getBodyBattery() as Lang.Number {
+    if ((Toybox has :SensorHistory) && (Toybox.SensorHistory has :getBodyBatteryHistory)) {
+      var bodyBatteryHistory = SensorHistory.getBodyBatteryHistory({});
+      if (bodyBatteryHistory != null) {
+        var sample = bodyBatteryHistory.next() as SensorHistory.SensorSample;
+        if (sample != null) {
+          var bodyBattery = sample.data as Lang.Number;
+          return bodyBattery;
+        }
+      }
+    }
+    return 50;
   }
 
   // 获取当前压力(Pascals (Pa))值，如果支持，应该不是身体压力
@@ -98,21 +142,26 @@ class BreezeSystemFieldUtils {
     return 50;
   }
 
+  // 获取当前卡路里
+  function getTodayCalories() as Lang.Number {
+    var info = ActivityMonitor.getInfo();
+    return info.calories ? info.calories : 1800;
+  }
+
   // 获取当前步数
   function getSystemStepCount() as Lang.Number {
     var info = ActivityMonitor.getInfo();
-    return info.steps ? info.steps.toString() : 6000;
+    return info.steps ? info.steps : 6000;
   }
 
   // 获取当前电量百分比
-  function getSystemBattery() as Lang.String {
-    var battery = System.getSystemStats().battery;
-    return battery.format("%d");
+  function getSystemBattery() as Lang.Float {
+    return System.getSystemStats().battery as Lang.Float;
   }
 
   // 电量剩余天数
-  function getSystemBatteryLife() as Lang.String {
-    return System.getSystemStats().batteryInDays.format("%d");
+  function getSystemBatteryLife() as Lang.Float {
+    return System.getSystemStats().batteryInDays as Lang.Float;
   }
 
   // 正在充电
@@ -133,6 +182,34 @@ class BreezeSystemFieldUtils {
   // 是否连接到手机
   function getSystemConnected() as Lang.Boolean {
     return System.getDeviceSettings().phoneConnected;
+  }
+
+  // 用小球画秒 
+  function drawSecondBalls(dc) {
+    // 秒颜色
+    var secondColor = Application.Properties.getValue("SecondColor") as Number;
+    // 秒半径
+    var secondRadius = 4;
+
+    var centerX = dc.getWidth() / 2;
+    var centerY = dc.getHeight() / 2;
+    var radius = dc.getWidth() / 2;
+    var secondHandLength = radius - secondRadius;
+
+    // 获取当前时间
+    var clockTime = System.getClockTime();
+    var seconds = clockTime.sec;
+
+    // 计算秒针角度
+    var secondAngle = (seconds * Math.PI) / 30; // 每秒钟 6 度
+
+    // 计算秒针末端坐标
+    var secondX = centerX + secondHandLength * Math.sin(secondAngle);
+    var secondY = centerY - secondHandLength * Math.cos(secondAngle);
+
+    // 绘制秒针小球
+    dc.setColor(secondColor, Graphics.COLOR_TRANSPARENT);
+    dc.fillCircle(secondX, secondY, secondRadius);
   }
 
   // 用小球画时分秒
