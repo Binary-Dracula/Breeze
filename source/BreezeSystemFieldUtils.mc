@@ -108,8 +108,11 @@ class BreezeSystemFieldUtils {
 
   // 获取当前心率
   function getSystemHeartRate() as Lang.Number {
-    var heartRate = Activity.getActivityInfo().currentHeartRate;
-    return heartRate ? heartRate.toString() : 100;
+    var heartRate = Activity.getActivityInfo().currentHeartRate as Lang.Number or Null;
+    if (heartRate != null) {
+      return heartRate;
+    }
+    return 0;
   }
 
   // 剩余身体电量
@@ -144,14 +147,20 @@ class BreezeSystemFieldUtils {
 
   // 获取当前卡路里
   function getTodayCalories() as Lang.Number {
-    var info = ActivityMonitor.getInfo();
-    return info.calories ? info.calories : 1800;
+    var calories = ActivityMonitor.getInfo().calories as Lang.Number or Null;
+    if (calories != null) {
+      return calories;
+    }
+    return 0;
   }
 
   // 获取当前步数
   function getSystemStepCount() as Lang.Number {
-    var info = ActivityMonitor.getInfo();
-    return info.steps ? info.steps : 6000;
+    var steps = ActivityMonitor.getInfo().steps as Lang.Number or Null;
+    if (steps != null) {
+      return steps;
+    }
+    return 0;
   }
 
   // 获取当前电量百分比

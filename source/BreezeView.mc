@@ -98,6 +98,10 @@ class BreezeView extends WatchUi.WatchFace {
     }
   }
 
+  function onPartialUpdate(dc) {
+    
+  }
+
   // Called when this View is removed from the screen. Save the
   // state of this View here. This includes freeing resources from
   // memory.

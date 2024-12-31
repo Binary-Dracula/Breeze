@@ -393,16 +393,13 @@ _Users_summer_work_garmin_Breeze_source_BreezeView_mc_96_11_98_4_stop:
 _Users_summer_work_garmin_Breeze_source_BreezeView_mc_94_4_98_4_if_end:
 _Users_summer_work_garmin_Breeze_source_BreezeView_mc_26_38_99_2_stop:
     }
-    [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeView.mc"; @line = 101; ]
-    function onPartialUpdate(dc) {
-    }
-    [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeView.mc"; @line = 108; ]
+    [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeView.mc"; @line = 104; ]
     function onHide() as Void {
     }
-    [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeView.mc"; @line = 111; ]
+    [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeView.mc"; @line = 107; ]
     function onExitSleep() as Void {
     }
-    [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeView.mc"; @line = 114; ]
+    [ @file = "/Users/summer/work/garmin/Breeze/source/BreezeView.mc"; @line = 110; ]
     function onEnterSleep() as Void {
     }
 }

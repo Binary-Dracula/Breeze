@@ -39,10 +39,10 @@ module Rez {
 _Users_summer_work_garmin_Breeze_bin_gen_006_B3992_00_source_Rez_mcgen_17_73_54_8_start:
 [ "/Users/summer/work/garmin/Breeze/bin/gen/006-B3992-00/source/Rez.mcgen" 18 12 ]
             [ "_Users_summer_work_garmin_Breeze_bin_gen_006_B3992_00_source_Rez_mcgen_17_73_54_8_start" "_Users_summer_work_garmin_Breeze_bin_gen_006_B3992_00_source_Rez_mcgen_17_73_54_8_stop" ]
-            %rez_cmp_local_custom_drawable_10884784465777752811.1 = local;
+            %rez_cmp_local_custom_drawable_52831218745645199717.1 = local;
             %tmp.4 = getv ? :Background;
             %tmp.1 = newc %tmp.4 ();
-            lputv %rez_cmp_local_custom_drawable_10884784465777752811.1 %tmp.1;
+            lputv %rez_cmp_local_custom_drawable_52831218745645199717.1 %tmp.1;
 [ "/Users/summer/work/garmin/Breeze/bin/gen/006-B3992-00/source/Rez.mcgen" 20 12 ]
             [ "_Users_summer_work_garmin_Breeze_bin_gen_006_B3992_00_source_Rez_mcgen_17_73_54_8_start" "_Users_summer_work_garmin_Breeze_bin_gen_006_B3992_00_source_Rez_mcgen_17_73_54_8_stop" ]
             %rez_cmp_local_text_Time.2 = local;
@@ -87,10 +87,10 @@ _Users_summer_work_garmin_Breeze_bin_gen_006_B3992_00_source_Rez_mcgen_17_73_54_
             lputv %rez_cmp_local_text_Time.2 %tmp.5;
 [ "/Users/summer/work/garmin/Breeze/bin/gen/006-B3992-00/source/Rez.mcgen" 22 12 ]
             [ "_Users_summer_work_garmin_Breeze_bin_gen_006_B3992_00_source_Rez_mcgen_17_73_54_8_start" "_Users_summer_work_garmin_Breeze_bin_gen_006_B3992_00_source_Rez_mcgen_17_73_54_8_stop" ]
-            %rez_cmp_local_custom_drawable_16925142799190241851.3 = local;
+            %rez_cmp_local_custom_drawable_17947028464686291381.3 = local;
             %tmp.53 = getv ? :BreezeHeartRate;
             %tmp.50 = newc %tmp.53 ();
-            lputv %rez_cmp_local_custom_drawable_16925142799190241851.3 %tmp.50;
+            lputv %rez_cmp_local_custom_drawable_17947028464686291381.3 %tmp.50;
 [ "/Users/summer/work/garmin/Breeze/bin/gen/006-B3992-00/source/Rez.mcgen" 24 12 ]
             [ "_Users_summer_work_garmin_Breeze_bin_gen_006_B3992_00_source_Rez_mcgen_17_73_54_8_start" "_Users_summer_work_garmin_Breeze_bin_gen_006_B3992_00_source_Rez_mcgen_17_73_54_8_stop" ]
             %rez_cmp_local_bitmap_HeartRateIcon.4 = local;
@@ -179,10 +179,10 @@ _Users_summer_work_garmin_Breeze_bin_gen_006_B3992_00_source_Rez_mcgen_17_73_54_
             lputv %rez_cmp_local_text_HeartRate.5 %tmp.102;
 [ "/Users/summer/work/garmin/Breeze/bin/gen/006-B3992-00/source/Rez.mcgen" 29 12 ]
             [ "_Users_summer_work_garmin_Breeze_bin_gen_006_B3992_00_source_Rez_mcgen_17_73_54_8_start" "_Users_summer_work_garmin_Breeze_bin_gen_006_B3992_00_source_Rez_mcgen_17_73_54_8_stop" ]
-            %rez_cmp_local_custom_drawable_20656131191026769883.6 = local;
+            %rez_cmp_local_custom_drawable_81534698593702433512.6 = local;
             %tmp.144 = getv ? :BreezeStress;
             %tmp.141 = newc %tmp.144 ();
-            lputv %rez_cmp_local_custom_drawable_20656131191026769883.6 %tmp.141;
+            lputv %rez_cmp_local_custom_drawable_81534698593702433512.6 %tmp.141;
 [ "/Users/summer/work/garmin/Breeze/bin/gen/006-B3992-00/source/Rez.mcgen" 31 12 ]
             [ "_Users_summer_work_garmin_Breeze_bin_gen_006_B3992_00_source_Rez_mcgen_17_73_54_8_start" "_Users_summer_work_garmin_Breeze_bin_gen_006_B3992_00_source_Rez_mcgen_17_73_54_8_stop" ]
             %rez_cmp_local_bitmap_StressIcon.7 = local;
@@ -594,13 +594,13 @@ _Users_summer_work_garmin_Breeze_bin_gen_006_B3992_00_source_Rez_mcgen_17_73_54_
             invoke %tmp.559 %tmp.560(%tmp.565, %tmp.570);
 [ "/Users/summer/work/garmin/Breeze/bin/gen/006-B3992-00/source/Rez.mcgen" 53 12 ]
             %tmp.571 = newa 16 Array<WatchUi.Drawable>;
-            %tmp.573 = lgetv %rez_cmp_local_custom_drawable_10884784465777752811.1;
+            %tmp.573 = lgetv %rez_cmp_local_custom_drawable_52831218745645199717.1;
             %tmp.574 = dup %tmp.571;
             %tmp.575 = aputv %tmp.574 0 %tmp.573;
             %tmp.577 = lgetv %rez_cmp_local_text_Time.2;
             %tmp.578 = dup %tmp.575;
             %tmp.579 = aputv %tmp.578 1 %tmp.577;
-            %tmp.581 = lgetv %rez_cmp_local_custom_drawable_16925142799190241851.3;
+            %tmp.581 = lgetv %rez_cmp_local_custom_drawable_17947028464686291381.3;
             %tmp.582 = dup %tmp.579;
             %tmp.583 = aputv %tmp.582 2 %tmp.581;
             %tmp.585 = lgetv %rez_cmp_local_bitmap_HeartRateIcon.4;
@@ -609,7 +609,7 @@ _Users_summer_work_garmin_Breeze_bin_gen_006_B3992_00_source_Rez_mcgen_17_73_54_
             %tmp.589 = lgetv %rez_cmp_local_text_HeartRate.5;
             %tmp.590 = dup %tmp.587;
             %tmp.591 = aputv %tmp.590 4 %tmp.589;
-            %tmp.593 = lgetv %rez_cmp_local_custom_drawable_20656131191026769883.6;
+            %tmp.593 = lgetv %rez_cmp_local_custom_drawable_81534698593702433512.6;
             %tmp.594 = dup %tmp.591;
             %tmp.595 = aputv %tmp.594 5 %tmp.593;
             %tmp.597 = lgetv %rez_cmp_local_bitmap_StressIcon.7;

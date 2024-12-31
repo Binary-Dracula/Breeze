@@ -360,72 +360,73 @@
         <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeDashedLine.mc" id="62" lineNum="11" parent="globals/DashedLine" pc="268439993" symbol="initialize"/>
         <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeDashedLine.mc" id="63" lineNum="14" parent="globals/DashedLine" pc="268440015" symbol="draw"/>
         <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeDashedLine.mc" id="63" lineNum="15" parent="globals/DashedLine" pc="268440017" symbol="draw"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="66" lineNum="16" parent="globals/BreezeView" pc="268440029" symbol="onLayout"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="66" lineNum="17" parent="globals/BreezeView" pc="268440031" symbol="onLayout"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="68" lineNum="11" parent="globals/BreezeView" pc="268440065" symbol="initialize"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="68" lineNum="12" parent="globals/BreezeView" pc="268440067" symbol="initialize"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="70" lineNum="26" parent="globals/BreezeView" pc="268440080" symbol="onUpdate"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="70" lineNum="31" parent="globals/BreezeView" pc="268440083" symbol="onUpdate"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="70" lineNum="35" parent="globals/BreezeView" pc="268440103" symbol="onUpdate"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="70" lineNum="38" parent="globals/BreezeView" pc="268440119" symbol="onUpdate"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="70" lineNum="39" parent="globals/BreezeView" pc="268440132" symbol="onUpdate"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="70" lineNum="40" parent="globals/BreezeView" pc="268440147" symbol="onUpdate"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="70" lineNum="43" parent="globals/BreezeView" pc="268440159" symbol="onUpdate"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="70" lineNum="44" parent="globals/BreezeView" pc="268440172" symbol="onUpdate"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="70" lineNum="45" parent="globals/BreezeView" pc="268440187" symbol="onUpdate"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="70" lineNum="48" parent="globals/BreezeView" pc="268440211" symbol="onUpdate"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="70" lineNum="49" parent="globals/BreezeView" pc="268440224" symbol="onUpdate"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="70" lineNum="50" parent="globals/BreezeView" pc="268440239" symbol="onUpdate"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="70" lineNum="53" parent="globals/BreezeView" pc="268440263" symbol="onUpdate"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="70" lineNum="55" parent="globals/BreezeView" pc="268440276" symbol="onUpdate"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="70" lineNum="56" parent="globals/BreezeView" pc="268440283" symbol="onUpdate"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="70" lineNum="57" parent="globals/BreezeView" pc="268440290" symbol="onUpdate"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="70" lineNum="58" parent="globals/BreezeView" pc="268440305" symbol="onUpdate"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="70" lineNum="60" parent="globals/BreezeView" pc="268440350" symbol="onUpdate"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="70" lineNum="61" parent="globals/BreezeView" pc="268440363" symbol="onUpdate"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="70" lineNum="62" parent="globals/BreezeView" pc="268440378" symbol="onUpdate"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="70" lineNum="65" parent="globals/BreezeView" pc="268440390" symbol="onUpdate"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="70" lineNum="66" parent="globals/BreezeView" pc="268440403" symbol="onUpdate"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="70" lineNum="67" parent="globals/BreezeView" pc="268440418" symbol="onUpdate"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="70" lineNum="70" parent="globals/BreezeView" pc="268440448" symbol="onUpdate"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="70" lineNum="71" parent="globals/BreezeView" pc="268440461" symbol="onUpdate"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="70" lineNum="72" parent="globals/BreezeView" pc="268440476" symbol="onUpdate"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="70" lineNum="75" parent="globals/BreezeView" pc="268440500" symbol="onUpdate"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="70" lineNum="76" parent="globals/BreezeView" pc="268440513" symbol="onUpdate"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="70" lineNum="77" parent="globals/BreezeView" pc="268440528" symbol="onUpdate"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="70" lineNum="80" parent="globals/BreezeView" pc="268440552" symbol="onUpdate"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="70" lineNum="82" parent="globals/BreezeView" pc="268440565" symbol="onUpdate"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="70" lineNum="83" parent="globals/BreezeView" pc="268440578" symbol="onUpdate"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="70" lineNum="84" parent="globals/BreezeView" pc="268440593" symbol="onUpdate"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="70" lineNum="87" parent="globals/BreezeView" pc="268440650" symbol="onUpdate"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="70" lineNum="88" parent="globals/BreezeView" pc="268440663" symbol="onUpdate"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="70" lineNum="89" parent="globals/BreezeView" pc="268440678" symbol="onUpdate"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="70" lineNum="92" parent="globals/BreezeView" pc="268440708" symbol="onUpdate"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="70" lineNum="93" parent="globals/BreezeView" pc="268440721" symbol="onUpdate"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="70" lineNum="94" parent="globals/BreezeView" pc="268440736" symbol="onUpdate"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="70" lineNum="95" parent="globals/BreezeView" pc="268440741" symbol="onUpdate"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="70" lineNum="97" parent="globals/BreezeView" pc="268440773" symbol="onUpdate"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/bin/gen/006-B3992-00/source/Rez.mcgen" id="71" lineNum="17" parent="globals/Rez/Layouts" pc="268440803" symbol="WatchFace"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/bin/gen/006-B3992-00/source/Rez.mcgen" id="71" lineNum="18" parent="globals/Rez/Layouts" pc="268440814" symbol="WatchFace"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/bin/gen/006-B3992-00/source/Rez.mcgen" id="71" lineNum="20" parent="globals/Rez/Layouts" pc="268440838" symbol="WatchFace"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/bin/gen/006-B3992-00/source/Rez.mcgen" id="71" lineNum="22" parent="globals/Rez/Layouts" pc="268440927" symbol="WatchFace"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/bin/gen/006-B3992-00/source/Rez.mcgen" id="71" lineNum="24" parent="globals/Rez/Layouts" pc="268440951" symbol="WatchFace"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/bin/gen/006-B3992-00/source/Rez.mcgen" id="71" lineNum="25" parent="globals/Rez/Layouts" pc="268441038" symbol="WatchFace"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/bin/gen/006-B3992-00/source/Rez.mcgen" id="71" lineNum="27" parent="globals/Rez/Layouts" pc="268441058" symbol="WatchFace"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/bin/gen/006-B3992-00/source/Rez.mcgen" id="71" lineNum="29" parent="globals/Rez/Layouts" pc="268441138" symbol="WatchFace"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/bin/gen/006-B3992-00/source/Rez.mcgen" id="71" lineNum="31" parent="globals/Rez/Layouts" pc="268441162" symbol="WatchFace"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/bin/gen/006-B3992-00/source/Rez.mcgen" id="71" lineNum="32" parent="globals/Rez/Layouts" pc="268441249" symbol="WatchFace"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/bin/gen/006-B3992-00/source/Rez.mcgen" id="71" lineNum="34" parent="globals/Rez/Layouts" pc="268441269" symbol="WatchFace"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/bin/gen/006-B3992-00/source/Rez.mcgen" id="71" lineNum="36" parent="globals/Rez/Layouts" pc="268441349" symbol="WatchFace"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/bin/gen/006-B3992-00/source/Rez.mcgen" id="71" lineNum="38" parent="globals/Rez/Layouts" pc="268441429" symbol="WatchFace"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/bin/gen/006-B3992-00/source/Rez.mcgen" id="71" lineNum="40" parent="globals/Rez/Layouts" pc="268441509" symbol="WatchFace"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/bin/gen/006-B3992-00/source/Rez.mcgen" id="71" lineNum="42" parent="globals/Rez/Layouts" pc="268441596" symbol="WatchFace"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/bin/gen/006-B3992-00/source/Rez.mcgen" id="71" lineNum="44" parent="globals/Rez/Layouts" pc="268441683" symbol="WatchFace"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/bin/gen/006-B3992-00/source/Rez.mcgen" id="71" lineNum="46" parent="globals/Rez/Layouts" pc="268441763" symbol="WatchFace"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/bin/gen/006-B3992-00/source/Rez.mcgen" id="71" lineNum="48" parent="globals/Rez/Layouts" pc="268441843" symbol="WatchFace"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/bin/gen/006-B3992-00/source/Rez.mcgen" id="71" lineNum="50" parent="globals/Rez/Layouts" pc="268441930" symbol="WatchFace"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/bin/gen/006-B3992-00/source/Rez.mcgen" id="71" lineNum="51" parent="globals/Rez/Layouts" pc="268442017" symbol="WatchFace"/>
-        <entry filename="/Users/summer/work/garmin/Breeze/bin/gen/006-B3992-00/source/Rez.mcgen" id="71" lineNum="53" parent="globals/Rez/Layouts" pc="268442037" symbol="WatchFace"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="65" lineNum="101" parent="globals/BreezeView" pc="268440029" symbol="onPartialUpdate"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="67" lineNum="16" parent="globals/BreezeView" pc="268440032" symbol="onLayout"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="67" lineNum="17" parent="globals/BreezeView" pc="268440034" symbol="onLayout"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="69" lineNum="11" parent="globals/BreezeView" pc="268440068" symbol="initialize"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="69" lineNum="12" parent="globals/BreezeView" pc="268440070" symbol="initialize"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="71" lineNum="26" parent="globals/BreezeView" pc="268440083" symbol="onUpdate"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="71" lineNum="31" parent="globals/BreezeView" pc="268440086" symbol="onUpdate"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="71" lineNum="35" parent="globals/BreezeView" pc="268440106" symbol="onUpdate"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="71" lineNum="38" parent="globals/BreezeView" pc="268440122" symbol="onUpdate"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="71" lineNum="39" parent="globals/BreezeView" pc="268440135" symbol="onUpdate"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="71" lineNum="40" parent="globals/BreezeView" pc="268440150" symbol="onUpdate"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="71" lineNum="43" parent="globals/BreezeView" pc="268440162" symbol="onUpdate"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="71" lineNum="44" parent="globals/BreezeView" pc="268440175" symbol="onUpdate"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="71" lineNum="45" parent="globals/BreezeView" pc="268440190" symbol="onUpdate"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="71" lineNum="48" parent="globals/BreezeView" pc="268440214" symbol="onUpdate"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="71" lineNum="49" parent="globals/BreezeView" pc="268440227" symbol="onUpdate"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="71" lineNum="50" parent="globals/BreezeView" pc="268440242" symbol="onUpdate"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="71" lineNum="53" parent="globals/BreezeView" pc="268440266" symbol="onUpdate"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="71" lineNum="55" parent="globals/BreezeView" pc="268440279" symbol="onUpdate"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="71" lineNum="56" parent="globals/BreezeView" pc="268440286" symbol="onUpdate"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="71" lineNum="57" parent="globals/BreezeView" pc="268440293" symbol="onUpdate"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="71" lineNum="58" parent="globals/BreezeView" pc="268440308" symbol="onUpdate"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="71" lineNum="60" parent="globals/BreezeView" pc="268440353" symbol="onUpdate"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="71" lineNum="61" parent="globals/BreezeView" pc="268440366" symbol="onUpdate"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="71" lineNum="62" parent="globals/BreezeView" pc="268440381" symbol="onUpdate"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="71" lineNum="65" parent="globals/BreezeView" pc="268440393" symbol="onUpdate"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="71" lineNum="66" parent="globals/BreezeView" pc="268440406" symbol="onUpdate"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="71" lineNum="67" parent="globals/BreezeView" pc="268440421" symbol="onUpdate"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="71" lineNum="70" parent="globals/BreezeView" pc="268440451" symbol="onUpdate"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="71" lineNum="71" parent="globals/BreezeView" pc="268440464" symbol="onUpdate"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="71" lineNum="72" parent="globals/BreezeView" pc="268440479" symbol="onUpdate"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="71" lineNum="75" parent="globals/BreezeView" pc="268440503" symbol="onUpdate"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="71" lineNum="76" parent="globals/BreezeView" pc="268440516" symbol="onUpdate"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="71" lineNum="77" parent="globals/BreezeView" pc="268440531" symbol="onUpdate"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="71" lineNum="80" parent="globals/BreezeView" pc="268440555" symbol="onUpdate"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="71" lineNum="82" parent="globals/BreezeView" pc="268440568" symbol="onUpdate"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="71" lineNum="83" parent="globals/BreezeView" pc="268440581" symbol="onUpdate"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="71" lineNum="84" parent="globals/BreezeView" pc="268440596" symbol="onUpdate"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="71" lineNum="87" parent="globals/BreezeView" pc="268440653" symbol="onUpdate"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="71" lineNum="88" parent="globals/BreezeView" pc="268440666" symbol="onUpdate"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="71" lineNum="89" parent="globals/BreezeView" pc="268440681" symbol="onUpdate"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="71" lineNum="92" parent="globals/BreezeView" pc="268440711" symbol="onUpdate"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="71" lineNum="93" parent="globals/BreezeView" pc="268440724" symbol="onUpdate"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="71" lineNum="94" parent="globals/BreezeView" pc="268440739" symbol="onUpdate"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="71" lineNum="95" parent="globals/BreezeView" pc="268440744" symbol="onUpdate"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/source/BreezeView.mc" id="71" lineNum="97" parent="globals/BreezeView" pc="268440776" symbol="onUpdate"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/bin/gen/006-B3992-00/source/Rez.mcgen" id="72" lineNum="17" parent="globals/Rez/Layouts" pc="268440806" symbol="WatchFace"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/bin/gen/006-B3992-00/source/Rez.mcgen" id="72" lineNum="18" parent="globals/Rez/Layouts" pc="268440817" symbol="WatchFace"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/bin/gen/006-B3992-00/source/Rez.mcgen" id="72" lineNum="20" parent="globals/Rez/Layouts" pc="268440841" symbol="WatchFace"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/bin/gen/006-B3992-00/source/Rez.mcgen" id="72" lineNum="22" parent="globals/Rez/Layouts" pc="268440930" symbol="WatchFace"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/bin/gen/006-B3992-00/source/Rez.mcgen" id="72" lineNum="24" parent="globals/Rez/Layouts" pc="268440954" symbol="WatchFace"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/bin/gen/006-B3992-00/source/Rez.mcgen" id="72" lineNum="25" parent="globals/Rez/Layouts" pc="268441041" symbol="WatchFace"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/bin/gen/006-B3992-00/source/Rez.mcgen" id="72" lineNum="27" parent="globals/Rez/Layouts" pc="268441061" symbol="WatchFace"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/bin/gen/006-B3992-00/source/Rez.mcgen" id="72" lineNum="29" parent="globals/Rez/Layouts" pc="268441141" symbol="WatchFace"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/bin/gen/006-B3992-00/source/Rez.mcgen" id="72" lineNum="31" parent="globals/Rez/Layouts" pc="268441165" symbol="WatchFace"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/bin/gen/006-B3992-00/source/Rez.mcgen" id="72" lineNum="32" parent="globals/Rez/Layouts" pc="268441252" symbol="WatchFace"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/bin/gen/006-B3992-00/source/Rez.mcgen" id="72" lineNum="34" parent="globals/Rez/Layouts" pc="268441272" symbol="WatchFace"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/bin/gen/006-B3992-00/source/Rez.mcgen" id="72" lineNum="36" parent="globals/Rez/Layouts" pc="268441352" symbol="WatchFace"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/bin/gen/006-B3992-00/source/Rez.mcgen" id="72" lineNum="38" parent="globals/Rez/Layouts" pc="268441432" symbol="WatchFace"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/bin/gen/006-B3992-00/source/Rez.mcgen" id="72" lineNum="40" parent="globals/Rez/Layouts" pc="268441512" symbol="WatchFace"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/bin/gen/006-B3992-00/source/Rez.mcgen" id="72" lineNum="42" parent="globals/Rez/Layouts" pc="268441599" symbol="WatchFace"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/bin/gen/006-B3992-00/source/Rez.mcgen" id="72" lineNum="44" parent="globals/Rez/Layouts" pc="268441686" symbol="WatchFace"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/bin/gen/006-B3992-00/source/Rez.mcgen" id="72" lineNum="46" parent="globals/Rez/Layouts" pc="268441766" symbol="WatchFace"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/bin/gen/006-B3992-00/source/Rez.mcgen" id="72" lineNum="48" parent="globals/Rez/Layouts" pc="268441846" symbol="WatchFace"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/bin/gen/006-B3992-00/source/Rez.mcgen" id="72" lineNum="50" parent="globals/Rez/Layouts" pc="268441933" symbol="WatchFace"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/bin/gen/006-B3992-00/source/Rez.mcgen" id="72" lineNum="51" parent="globals/Rez/Layouts" pc="268442020" symbol="WatchFace"/>
+        <entry filename="/Users/summer/work/garmin/Breeze/bin/gen/006-B3992-00/source/Rez.mcgen" id="72" lineNum="53" parent="globals/Rez/Layouts" pc="268442040" symbol="WatchFace"/>
     </pcToLineNum>
     <symbolTable>
         <entry field="true" id="67" symbol="weatherUtils"/>
@@ -472,6 +473,7 @@
         <entry id="8389345" symbol="rezId"/>
         <entry id="8388631" module="true" symbol="Activity"/>
         <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry id="8390097" method="true" symbol="onPartialUpdate"/>
         <entry field="true" id="45" symbol="&lt;globals/BreezeTickDrawer/&lt;&gt;_circleColor&gt;"/>
         <entry id="21" method="true" symbol="getSystemBatteryLife"/>
         <entry id="2" module="true" symbol="globals/Rez"/>
@@ -728,50 +730,50 @@
         <entry endPc="268439973" name="i" stackId="9" startPc="268439941"/>
         <entry arg="true" endPc="268440014" name="params" stackId="1" startPc="268439975"/>
         <entry arg="true" endPc="268440028" name="dc" stackId="1" startPc="268440015"/>
-        <entry arg="true" endPc="268440064" name="dc" stackId="1" startPc="268440029"/>
-        <entry arg="true" endPc="268440802" name="dc" stackId="1" startPc="268440080"/>
-        <entry endPc="268440801" name="time" stackId="2" startPc="268440083"/>
-        <entry endPc="268440801" name="timeLabel" stackId="3" startPc="268440083"/>
-        <entry endPc="268440801" name="heartRate" stackId="4" startPc="268440083"/>
-        <entry endPc="268440801" name="heartRateLabel" stackId="5" startPc="268440083"/>
-        <entry endPc="268440801" name="stress" stackId="6" startPc="268440083"/>
-        <entry endPc="268440801" name="stressLabel" stackId="7" startPc="268440083"/>
-        <entry endPc="268440801" name="date" stackId="8" startPc="268440083"/>
-        <entry endPc="268440801" name="month" stackId="9" startPc="268440083"/>
-        <entry endPc="268440801" name="day" stackId="10" startPc="268440083"/>
-        <entry endPc="268440801" name="monthAndDay" stackId="11" startPc="268440083"/>
-        <entry endPc="268440801" name="week" stackId="12" startPc="268440083"/>
-        <entry endPc="268440801" name="weekLabel" stackId="13" startPc="268440083"/>
-        <entry endPc="268440801" name="calories" stackId="14" startPc="268440083"/>
-        <entry endPc="268440801" name="caloriesLabel" stackId="15" startPc="268440083"/>
-        <entry endPc="268440801" name="steps" stackId="16" startPc="268440083"/>
-        <entry endPc="268440801" name="stepsLabel" stackId="17" startPc="268440083"/>
-        <entry endPc="268440801" name="bodyBattery" stackId="18" startPc="268440083"/>
-        <entry endPc="268440801" name="bodyBatteryLabel" stackId="19" startPc="268440083"/>
-        <entry endPc="268440801" name="battery" stackId="20" startPc="268440083"/>
-        <entry endPc="268440801" name="batteryLife" stackId="21" startPc="268440083"/>
-        <entry endPc="268440801" name="batteryLabel" stackId="22" startPc="268440083"/>
-        <entry endPc="268440801" name="currentTemperature" stackId="23" startPc="268440083"/>
-        <entry endPc="268440801" name="temperatureLabel" stackId="24" startPc="268440083"/>
-        <entry endPc="268440801" name="isPhoneConnected" stackId="25" startPc="268440083"/>
-        <entry endPc="268440801" name="bluetoothDrawable" stackId="26" startPc="268440083"/>
-        <entry arg="true" endPc="268442121" name="dc" stackId="1" startPc="268440803"/>
-        <entry endPc="268442121" name="rez_cmp_local_custom_drawable_10884784465777752811" stackId="2" startPc="268440814"/>
-        <entry endPc="268442121" name="rez_cmp_local_text_Time" stackId="3" startPc="268440814"/>
-        <entry endPc="268442121" name="rez_cmp_local_custom_drawable_16925142799190241851" stackId="4" startPc="268440814"/>
-        <entry endPc="268442121" name="rez_cmp_local_bitmap_HeartRateIcon" stackId="5" startPc="268440814"/>
-        <entry endPc="268442121" name="rez_cmp_local_text_HeartRate" stackId="6" startPc="268440814"/>
-        <entry endPc="268442121" name="rez_cmp_local_custom_drawable_20656131191026769883" stackId="7" startPc="268440814"/>
-        <entry endPc="268442121" name="rez_cmp_local_bitmap_StressIcon" stackId="8" startPc="268440814"/>
-        <entry endPc="268442121" name="rez_cmp_local_text_Stress" stackId="9" startPc="268440814"/>
-        <entry endPc="268442121" name="rez_cmp_local_text_Calories" stackId="10" startPc="268440814"/>
-        <entry endPc="268442121" name="rez_cmp_local_text_Steps" stackId="11" startPc="268440814"/>
-        <entry endPc="268442121" name="rez_cmp_local_text_MonthAndDay" stackId="12" startPc="268440814"/>
-        <entry endPc="268442121" name="rez_cmp_local_text_Week" stackId="13" startPc="268440814"/>
-        <entry endPc="268442121" name="rez_cmp_local_text_BodyBattery" stackId="14" startPc="268440814"/>
-        <entry endPc="268442121" name="rez_cmp_local_text_WatchBattery" stackId="15" startPc="268440814"/>
-        <entry endPc="268442121" name="rez_cmp_local_text_Temperature" stackId="16" startPc="268440814"/>
-        <entry endPc="268442121" name="rez_cmp_local_bitmap_Bluetooth" stackId="17" startPc="268440814"/>
+        <entry arg="true" endPc="268440067" name="dc" stackId="1" startPc="268440032"/>
+        <entry arg="true" endPc="268440805" name="dc" stackId="1" startPc="268440083"/>
+        <entry endPc="268440804" name="time" stackId="2" startPc="268440086"/>
+        <entry endPc="268440804" name="timeLabel" stackId="3" startPc="268440086"/>
+        <entry endPc="268440804" name="heartRate" stackId="4" startPc="268440086"/>
+        <entry endPc="268440804" name="heartRateLabel" stackId="5" startPc="268440086"/>
+        <entry endPc="268440804" name="stress" stackId="6" startPc="268440086"/>
+        <entry endPc="268440804" name="stressLabel" stackId="7" startPc="268440086"/>
+        <entry endPc="268440804" name="date" stackId="8" startPc="268440086"/>
+        <entry endPc="268440804" name="month" stackId="9" startPc="268440086"/>
+        <entry endPc="268440804" name="day" stackId="10" startPc="268440086"/>
+        <entry endPc="268440804" name="monthAndDay" stackId="11" startPc="268440086"/>
+        <entry endPc="268440804" name="week" stackId="12" startPc="268440086"/>
+        <entry endPc="268440804" name="weekLabel" stackId="13" startPc="268440086"/>
+        <entry endPc="268440804" name="calories" stackId="14" startPc="268440086"/>
+        <entry endPc="268440804" name="caloriesLabel" stackId="15" startPc="268440086"/>
+        <entry endPc="268440804" name="steps" stackId="16" startPc="268440086"/>
+        <entry endPc="268440804" name="stepsLabel" stackId="17" startPc="268440086"/>
+        <entry endPc="268440804" name="bodyBattery" stackId="18" startPc="268440086"/>
+        <entry endPc="268440804" name="bodyBatteryLabel" stackId="19" startPc="268440086"/>
+        <entry endPc="268440804" name="battery" stackId="20" startPc="268440086"/>
+        <entry endPc="268440804" name="batteryLife" stackId="21" startPc="268440086"/>
+        <entry endPc="268440804" name="batteryLabel" stackId="22" startPc="268440086"/>
+        <entry endPc="268440804" name="currentTemperature" stackId="23" startPc="268440086"/>
+        <entry endPc="268440804" name="temperatureLabel" stackId="24" startPc="268440086"/>
+        <entry endPc="268440804" name="isPhoneConnected" stackId="25" startPc="268440086"/>
+        <entry endPc="268440804" name="bluetoothDrawable" stackId="26" startPc="268440086"/>
+        <entry arg="true" endPc="268442124" name="dc" stackId="1" startPc="268440806"/>
+        <entry endPc="268442124" name="rez_cmp_local_custom_drawable_52831218745645199717" stackId="2" startPc="268440817"/>
+        <entry endPc="268442124" name="rez_cmp_local_text_Time" stackId="3" startPc="268440817"/>
+        <entry endPc="268442124" name="rez_cmp_local_custom_drawable_17947028464686291381" stackId="4" startPc="268440817"/>
+        <entry endPc="268442124" name="rez_cmp_local_bitmap_HeartRateIcon" stackId="5" startPc="268440817"/>
+        <entry endPc="268442124" name="rez_cmp_local_text_HeartRate" stackId="6" startPc="268440817"/>
+        <entry endPc="268442124" name="rez_cmp_local_custom_drawable_81534698593702433512" stackId="7" startPc="268440817"/>
+        <entry endPc="268442124" name="rez_cmp_local_bitmap_StressIcon" stackId="8" startPc="268440817"/>
+        <entry endPc="268442124" name="rez_cmp_local_text_Stress" stackId="9" startPc="268440817"/>
+        <entry endPc="268442124" name="rez_cmp_local_text_Calories" stackId="10" startPc="268440817"/>
+        <entry endPc="268442124" name="rez_cmp_local_text_Steps" stackId="11" startPc="268440817"/>
+        <entry endPc="268442124" name="rez_cmp_local_text_MonthAndDay" stackId="12" startPc="268440817"/>
+        <entry endPc="268442124" name="rez_cmp_local_text_Week" stackId="13" startPc="268440817"/>
+        <entry endPc="268442124" name="rez_cmp_local_text_BodyBattery" stackId="14" startPc="268440817"/>
+        <entry endPc="268442124" name="rez_cmp_local_text_WatchBattery" stackId="15" startPc="268440817"/>
+        <entry endPc="268442124" name="rez_cmp_local_text_Temperature" stackId="16" startPc="268440817"/>
+        <entry endPc="268442124" name="rez_cmp_local_bitmap_Bluetooth" stackId="17" startPc="268440817"/>
     </localVars>
     <deviceInfo deviceVersion="3ec88d10900803ee2943328b35e298d1bb9907df" partNumber="006-B3992-00"/>
     <annotations>
@@ -808,9 +810,9 @@
         <dataEntry label="globals/BreezeApp" offset="1000" parentId="globals" symbolId="BreezeApp" type="class"/>
         <dataEntry label="globals/DashedLine" offset="1080" parentId="globals" symbolId="DashedLine" type="class"/>
         <dataEntry label="globals/BreezeView" offset="1151" parentId="globals" symbolId="BreezeView" type="class"/>
-        <dataEntry label="globals/Rez/Drawables" offset="1267" parentId="Rez" symbolId="Drawables" type="module"/>
-        <dataEntry label="globals/Rez/Layouts" offset="1338" parentId="Rez" symbolId="Layouts" type="module"/>
-        <dataEntry label="globals/Rez/Strings" offset="1373" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry label="globals/Rez/Drawables" offset="1276" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="1347" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="1382" parentId="Rez" symbolId="Strings" type="module"/>
     </dataEntryOffsetMappings>
     <functions>
         <functionEntry accessMode="public" name="&lt;init&gt;" parent="BreezeSystemFieldUtils">
@@ -1050,27 +1052,31 @@
         <functionEntry accessMode="public" name="onExitSleep" parent="BreezeView">
             <documentation/>
         </functionEntry>
+        <functionEntry accessMode="public" endPc="268440031" name="onPartialUpdate" parent="BreezeView" startPc="268440029">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
         <functionEntry accessMode="public" name="onShow" parent="BreezeView">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268440064" name="onLayout" parent="BreezeView" startPc="268440029">
+        <functionEntry accessMode="public" endPc="268440067" name="onLayout" parent="BreezeView" startPc="268440032">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="public" name="onEnterSleep" parent="BreezeView">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268440079" name="initialize" parent="BreezeView" startPc="268440065">
+        <functionEntry accessMode="public" endPc="268440082" name="initialize" parent="BreezeView" startPc="268440068">
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="public" name="onHide" parent="BreezeView">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268440802" name="onUpdate" parent="BreezeView" startPc="268440080">
+        <functionEntry accessMode="public" endPc="268440805" name="onUpdate" parent="BreezeView" startPc="268440083">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268442121" name="WatchFace" parent="Layouts" startPc="268440803">
+        <functionEntry accessMode="public" endPc="268442124" name="WatchFace" parent="Layouts" startPc="268440806">
             <param id="dc"/>
             <documentation/>
         </functionEntry>

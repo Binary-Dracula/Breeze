@@ -15,7 +15,7 @@ A Garmin Watch Face
 - 身体电量 
 - 手表电量
 - 天气
-- 当前和手机的链接状态 todo
+- 当前和手机的链接状态
 
 
 ## Contributing

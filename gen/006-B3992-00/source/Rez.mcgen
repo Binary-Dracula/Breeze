@@ -15,18 +15,18 @@ module Rez {
 
     module Layouts {
         function WatchFace(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
-            var rez_cmp_local_custom_drawable_52831218745645199717 = new Background();
+            var rez_cmp_local_custom_drawable_87957927413807787805 = new Background();
 
             var rez_cmp_local_text_Time = new WatchUi.Text({:identifier=>"Time", :locX=>(260 * (50 / 100.0)), :locY=>(260 * (40 / 100.0)), :text=>"00:00", :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_NUMBER_MEDIUM});
 
-            var rez_cmp_local_custom_drawable_17947028464686291381 = new BreezeHeartRate();
+            var rez_cmp_local_custom_drawable_16205409811234066791 = new BreezeHeartRate();
 
             var rez_cmp_local_bitmap_HeartRateIcon = new WatchUi.Bitmap({:identifier=>"HeartRateIcon", :rezId=>$.Rez.Drawables.HeartRateIcon, :locX=>(260 * (40 / 100.0)), :locY=>(260 * (12 / 100.0))});
             rez_cmp_local_bitmap_HeartRateIcon.setLocation((260 * (40 / 100.0)), (260 * (12 / 100.0)));
 
             var rez_cmp_local_text_HeartRate = new WatchUi.Text({:identifier=>"HeartRate", :locX=>(260 * (50 / 100.0)), :locY=>(260 * (13 / 100.0)), :text=>"100", :font=>Graphics.FONT_XTINY});
 
-            var rez_cmp_local_custom_drawable_81534698593702433512 = new BreezeStress();
+            var rez_cmp_local_custom_drawable_19201273101583373440 = new BreezeStress();
 
             var rez_cmp_local_bitmap_StressIcon = new WatchUi.Bitmap({:identifier=>"StressIcon", :rezId=>$.Rez.Drawables.StressIcon, :locX=>(260 * (40 / 100.0)), :locY=>(260 * (80 / 100.0))});
             rez_cmp_local_bitmap_StressIcon.setLocation((260 * (40 / 100.0)), (260 * (80 / 100.0)));
@@ -50,7 +50,7 @@ module Rez {
             var rez_cmp_local_bitmap_Bluetooth = new WatchUi.Bitmap({:identifier=>"Bluetooth", :rezId=>$.Rez.Drawables.Bluetooth, :locX=>(260 * (79 / 100.0)), :locY=>(260 * (62 / 100.0))});
             rez_cmp_local_bitmap_Bluetooth.setLocation((260 * (79 / 100.0)), (260 * (62 / 100.0)));
 
-            return [rez_cmp_local_custom_drawable_52831218745645199717, rez_cmp_local_text_Time, rez_cmp_local_custom_drawable_17947028464686291381, rez_cmp_local_bitmap_HeartRateIcon, rez_cmp_local_text_HeartRate, rez_cmp_local_custom_drawable_81534698593702433512, rez_cmp_local_bitmap_StressIcon, rez_cmp_local_text_Stress, rez_cmp_local_text_Calories, rez_cmp_local_text_Steps, rez_cmp_local_text_MonthAndDay, rez_cmp_local_text_Week, rez_cmp_local_text_BodyBattery, rez_cmp_local_text_WatchBattery, rez_cmp_local_text_Temperature, rez_cmp_local_bitmap_Bluetooth] as Array<WatchUi.Drawable>;
+            return [rez_cmp_local_custom_drawable_87957927413807787805, rez_cmp_local_text_Time, rez_cmp_local_custom_drawable_16205409811234066791, rez_cmp_local_bitmap_HeartRateIcon, rez_cmp_local_text_HeartRate, rez_cmp_local_custom_drawable_19201273101583373440, rez_cmp_local_bitmap_StressIcon, rez_cmp_local_text_Stress, rez_cmp_local_text_Calories, rez_cmp_local_text_Steps, rez_cmp_local_text_MonthAndDay, rez_cmp_local_text_Week, rez_cmp_local_text_BodyBattery, rez_cmp_local_text_WatchBattery, rez_cmp_local_text_Temperature, rez_cmp_local_bitmap_Bluetooth] as Array<WatchUi.Drawable>;
         }
     } // Layouts
 
